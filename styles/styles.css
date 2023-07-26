@@ -15,6 +15,8 @@ h1, h2 {
     font-weight: 800;
     text-align: center;
     vertical-align: middle;
+    padding: 1em;
+    height: 100vh;
 }
 
 footer {
