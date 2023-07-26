@@ -1,8 +1,28 @@
+:root {
+    /* CSS HEX */
+    --sky-blue: #8ecae6ff;
+    --blue-green: #219ebcff;
+    --prussian-blue: #023047ff;
+    --selective-yellow: #ffb703ff;
+    --ut-orange: #fb8500ff;
+
+    /* CSS HSL */
+    --sky-blue: hsla(199, 64%, 73%, 1);
+    --blue-green: hsla(192, 70%, 43%, 1);
+    --prussian-blue: hsla(200, 95%, 14%, 1);
+    --selective-yellow: hsla(43, 100%, 51%, 1);
+    --ut-orange: hsla(32, 100%, 49%, 1);
+
+    /* Font Sizes */
+    --subtitle-size: 30px;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: none;
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    margin: 0;
 }
 
 h1, h2 {
@@ -12,15 +32,27 @@ h1, h2 {
 
 .intro-block {
     font-family: "Raleway";
-    font-weight: 800;
+    font-weight: 300;
+    color: white;
     text-align: center;
     vertical-align: middle;
-    padding: 1em;
+    top: 50%;
+    width: 100%;
     height: 100vh;
+    background-color: var(--prussian-blue);
+}
+
+.intro-block h1 {
+    font-size: 40px;
+}
+
+.intro-block p {
+    font-size: var(--subtitle-size);
 }
 
 footer {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 300;
+    background-color: var(--ut-orange);
 }
