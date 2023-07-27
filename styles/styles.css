@@ -14,20 +14,25 @@
     --ut-orange: hsla(32, 100%, 49%, 1);
 
     /* Font Sizes */
+    --title-size: 40px;
     --subtitle-size: 30px;
+
+    font-family: "Raleway";
+}
+
+body {
+    margin: 0;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: none;
-    gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-    margin: 0;
 }
 
 h1, h2 {
     font-family: "Raleway";
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .intro-block {
@@ -36,14 +41,12 @@ h1, h2 {
     color: white;
     text-align: center;
     vertical-align: middle;
-    top: 50%;
-    width: 100%;
     height: 100vh;
     background-color: var(--prussian-blue);
 }
 
 .intro-block h1 {
-    font-size: 40px;
+    font-size: var(--title-size);
 }
 
 .intro-block p {
@@ -54,5 +57,27 @@ footer {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 300;
-    background-color: var(--ut-orange);
+    background-color: var(--blue-green);
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-github {
+    color:white;
+}
+
+.fa-linkedin-square {
+    color: #0077b5;
 }
