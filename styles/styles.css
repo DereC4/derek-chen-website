@@ -1,0 +1,83 @@
+:root {
+    /* CSS HEX */
+    --sky-blue: #8ecae6ff;
+    --blue-green: #219ebcff;
+    --prussian-blue: #023047ff;
+    --selective-yellow: #ffb703ff;
+    --ut-orange: #fb8500ff;
+
+    /* CSS HSL */
+    --sky-blue: hsla(199, 64%, 73%, 1);
+    --blue-green: hsla(192, 70%, 43%, 1);
+    --prussian-blue: hsla(200, 95%, 14%, 1);
+    --selective-yellow: hsla(43, 100%, 51%, 1);
+    --ut-orange: hsla(32, 100%, 49%, 1);
+
+    /* Font Sizes */
+    --title-size: 40px;
+    --subtitle-size: 30px;
+
+    font-family: "Raleway";
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: none;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+h1, h2 {
+    font-family: "Raleway";
+    font-weight: 600;
+}
+
+.intro-block {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    height: 100vh;
+    background-color: var(--prussian-blue);
+}
+
+.intro-block h1 {
+    font-size: var(--title-size);
+}
+
+.intro-block p {
+    font-size: var(--subtitle-size);
+}
+
+footer {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 300;
+    background-color: var(--blue-green);
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-github {
+    color:white;
+}
+
+.fa-linkedin-square {
+    color: #0077b5;
+}
