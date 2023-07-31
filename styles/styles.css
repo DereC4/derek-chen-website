@@ -1,25 +1,45 @@
-:root {
-    /* CSS HEX */
-    --sky-blue: #8ecae6ff;
-    --blue-green: #219ebcff;
-    --prussian-blue: #023047ff;
-    --selective-yellow: #ffb703ff;
-    --ut-orange: #fb8500ff;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+:root {
     /* CSS HSL */
-    --sky-blue: hsla(199, 64%, 73%, 1);
-    --blue-green: hsla(192, 70%, 43%, 1);
-    --prussian-blue: hsla(200, 95%, 14%, 1);
-    --selective-yellow: hsla(43, 100%, 51%, 1);
-    --ut-orange: hsla(32, 100%, 49%, 1);
+    --foreground-rgb: hsla(217, 20%, 18%, 1);
+    --background-start-rgb: hsla(209, 22%, 30%, 1);
+    --paynes-gray: hsla(206, 23%, 42%, 1);
+    --cadet-gray: hsla(203, 21%, 68%, 1);
+    --alice-blue: hsla(206, 31%, 90%, 1);
+    --text-color: rgb(255, 255, 255);
 
     /* Font Sizes */
-    --title-size: 40px;
+    --title-size: 60px;
     --subtitle-size: 30px;
 
     font-family: "Raleway";
 }
 
+@media (prefers-color-scheme: light) {
+    :root {
+        /* CSS HSL */
+        --foreground-rgb: hsla(217, 20%, 18%, 1);
+        --background-start-rgb: hsla(209, 22%, 30%, 1);
+        --paynes-gray: hsla(206, 23%, 42%, 1);
+        --cadet-gray: hsla(203, 21%, 68%, 1);
+        --alice-blue: hsla(206, 31%, 90%, 1);
+        --text-color: rgb(29, 30, 31);
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  }
+  
 body {
     margin: 0;
 }
@@ -28,25 +48,32 @@ body {
     display: grid;
     grid-template-columns: none;
     grid-auto-rows: minmax(100px, auto);
+    align-items: center;
 }
 
 h1, h2 {
     font-family: "Raleway";
     font-weight: 600;
+    font-size: var(--title-size);
+}
+
+h2 {
+    font-size: var(--title-size);    
+}
+
+nav {
+    background-color: var(--foreground-rgb);
+    color: var(--text-color);
 }
 
 .intro-block {
     font-family: "Raleway";
     font-weight: 300;
-    color: white;
+    color: var(--text-color);
     text-align: center;
     vertical-align: middle;
     height: 100vh;
-    background-color: var(--prussian-blue);
-}
-
-.intro-block h1 {
-    font-size: var(--title-size);
+    background-color: var(--foreground-rgb);
 }
 
 .intro-block p {
@@ -57,12 +84,14 @@ footer {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 300;
-    background-color: var(--blue-green);
+    background-color: var(--background-start-rgb);
     text-align: center;
 }
 
-nav ul li {
-    display: inline-block;
+.default-margins {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 48rem;
 }
 
 .fa {
@@ -75,7 +104,7 @@ nav ul li {
 }
 
 .fa-github {
-    color:white;
+    color:var(--text-color);
 }
 
 .fa-linkedin-square {
