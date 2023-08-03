@@ -12,8 +12,8 @@
     --text-color: rgb(255, 255, 255);
 
     /* Font Sizes */
-    --title-size: 60px;
-    --subtitle-size: 30px;
+    --title-size: 40px;
+    --subtitle-size: 20px;
 
     font-family: "Raleway";
 }
@@ -76,7 +76,7 @@ nav {
     background-color: var(--foreground-rgb);
 }
 
-.intro-block p {
+p {
     font-size: var(--subtitle-size);
 }
 

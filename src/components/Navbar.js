@@ -2,13 +2,21 @@ import Link from "next/link";
 
 const Navbar = () => {
     return (
-        <nav className="navbar mx-auto pt-8 pb-10">
-            <ul className="flex flex-row justify-between gap-5 default-margins">
-                <Link href="/home" className="navbar-link">Home</Link>
-                <Link href="/projects" className="navbar-link">Projects</Link>
-                <p className="navbar-link">TempTemp</p>
-            </ul>
-        </nav>
+            <div className="py-8 default-margins grid gap-x-2 grid-cols-6">
+                <div>
+                    <Link href="/home" className="navbar-link">Home</Link>
+                </div>
+                <div>
+                    <Link href="/projects" className="navbar-link">Projects</Link>
+                </div>
+                <div>
+                    <Link href="/about" className="navbar-link">About</Link>
+                </div>
+                <div className="col-span-2"/>
+                <div>
+                    <p className="navbar-link">Icon</p>
+                </div>
+            </div>
     );
 }
  
