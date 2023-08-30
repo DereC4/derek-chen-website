@@ -4,7 +4,7 @@
 
 :root {
     /* CSS HSL */
-    --foreground-rgb: hsla(217, 20%, 18%, 1);
+    --foreground-rgb: rgb(30, 33, 39);
     --background-start-rgb: hsla(209, 22%, 30%, 1);
     --paynes-gray: hsla(206, 23%, 42%, 1);
     --cadet-gray: hsla(203, 21%, 68%, 1);
@@ -12,8 +12,9 @@
     --text-color: rgb(255, 255, 255);
 
     /* Font Sizes */
+    font-size: 24px;
     --title-size: 40px;
-    --subtitle-size: 20px;
+    --h2-size: 30px;
 
     font-family: "Raleway";
 }
@@ -51,14 +52,18 @@ body {
     align-items: center;
 }
 
-h1, h2 {
-    font-family: "Raleway";
+p {
+    font-size: 16px;
+}
+
+h1 {
     font-weight: 600;
     font-size: var(--title-size);
 }
 
 h2 {
-    font-size: var(--title-size);    
+    font-weight: 500;
+    font-size: var(--h2-size);    
 }
 
 nav {
@@ -66,18 +71,17 @@ nav {
     color: var(--text-color);
 }
 
+.blue-block {
+    background-color: var(--foreground-rgb);
+    color: var(--text-color);
+}
+
 .intro-block {
     font-family: "Raleway";
     font-weight: 300;
-    color: var(--text-color);
     text-align: center;
     vertical-align: middle;
     height: 100vh;
-    background-color: var(--foreground-rgb);
-}
-
-p {
-    font-size: var(--subtitle-size);
 }
 
 footer {
@@ -91,7 +95,11 @@ footer {
 .default-margins {
     margin-left: auto;
     margin-right: auto;
-    max-width: 48rem;
+    max-width: 36rem;
+}
+
+.navbar-link {
+    font-size: 16px;
 }
 
 .fa {
@@ -109,4 +117,8 @@ footer {
 
 .fa-linkedin-square {
     color: #0077b5;
+}
+
+.project-block {
+    border-radius: 30px;
 }
