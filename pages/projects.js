@@ -1,9 +1,9 @@
+import ProjectBlock from "@/src/components/ProjectBlock";
+
 const Projects = () => {
     return (  
-        <div className="wrapper blue-block flex flex-col">
-            <div className="project-block">
-                UT Austin Grade Distribution Viewer
-            </div>
+        <div className="wrapper blue-block flex flex-col items-center">
+            <ProjectBlock projectTitle={"UT Grade Distribution Viewer"} />
             <div className="project-block">
                 Earth Mobs Mod
             </div>
