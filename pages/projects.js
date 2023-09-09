@@ -1,24 +1,15 @@
 import ProjectBlock from "@/src/components/ProjectBlock";
 
 const Projects = () => {
-    return (  
+    return (
         <div className="wrapper blue-block flex flex-col items-center">
             <ProjectBlock projectTitle={"UT Grade Distribution Viewer"} description={"A description"} />
-            <div className="project-block">
-                Earth Mobs Mod
-            </div>
-            <div className="project-block">
-                NASA APOD Visualizer
-            </div>
-            <div className="project-block">
-                JavaScript Breaker
-            </div>
-            
-            <div className="project-block">
-                Sci-Fi Film “SLORK Wars”
-            </div>
+            <ProjectBlock projectTitle={"Earth Mobs Mod"} description={"A description"} />
+            <ProjectBlock projectTitle={"Breaker"} description={"A description"} />
+            <ProjectBlock projectTitle={"NASA APOD Visualizer"} description={"A description"} />
+            <ProjectBlock projectTitle={"Sci-Fi Film \"SLORK WARS\""} description={"A description"} />
         </div>
     );
 }
- 
+
 export default Projects;
