@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Inter, The_Girl_Next_Door } from 'next/font/google'
 import { useSpring, animated } from '@react-spring/web'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -9,24 +9,31 @@ export default function Home() {
   const widen = useSpring({
     from: { width: '0%' },
     to: { width: '100%' },
-    config: { duration: 500 },
+    config: { duration: 1000 },
   });
 
-  // Define the animation spring
+  const paddingAnimation = useSpring({
+    from: { padding: '0px' },
+    to: { padding: '40px' }, // Adjust the desired padding value
+    delay: 1000, // Delay padding animation until the width animation is complete
+    config: { duration: 250 },
+  });
+
   const fadeIn = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    config: { duration: 3000 },
-    // Add a delay
-  })
+    from: { opacity: 0, display: 'none' },
+    to: { opacity: 1, display: 'flex' },
+    delay: 1000, // Delay text animation until the padding animation is complete
+  });
+
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+    <div
+      className={`flex min-h-screen flex-col items-center justify-between align-center mt-24 ${inter.className} default-margins`}
     >
-      <div className="flex justify-start mx-36 md:mx-44">
-        <animated.div className="border-solid border-black border-x-2" style={widen}>
-          <animated.div style={fadeIn}>
+      <div className="flex justify-center items-center mx-46 w-full">
+        <animated.div className="border-solid border-black border-y-2 max-w-full" style={{...widen, ...paddingAnimation}}>
+          <animated.div className="flex flex-col justify-center" style={fadeIn}>
             <h1 className="text-center">Derek Chen</h1>
+            <h2 className="text-center">Computer Science @ UT Austin</h2>
           </animated.div>
         </animated.div>
       </div>
@@ -136,6 +143,6 @@ export default function Home() {
           </p>
         </a>
       </div> */}
-    </main>
+    </div>
   )
 }
