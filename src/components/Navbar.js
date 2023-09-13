@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { useState } from "react";
 
 const Navbar = () => {
+    const [hamburger, setBurger] = useState(false);
     return (
         <>
             <div className="default-margins flex flex-row justify-between items-center mx-28 drop-shadow-md overflow-hidden">
@@ -13,20 +15,24 @@ const Navbar = () => {
                     <p className="self-center">Icon Here</p>
                 </div>
 
-                <nav role="navigation" className="hamburger-menu">
-                    <div id="menuToggle">
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <ul id="menu">
-                            <a href="#"><li>Home</li></a>
-                            <a href="#"><li>About</li></a>
-                            <a href="#"><li>Info</li></a>
-                            <a href="#"><li>Contact</li></a>
+                <div className="max-w-sm w-16 nav-container">
+                    <input className="checkbox" type="checkbox" name="" id="" onClick={() => { setBurger(!hamburger) }} />
+                    <div className="hamburger-lines">
+                        <span className="line line1"></span>
+                        <span className="line line2"></span>
+                        <span className="line line3"></span>
+                    </div>
+                    <div className="burger-menu">
+                        <ul className="menu-items">
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
+                            <li>Home</li>
                         </ul>
                     </div>
-                </nav>
+
+                </div>
             </div>
 
         </>
