@@ -4,6 +4,8 @@ import Navbar from '@/components/Navbar';
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
 import ProjectCard from '@/components/ProjectCard';
+import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { BiLogoDiscord } from 'react-icons/bi';
 
 const templateProjects = [
     {
@@ -39,7 +41,7 @@ export default function Home() {
             {/* First part */}
             <div className='h-screen flex flex-col justify-center items-center px-4 bg-background'>
                 <div className='max-w-[1600px] mx-auto text-center'>
-                    {/* Name with Typing Effect */}
+                    {/* Typing Effect */}
                     <div className='mb-8'>
                         <h1 className='text-5xl md:text-7xl font-bold text-foreground mb-4'>
                             Derek Chen
@@ -73,6 +75,32 @@ export default function Home() {
                             <span className='text-primary font-semibold'>full stack development</span>.
                         </p>
                     </div>
+                    <div className='flex justify-center items-center gap-6 mb-8'>
+                            <a 
+                                href='https://www.linkedin.com/in/derekyujirchen/' 
+                                target='_blank' 
+                                rel='noopener noreferrer'
+                                className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
+                            >
+                                <FaLinkedin size={40} />
+                            </a>
+                            <a 
+                                href='https://github.com/DereC4' 
+                                target='_blank' 
+                                rel='noopener noreferrer'
+                                className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
+                            >
+                                <FaGithubSquare size={40} />
+                            </a>
+                            <a 
+                                href='https://discord.com/users/yourDiscordId' 
+                                target='_blank' 
+                                rel='noopener noreferrer'
+                                className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
+                            >
+                                <BiLogoDiscord size={40} />
+                            </a>
+                        </div>
                 </div>
             </div>
 
@@ -85,7 +113,7 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* Projects Section */}
+            {/* Projects */}
             <div className='min-h-screen bg-secondary py-16 px-4'>
                 <div className='max-w-[1600px] mx-auto'>
                     <div className='text-center mb-16'>
