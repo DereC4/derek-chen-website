@@ -80,8 +80,16 @@ export const getTechnologyColor = (technology: string): string => {
   return technologyColors[technology] || technologyColors.default;
 };
 
-export const getTextColor = (backgroundColor: string): string => {
-  // Simple heuristic: if the background is dark, use white text, otherwise black
-  const darkColors = ['#000000', '#181717', '#092e20', '#430098', '#17202c', '#2d3748', '#003b57'];
-  return darkColors.includes(backgroundColor.toLowerCase()) ? '#ffffff' : '#000000';
-};
+export const getTextColor = (hexColor: string) => {
+  hexColor = hexColor.replace('#', '');
+
+  // Convert hex to RGB
+  const r = parseInt(hexColor.substring(0, 2), 16); // Red
+  const g = parseInt(hexColor.substring(2, 4), 16); // Green
+  const b = parseInt(hexColor.substring(4, 6), 16); // Blue
+
+  // Calculate luminance
+  const luminance = (0.299 * r + 0.587 * g + 0.114 * b);
+
+  return luminance > 128 ? '#000000' : '#FFFFFF';
+}
