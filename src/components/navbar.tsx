@@ -65,13 +65,13 @@ const Navbar = () => {
                     
                     {/* Mobile Social Links */}
                     <div className="flex w-[60%] justify-between py-5">
-                        <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/derekyujirchen/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin size={30} className='cursor-pointer text-blue-500'/>
                         </a>
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/DereC4" target="_blank" rel="noopener noreferrer">
                             <FaGithub size={30} className='cursor-pointer text-muted-foreground'/>
                         </a>
-                        <a href="mailto:your.email@example.com" target="_blank" rel="noopener noreferrer">
+                        <a href="mailto:derexh2so4@utexas.edu" target="_blank" rel="noopener noreferrer">
                             <HiOutlineMail size={30} className='cursor-pointer text-muted-foreground'/>
                         </a>
                         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
