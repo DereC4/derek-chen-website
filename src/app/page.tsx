@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <Navbar></Navbar>
             {/* First part */}
-            <div className='min-h-screen flex flex-col justify-center items-center px-4 bg-background'>
+            <div className='h-screen flex flex-col justify-center items-center px-4 bg-background'>
                 <div className='max-w-[1600px] mx-auto text-center'>
                     {/* Name with Typing Effect */}
                     <div className='mb-8'>
@@ -45,6 +45,15 @@ export default function Home() {
                             <span className='text-primary font-semibold'>full stack development</span>.
                         </p>
                     </div>
+                </div>
+            </div>
+
+            <div className='h-screen bg-secondary flex items-center justify-center'>
+                <div className='max-w-[1600px] mx-auto px-4 text-center'>
+                    <h2 className='text-4xl font-bold text-foreground mb-8'>About Me</h2>
+                    <p className='text-xl text-muted-foreground'>
+                        More content here that requires scrolling to see...
+                    </p>
                 </div>
             </div>
         </>
