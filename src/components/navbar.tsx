@@ -5,9 +5,9 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BiFile } from 'react-icons/bi';
 
-const Navbar = () => {
-    const [nav, setNav] = useState(false);
-    const handleClick = () => setNav(!nav);
+const Navbar: React.FC = () => {
+    const [nav, setNav] = useState<boolean>(false);
+    const handleClick = (): void => setNav(!nav);
 
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-background border-b border-border z-[1000]">
