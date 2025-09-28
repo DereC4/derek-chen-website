@@ -12,36 +12,38 @@ const Navbar: React.FC = () => {
     const handleClick = (): void => setNav(!nav);
 
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-background border-b border-border z-[1000]'>
-            <div className='flex'>
-                <h1 className='font-bold text-2xl text-primary cursor-pointer'>
-                    <Link href='/'>Derek Chen</Link>
-                </h1>
-            </div>
+        <div className='fixed w-full h-[80px] bg-background border-b border-border z-[1000]'>
+            <div className='max-w-[1600px] mx-auto h-full flex justify-between items-center px-4'>
+                <div className='flex'>
+                    <h1 className='font-bold text-2xl text-primary cursor-pointer'>
+                        <Link href='/'>Derek Chen</Link>
+                    </h1>
+                </div>
 
-            {/* Desktop Menu */}
-            <ul className='hidden md:flex font-medium text-foreground gap-8'>
-                <li className='hover:scale-110 duration-500'>
-                    <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
-                        <Link href='/'>About</Link>
-                    </span>
-                </li>
-                <li className='hover:scale-110 duration-500'>
-                    <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
-                        <Link href='/about'>Experience</Link>
-                    </span>
-                </li>
-                <li className='hover:scale-110 duration-500'>
-                    <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
-                        <Link href='/projects'>Projects</Link>
-                    </span>
-                </li>
-                <li className='hover:scale-110 duration-500'>
-                    <span className='border-b-4 border-spacing-y-6 hover:border-accent border-spacing-8 duration-500 border-transparent px-1 inline'>
-                        <Link href='/contact'>Contact</Link>
-                    </span>
-                </li>
-            </ul>
+                {/* Desktop Menu */}
+                <ul className='hidden md:flex font-medium text-foreground gap-8'>
+                    <li className='hover:scale-110 duration-500'>
+                        <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
+                            <Link href='/'>About</Link>
+                        </span>
+                    </li>
+                    <li className='hover:scale-110 duration-500'>
+                        <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
+                            <Link href='/about'>Experience</Link>
+                        </span>
+                    </li>
+                    <li className='hover:scale-110 duration-500'>
+                        <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
+                            <Link href='/projects'>Projects</Link>
+                        </span>
+                    </li>
+                    <li className='hover:scale-110 duration-500'>
+                        <span className='border-b-4 border-spacing-y-6 hover:border-accent border-spacing-8 duration-500 border-transparent px-1 inline'>
+                            <Link href='/contact'>Contact</Link>
+                        </span>
+                    </li>
+                </ul>
+            </div>
 
             {/* Hamburger */}
             <div onClick={handleClick} className='md:hidden z-[300] duration-500 cursor-pointer'>
@@ -101,8 +103,7 @@ const Navbar: React.FC = () => {
                 </ul>
             </div>
 
-            {/* Desktop Social Sidebar */}
-            <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+            {/* <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 rounded-tr-2xl hover:rounded-br-2xl'>
                         <a
@@ -145,7 +146,7 @@ const Navbar: React.FC = () => {
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     );
 };
