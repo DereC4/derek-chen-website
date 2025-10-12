@@ -6,6 +6,7 @@ import Image from 'next/image';
 import ProjectCard from '@/components/ProjectCard';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { BiLogoDiscord } from 'react-icons/bi';
+import ExperienceTimeline from '@/components/ExperienceTimeline';
 
 const templateProjects = [
     {
@@ -139,10 +140,15 @@ export default function Home() {
                             />
                         ))}
                     </div>
-                </div>
+                </div> 
             </div>
 
             {/* Experience */}
+            <div className='min-h-screen bg-secondary py-16 px-4'>
+                <ExperienceTimeline>
+
+                </ExperienceTimeline>
+            </div>
         </>
     );
 }
