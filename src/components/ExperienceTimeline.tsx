@@ -17,8 +17,18 @@ const ExperienceTimeline = () => {
         <Timeline position='right'>
             <TimelineItem>
                 <TimelineSeparator>
-                    <TimelineDot>
-                        <LogoIcon src={Schwab}></LogoIcon>
+                    <TimelineDot
+                        sx={{
+                            width: 80,
+                            height: 80,
+                            p: 0,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            bgcolor: '#fff',
+                        }}
+                    >
+                        <LogoIcon src={Schwab} size={70} circle alt='Company logo for Charles Schwab' />
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
@@ -26,8 +36,18 @@ const ExperienceTimeline = () => {
             </TimelineItem>
             <TimelineItem>
                 <TimelineSeparator>
-                    <TimelineDot>
-                        <LogoIcon src={Att}></LogoIcon>
+                    <TimelineDot
+                        sx={{
+                            width: 80,
+                            height: 80,
+                            p: 0,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            bgcolor: '#fff',
+                        }}
+                    >
+                        <LogoIcon src={Att} size={70} circle alt='Company logo for Charles Schwab' />
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
@@ -35,8 +55,18 @@ const ExperienceTimeline = () => {
             </TimelineItem>
             <TimelineItem>
                 <TimelineSeparator>
-                    <TimelineDot>
-                        <LogoIcon src={Cyltek}></LogoIcon>
+                    <TimelineDot
+                        sx={{
+                            width: 80,
+                            height: 80,
+                            p: 0,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            bgcolor: '#fff',
+                        }}
+                    >
+                        <LogoIcon src={Cyltek} size={70} circle alt='Company logo for Charles Schwab' />
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
@@ -44,10 +74,20 @@ const ExperienceTimeline = () => {
             </TimelineItem>
             <TimelineItem>
                 <TimelineSeparator>
-                    <TimelineDot>
-                        <LogoIcon src={Slork}></LogoIcon>
+                    <TimelineDot
+                        sx={{
+                            width: 80,
+                            height: 80,
+                            p: 0,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            bgcolor: '#fff',
+                        }}
+                    >
+                        <LogoIcon src={Slork} size={70} circle alt='Company logo for Charles Schwab' />
                     </TimelineDot>
-                    <TimelineConnector></TimelineConnector>
+                    <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>Experience 3</TimelineContent>
             </TimelineItem>

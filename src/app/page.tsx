@@ -73,7 +73,7 @@ export default function Home() {
                         </p>
                         <p className='text-lg md:text-xl text-muted-foreground leading-relaxed'>
                             Some aspects of computer science that particularly pique my interest are{' '}
-                            <span className='text-primary font-semibold'>full stack development</span>.
+                            <span className='text-primary font-semibold'>full stack development</span>
                         </p>
                     </div>
                     <div className='flex justify-center items-center gap-6 mb-8'>
