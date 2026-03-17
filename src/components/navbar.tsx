@@ -6,6 +6,7 @@ import { HiOutlineMenuAlt4, HiOutlineMail } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BiFile } from 'react-icons/bi';
+import { SOCIAL_LINKS } from '@/data/socialLinks';
 
 const Navbar: React.FC = () => {
     const [nav, setNav] = useState<boolean>(false);
@@ -87,13 +88,13 @@ const Navbar: React.FC = () => {
 
                     {/* Mobile Social Links */}
                     <div className='flex w-[60%] justify-between py-5'>
-                        <a href='https://www.linkedin.com/in/derekyujirchen/' target='_blank' rel='noopener noreferrer'>
+                        <a href={SOCIAL_LINKS.linkedin} target='_blank' rel='noopener noreferrer'>
                             <FaLinkedin size={30} className='cursor-pointer text-blue-500' />
                         </a>
-                        <a href='https://github.com/DereC4' target='_blank' rel='noopener noreferrer'>
+                        <a href={SOCIAL_LINKS.github} target='_blank' rel='noopener noreferrer'>
                             <FaGithub size={30} className='cursor-pointer text-muted-foreground' />
                         </a>
-                        <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
+                        <a href={SOCIAL_LINKS.resume} target='_blank' rel='noopener noreferrer'>
                             <BiFile size={30} className='cursor-pointer text-accent' />
                         </a>
                     </div>

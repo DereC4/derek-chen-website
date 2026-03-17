@@ -8,6 +8,7 @@ import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { BiLogoDiscord } from 'react-icons/bi';
 import ExperienceTimeline from '@/components/ExperienceTimeline';
 import { SiKofi } from 'react-icons/si';
+import { SOCIAL_LINKS } from '@/data/socialLinks';
 
 const templateProjects = [
     {
@@ -82,7 +83,7 @@ export default function Home() {
                     </div>
                     <div className='flex justify-center items-center gap-6 mb-8'>
                         <a
-                            href='https://www.linkedin.com/in/derekyujirchen/'
+                            href={SOCIAL_LINKS.linkedin}
                             target='_blank'
                             rel='noopener noreferrer'
                             className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
@@ -90,7 +91,7 @@ export default function Home() {
                             <FaLinkedin size={40} />
                         </a>
                         <a
-                            href='https://github.com/DereC4'
+                            href={SOCIAL_LINKS.github}
                             target='_blank'
                             rel='noopener noreferrer'
                             className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
@@ -98,7 +99,7 @@ export default function Home() {
                             <FaGithubSquare size={40} />
                         </a>
                         <a
-                            href='https://ko-fi.com/derexxd'
+                            href={SOCIAL_LINKS.kofi}
                             target='_blank'
                             rel='noopener noreferrer'
                             className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
