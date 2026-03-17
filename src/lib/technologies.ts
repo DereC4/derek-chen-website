@@ -73,6 +73,9 @@ export const technologyColors: Record<string, string> = {
   'Cypress': '#17202c',
   'Playwright': '#2eab6f',
 
+  // Other
+  'APIs': '#A82265',
+
   'default': '#64748b'
 };
 
