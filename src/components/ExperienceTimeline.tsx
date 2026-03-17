@@ -16,7 +16,17 @@ import { Typography } from '@mui/material';
 
 const ExperienceTimeline = () => {
     return (
-        <Timeline position='right'>
+        <Timeline
+            position='right'
+            sx={{
+                m: 0,
+                p: 0,
+                '& .MuiTimelineItem-root:before': {
+                    flex: 0,
+                    padding: 0,
+                },
+            }}
+        >
             <TimelineItem>
                 <TimelineSeparator>
                     <TimelineDot
@@ -150,7 +160,11 @@ const ExperienceTimeline = () => {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography variant='h6' component='span'>
-                        <ArrowLink label='Seven Lakes Orchestras' href='https://sevenlakesorchestras.org/' target='_blank' />
+                        <ArrowLink
+                            label='Seven Lakes Orchestras'
+                            href='https://sevenlakesorchestras.org/'
+                            target='_blank'
+                        />
                     </Typography>
                     <Typography>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
