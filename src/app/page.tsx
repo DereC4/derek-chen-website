@@ -45,7 +45,7 @@ export default function Home() {
         <>
             <Navbar></Navbar>
             {/* First part */}
-            <div className='h-screen flex flex-col justify-center items-center px-4 bg-background'>
+            <div id='intro' className='h-screen flex flex-col justify-center items-center px-4 bg-background'>
                 <div className='max-w-[1600px] mx-auto text-center'>
                     {/* Typing Effect */}
                     <div className='mb-8'>
@@ -118,7 +118,7 @@ export default function Home() {
             </div>
 
             {/* Experience */}
-            <div id="experience" className='min-h-screen bg-secondary py-16 px-4'>
+            <div id='experience' className='min-h-screen bg-secondary py-16 px-4'>
                 <ExperienceTimeline></ExperienceTimeline>
             </div>
             {/* Projects */}
@@ -151,7 +151,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div id="contact" className=""></div>
+            <div id='contact' className=''></div>
         </>
     );
 }
