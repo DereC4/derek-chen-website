@@ -38,11 +38,6 @@ const Navbar: React.FC = () => {
                             <Link href='/#projects'>Projects</Link>
                         </span>
                     </li>
-                    <li className='hover:scale-110 duration-500'>
-                        <span className='border-b-4 border-spacing-y-6 hover:border-accent border-spacing-8 duration-500 border-transparent px-1 inline'>
-                            <Link href='/#contact'>Contact</Link>
-                        </span>
-                    </li>
                 </ul>
             </div>
 
@@ -78,11 +73,6 @@ const Navbar: React.FC = () => {
                     <li className='py-6 text-3xl hover:text-primary duration-300'>
                         <Link onClick={handleClick} href='/#projects'>
                             Projects
-                        </Link>
-                    </li>
-                    <li className='py-6 text-3xl hover:text-primary duration-300'>
-                        <Link onClick={handleClick} href='/#contact'>
-                            Contact
                         </Link>
                     </li>
 

@@ -83,7 +83,6 @@ export default function Home() {
                         </p>
                     </div>
                     <div className='flex justify-center items-center gap-8 mb-10'>
-                        <ArrowLink label='Contact Me' href='/#contact' />
                         <ArrowLink label='View Resume' href={SOCIAL_LINKS.resume} target='_blank' />
                     </div>
                     <div className='flex justify-center items-center gap-6 mb-8'>
@@ -149,7 +148,6 @@ export default function Home() {
                 </div>
             </div>
 
-            <div id='contact' className=''></div>
         </>
     );
 }
