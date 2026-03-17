@@ -12,27 +12,30 @@ const templateProjects = [
     {
         id: 'project-1',
         title: 'E-Commerce Platform',
-        description: 'A full-stack e-commerce platform built with Next.js and Stripe integration. Features include user authentication, product management, shopping cart, and secure payments processing.',
+        description:
+            'A full-stack e-commerce platform built with Next.js and Stripe integration. Features include user authentication, product management, shopping cart, and secure payments processing.',
         image: '/images/projects/ecommerce-placeholder.jpg',
         technologies: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL', 'TailwindCSS'],
-        href: '/projects/ecommerce-platform'
+        href: '/projects/ecommerce-platform',
     },
     {
-        id: 'project-2', 
+        id: 'project-2',
         title: 'Task Management App',
-        description: 'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features. Built with modern web technologies.',
+        description:
+            'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features. Built with modern web technologies.',
         image: '/images/projects/task-app-placeholder.jpg',
         technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Express'],
-        href: '/projects/task-management'
+        href: '/projects/task-management',
     },
     {
         id: 'project-3',
         title: 'Weather Dashboard',
-        description: 'A responsive weather application that provides real-time weather data, forecasts, and interactive maps. Integrates with multiple weather APIs for accurate data.',
-        image: '/images/projects/weather-placeholder.jpg', 
+        description:
+            'A responsive weather application that provides real-time weather data, forecasts, and interactive maps. Integrates with multiple weather APIs for accurate data.',
+        image: '/images/projects/weather-placeholder.jpg',
         technologies: ['JavaScript', 'Weather API', 'Chart.js', 'CSS Grid', 'LocalStorage'],
-        href: '/projects/weather-dashboard'
-    }
+        href: '/projects/weather-dashboard',
+    },
 ];
 
 export default function Home() {
@@ -77,53 +80,56 @@ export default function Home() {
                         </p>
                     </div>
                     <div className='flex justify-center items-center gap-6 mb-8'>
-                            <a 
-                                href='https://www.linkedin.com/in/derekyujirchen/' 
-                                target='_blank' 
-                                rel='noopener noreferrer'
-                                className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
-                            >
-                                <FaLinkedin size={40} />
-                            </a>
-                            <a 
-                                href='https://github.com/DereC4' 
-                                target='_blank' 
-                                rel='noopener noreferrer'
-                                className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
-                            >
-                                <FaGithubSquare size={40} />
-                            </a>
-                            <a 
-                                href='https://discord.com/users/yourDiscordId' 
-                                target='_blank' 
-                                rel='noopener noreferrer'
-                                className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
-                            >
-                                <BiLogoDiscord size={40} />
-                            </a>
-                        </div>
+                        <a
+                            href='https://www.linkedin.com/in/derekyujirchen/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
+                        >
+                            <FaLinkedin size={40} />
+                        </a>
+                        <a
+                            href='https://github.com/DereC4'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
+                        >
+                            <FaGithubSquare size={40} />
+                        </a>
+                        <a
+                            href='https://discord.com/users/yourDiscordId'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
+                        >
+                            <BiLogoDiscord size={40} />
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div className='h-screen bg-secondary flex items-center justify-center'>
+            <div id='about' className='h-screen bg-secondary flex items-center justify-center'>
                 <div className='max-w-[1600px] mx-auto px-4 text-center'>
                     <h2 className='text-4xl font-bold text-foreground mb-8'>About Me</h2>
-                    <p className='text-xl text-muted-foreground'>
-                        More content here that requires scrolling to see...
-                    </p>
+                    <p className='text-xl text-muted-foreground'>More content here that requires scrolling to see...</p>
                 </div>
             </div>
 
+            {/* Experience */}
+            <div id="experience" className='min-h-screen bg-secondary py-16 px-4'>
+                <ExperienceTimeline></ExperienceTimeline>
+            </div>
             {/* Projects */}
-            <div className='min-h-screen bg-secondary py-16 px-4'>
+            <div id='projects' className='min-h-screen bg-secondary py-16 px-4'>
                 <div className='max-w-[1600px] mx-auto'>
                     <div className='text-center mb-16'>
                         <h2 className='text-4xl md:text-5xl font-bold text-foreground mb-4'>Featured Projects</h2>
                         <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
-                            Here are some of the projects I've worked on that showcase my skills in full-stack development and problem-solving.
+                            Here are some of the projects I've worked on that showcase my skills in full-stack
+                            development and problem-solving.
                         </p>
                     </div>
-                    
+
                     <div className='space-y-16'>
                         {templateProjects.map((project, index) => (
                             <ProjectCard
@@ -140,15 +146,10 @@ export default function Home() {
                             />
                         ))}
                     </div>
-                </div> 
+                </div>
             </div>
 
-            {/* Experience */}
-            <div className='min-h-screen bg-secondary py-16 px-4'>
-                <ExperienceTimeline>
-
-                </ExperienceTimeline>
-            </div>
+            <div id="contact" className=""></div>
         </>
     );
 }
