@@ -50,7 +50,7 @@ const ExperienceTimeline = () => {
                         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
                         qui officia deserunt mollit anim id est laborum.
                     </Typography>
-                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'text.primary' }}>
+                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
                         Feb 2026 - Present{' '}
                     </Typography>
                 </TimelineContent>
@@ -88,7 +88,7 @@ const ExperienceTimeline = () => {
                         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
                         qui officia deserunt mollit anim id est laborum.
                     </Typography>
-                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'text.primary' }}>
+                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
                         Feb 2026 - Present{' '}
                     </Typography>
                 </TimelineContent>
@@ -126,7 +126,7 @@ const ExperienceTimeline = () => {
                         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
                         qui officia deserunt mollit anim id est laborum.
                     </Typography>
-                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'text.primary' }}>
+                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
                         Feb 2026 - Present{' '}
                     </Typography>
                 </TimelineContent>
@@ -164,7 +164,7 @@ const ExperienceTimeline = () => {
                         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
                         qui officia deserunt mollit anim id est laborum.
                     </Typography>
-                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'text.primary' }}>
+                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
                         Feb 2026 - Present{' '}
                     </Typography>
                 </TimelineContent>
