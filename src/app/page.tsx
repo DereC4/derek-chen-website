@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
 import ProjectCard from '@/components/ProjectCard';
+import ArrowLink from '@/components/ArrowLink';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { BiLogoDiscord } from 'react-icons/bi';
 import ExperienceTimeline from '@/components/ExperienceTimeline';
@@ -45,7 +46,7 @@ export default function Home() {
         <>
             <Navbar></Navbar>
             {/* First part */}
-            <div id='intro' className='h-screen flex flex-col justify-center items-center px-4 bg-background'>
+            <div id='about' className='h-screen flex flex-col justify-center items-center px-4 bg-background'>
                 <div className='max-w-[1600px] mx-auto text-center'>
                     {/* Typing Effect */}
                     <div className='mb-8'>
@@ -81,6 +82,10 @@ export default function Home() {
                             <span className='text-primary font-semibold'>full stack development</span>
                         </p>
                     </div>
+                    <div className='flex justify-center items-center gap-8 mb-10'>
+                        <ArrowLink label='Contact Me' href='/#contact' />
+                        <ArrowLink label='View Resume' href={SOCIAL_LINKS.resume} target='_blank' />
+                    </div>
                     <div className='flex justify-center items-center gap-6 mb-8'>
                         <a
                             href={SOCIAL_LINKS.linkedin}
@@ -107,13 +112,6 @@ export default function Home() {
                             <SiKofi size={40} />
                         </a>
                     </div>
-                </div>
-            </div>
-
-            <div id='about' className='h-screen bg-secondary flex items-center justify-center'>
-                <div className='max-w-[1600px] mx-auto px-4 text-center'>
-                    <h2 className='text-4xl font-bold text-foreground mb-8'>About Me</h2>
-                    <p className='text-xl text-muted-foreground'>More content here that requires scrolling to see...</p>
                 </div>
             </div>
 
