@@ -5,11 +5,16 @@ import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
 import ProjectCard from '@/components/ProjectCard';
 import ArrowLink from '@/components/ArrowLink';
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
-import { BiLogoDiscord } from 'react-icons/bi';
+import { FaGithubSquare, FaLinkedin, FaMailBulk, FaMailchimp } from 'react-icons/fa';
+import { BiLogoDiscord, BiMailSend } from 'react-icons/bi';
+import { HiOutlineMail } from 'react-icons/hi';
 import ExperienceTimeline from '@/components/ExperienceTimeline';
 import { SiKofi } from 'react-icons/si';
 import { SOCIAL_LINKS } from '@/data/socialLinks';
+import { CgMail } from 'react-icons/cg';
+import { CiMail } from 'react-icons/ci';
+import { MdEmail } from 'react-icons/md';
+import { FiMail } from 'react-icons/fi';
 
 const templateProjects = [
     {
@@ -101,6 +106,12 @@ export default function Home() {
                             className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
                         >
                             <FaGithubSquare size={40} />
+                        </a>
+                        <a
+                            href='mailto:derexh2so4@utexas.edu'
+                            className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
+                        >
+                            <MdEmail size={40} />
                         </a>
                         <a
                             href={SOCIAL_LINKS.kofi}
