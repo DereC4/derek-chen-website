@@ -19,6 +19,8 @@ const schwabExperience = experiences.find((experience) => experience.company ===
 const attExperience = experiences.find((experience) => experience.company === 'AT&T');
 const cyltekExperience = experiences.find((experience) => experience.company === 'CYL-Tek');
 const slorkExperience = experiences.find((experience) => experience.company === 'Seven Lakes Orchestras');
+const TIMELINE_DOT_SIZE = 60;
+const TIMELINE_LOGO_SIZE = 50;
 
 const ExperienceTimeline = () => {
     return (
@@ -37,8 +39,8 @@ const ExperienceTimeline = () => {
                 <TimelineSeparator>
                     <TimelineDot
                         sx={{
-                            width: 80,
-                            height: 80,
+                            width: TIMELINE_DOT_SIZE,
+                            height: TIMELINE_DOT_SIZE,
                             p: 0,
                             display: 'flex',
                             alignItems: 'center',
@@ -46,7 +48,7 @@ const ExperienceTimeline = () => {
                             bgcolor: '#fff',
                         }}
                     >
-                        <LogoIcon src={Schwab} size={70} circle alt='Charles Schwab company logo' />
+                        <LogoIcon src={Schwab} size={TIMELINE_LOGO_SIZE} circle alt='Charles Schwab company logo' />
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
@@ -56,7 +58,11 @@ const ExperienceTimeline = () => {
                             label={schwabExperience?.company ?? 'Charles Schwab'}
                             href={schwabExperience?.companyLink ?? 'https://www.schwab.com'}
                             target='_blank'
+                            className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
                         />
+                    </Typography>
+                    <Typography variant='body2' sx={{ display: 'block' }}>
+                        {schwabExperience?.title}
                     </Typography>
                     <Typography>{schwabExperience?.shortDescription}</Typography>
                     <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
@@ -64,12 +70,13 @@ const ExperienceTimeline = () => {
                     </Typography>
                 </TimelineContent>
             </TimelineItem>
+
             <TimelineItem>
                 <TimelineSeparator>
                     <TimelineDot
                         sx={{
-                            width: 80,
-                            height: 80,
+                            width: TIMELINE_DOT_SIZE,
+                            height: TIMELINE_DOT_SIZE,
                             p: 0,
                             display: 'flex',
                             alignItems: 'center',
@@ -77,7 +84,7 @@ const ExperienceTimeline = () => {
                             bgcolor: '#fff',
                         }}
                     >
-                        <LogoIcon src={Att} size={70} circle alt='AT&T company logo' />
+                        <LogoIcon src={Att} size={TIMELINE_LOGO_SIZE} circle alt='AT&T company logo' />
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
@@ -87,7 +94,11 @@ const ExperienceTimeline = () => {
                             label={attExperience?.company ?? 'AT&T'}
                             href={attExperience?.companyLink ?? 'https://www.att.com'}
                             target='_blank'
+                            className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
                         />
+                    </Typography>
+                    <Typography variant='body2' sx={{ display: 'block' }}>
+                        {attExperience?.title}
                     </Typography>
                     <Typography>{attExperience?.shortDescription}</Typography>
                     <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
@@ -95,12 +106,13 @@ const ExperienceTimeline = () => {
                     </Typography>
                 </TimelineContent>
             </TimelineItem>
+
             <TimelineItem>
                 <TimelineSeparator>
                     <TimelineDot
                         sx={{
-                            width: 80,
-                            height: 80,
+                            width: TIMELINE_DOT_SIZE,
+                            height: TIMELINE_DOT_SIZE,
                             p: 0,
                             display: 'flex',
                             alignItems: 'center',
@@ -108,7 +120,7 @@ const ExperienceTimeline = () => {
                             bgcolor: '#fff',
                         }}
                     >
-                        <LogoIcon src={Cyltek} size={70} circle alt='CYL-Tek company logo' />
+                        <LogoIcon src={Cyltek} size={TIMELINE_LOGO_SIZE} circle alt='CYL-Tek company logo' />
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
@@ -118,7 +130,11 @@ const ExperienceTimeline = () => {
                             label={cyltekExperience?.company ?? 'CYL-Tek'}
                             href={cyltekExperience?.companyLink ?? 'https://www.cyl-tek.com/'}
                             target='_blank'
+                            className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
                         />
+                    </Typography>
+                    <Typography variant='body2' sx={{ display: 'block' }}>
+                        {cyltekExperience?.title}
                     </Typography>
                     <Typography>{cyltekExperience?.shortDescription}</Typography>
                     <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
@@ -126,12 +142,13 @@ const ExperienceTimeline = () => {
                     </Typography>
                 </TimelineContent>
             </TimelineItem>
+
             <TimelineItem>
                 <TimelineSeparator>
                     <TimelineDot
                         sx={{
-                            width: 80,
-                            height: 80,
+                            width: TIMELINE_DOT_SIZE,
+                            height: TIMELINE_DOT_SIZE,
                             p: 0,
                             display: 'flex',
                             alignItems: 'center',
@@ -139,7 +156,7 @@ const ExperienceTimeline = () => {
                             bgcolor: '#fff',
                         }}
                     >
-                        <LogoIcon src={Slork} size={70} circle alt='Seven Lakes Orchestras logo' />
+                        <LogoIcon src={Slork} size={TIMELINE_LOGO_SIZE} circle alt='Seven Lakes Orchestras logo' />
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>
@@ -150,10 +167,14 @@ const ExperienceTimeline = () => {
                                 label={slorkExperience.company}
                                 href={slorkExperience.companyLink}
                                 target='_blank'
+                                className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
                             />
                         ) : (
                             slorkExperience?.company ?? 'Seven Lakes Orchestras'
                         )}
+                    </Typography>
+                    <Typography variant='body2' sx={{ display: 'block' }}>
+                        {slorkExperience?.title}
                     </Typography>
                     <Typography>{slorkExperience?.shortDescription}</Typography>
                     <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
