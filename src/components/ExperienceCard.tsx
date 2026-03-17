@@ -8,7 +8,6 @@ interface ExperienceCardProps {
     companyLink?: string;
     period: string;
     description: string[];
-    isNonProfit?: boolean;
     className?: string;
 }
 
@@ -18,7 +17,6 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
     companyLink,
     period,
     description,
-    isNonProfit = false,
     className = '',
 }) => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -84,8 +82,6 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
                         ) : (
                             company
                         )}
-
-                        {isNonProfit && <span className='text-primary text-sm ml-2'>(Non-Profit)</span>}
                     </p>
 
                     <ul className='text-muted-foreground space-y-2 list-disc list-inside'>
