@@ -16,7 +16,7 @@ type LogoIconProps = {
 export default function LogoIcon({
     src,
     Svg,
-    alt = 'icon photo for a company',
+    alt = 'Company logo',
     size = 40,
     circle = true,
 }: LogoIconProps) {

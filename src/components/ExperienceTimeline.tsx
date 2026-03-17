@@ -29,7 +29,7 @@ const ExperienceTimeline = () => {
                             bgcolor: '#fff',
                         }}
                     >
-                        <LogoIcon src={Schwab} size={70} circle alt='Company logo for Charles Schwab' />
+                        <LogoIcon src={Schwab} size={70} circle alt='Charles Schwab company logo' />
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
@@ -67,7 +67,7 @@ const ExperienceTimeline = () => {
                             bgcolor: '#fff',
                         }}
                     >
-                        <LogoIcon src={Att} size={70} circle alt='Company logo for Charles Schwab' />
+                        <LogoIcon src={Att} size={70} circle alt='AT&T company logo' />
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
@@ -105,7 +105,7 @@ const ExperienceTimeline = () => {
                             bgcolor: '#fff',
                         }}
                     >
-                        <LogoIcon src={Cyltek} size={70} circle alt='Company logo for Charles Schwab' />
+                        <LogoIcon src={Cyltek} size={70} circle alt='CYL-Tek company logo' />
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
@@ -143,7 +143,7 @@ const ExperienceTimeline = () => {
                             bgcolor: '#fff',
                         }}
                     >
-                        <LogoIcon src={Slork} size={70} circle alt='Company logo for Charles Schwab' />
+                        <LogoIcon src={Slork} size={70} circle alt='Seven Lakes Orchestras logo' />
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>
