@@ -127,7 +127,9 @@ export default function Home() {
 
             {/* Experience */}
             <div id='experience' className='min-h-screen bg-secondary py-16 px-4'>
-                <div className="max-w-[1600px] mx-auto flex justify-start"><ExperienceTimeline></ExperienceTimeline></div>
+                <div className='max-w-[1600px] mx-auto flex justify-start'>
+                    <ExperienceTimeline></ExperienceTimeline>
+                </div>
             </div>
             {/* Projects */}
             <div id='projects' className='min-h-screen bg-secondary py-16 px-4'>
