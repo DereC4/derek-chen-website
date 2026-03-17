@@ -24,22 +24,22 @@ const Navbar: React.FC = () => {
                 <ul className='hidden md:flex font-medium text-foreground gap-8'>
                     <li className='hover:scale-110 duration-500'>
                         <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
-                            <Link href='/'>About</Link>
+                            <Link href='/#about'>About</Link>
                         </span>
                     </li>
                     <li className='hover:scale-110 duration-500'>
                         <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
-                            <Link href='/about'>Experience</Link>
+                            <Link href='/#experience'>Experience</Link>
                         </span>
                     </li>
                     <li className='hover:scale-110 duration-500'>
                         <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
-                            <Link href='/projects'>Projects</Link>
+                            <Link href='/#projects'>Projects</Link>
                         </span>
                     </li>
                     <li className='hover:scale-110 duration-500'>
                         <span className='border-b-4 border-spacing-y-6 hover:border-accent border-spacing-8 duration-500 border-transparent px-1 inline'>
-                            <Link href='/contact'>Contact</Link>
+                            <Link href='/#contact'>Contact</Link>
                         </span>
                     </li>
                 </ul>
@@ -65,22 +65,22 @@ const Navbar: React.FC = () => {
                 <h1 className='font-bold text-2xl text-primary mb-8'>Derek Chen</h1>
                 <ul className='items-center justify-center flex flex-col text-foreground'>
                     <li className='py-6 text-3xl hover:text-primary duration-300'>
-                        <Link onClick={handleClick} href='/'>
+                        <Link onClick={handleClick} href='/#about'>
                             About
                         </Link>
                     </li>
                     <li className='py-6 text-3xl hover:text-primary duration-300'>
-                        <Link onClick={handleClick} href='/about'>
+                        <Link onClick={handleClick} href='/#experience'>
                             Experience
                         </Link>
                     </li>
                     <li className='py-6 text-3xl hover:text-primary duration-300'>
-                        <Link onClick={handleClick} href='/projects'>
+                        <Link onClick={handleClick} href='/#projects'>
                             Projects
                         </Link>
                     </li>
                     <li className='py-6 text-3xl hover:text-primary duration-300'>
-                        <Link onClick={handleClick} href='/contact'>
+                        <Link onClick={handleClick} href='/#contact'>
                             Contact
                         </Link>
                     </li>
@@ -92,9 +92,6 @@ const Navbar: React.FC = () => {
                         </a>
                         <a href='https://github.com/DereC4' target='_blank' rel='noopener noreferrer'>
                             <FaGithub size={30} className='cursor-pointer text-muted-foreground' />
-                        </a>
-                        <a href='mailto:derexh2so4@utexas.edu' target='_blank' rel='noopener noreferrer'>
-                            <HiOutlineMail size={30} className='cursor-pointer text-muted-foreground' />
                         </a>
                         <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
                             <BiFile size={30} className='cursor-pointer text-accent' />
