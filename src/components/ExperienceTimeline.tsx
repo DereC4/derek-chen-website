@@ -6,6 +6,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import LogoIcon from './CompanyLogoDot';
+import ArrowLink from './ArrowLink';
 // 10.12.2025 next.js images use imports
 import Cyltek from '@/assets/pics/cyltek.jpg';
 import Att from '@/assets/pics/att.svg';
@@ -35,7 +36,7 @@ const ExperienceTimeline = () => {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography variant='h6' component='span'>
-                        Charles Schwab
+                        <ArrowLink label='Charles Schwab' href='https://www.schwab.com' target='_blank' />
                     </Typography>
                     <Typography>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -73,7 +74,7 @@ const ExperienceTimeline = () => {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography variant='h6' component='span'>
-                        AT&T
+                        <ArrowLink label='AT&T' href='https://www.att.com' target='_blank' />
                     </Typography>
                     <Typography>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -111,7 +112,7 @@ const ExperienceTimeline = () => {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography variant='h6' component='span'>
-                        Cyltek
+                        <ArrowLink label='CYLTEK' href='https://www.cyl-tek.com/' target='_blank' />
                     </Typography>
                     <Typography>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -149,7 +150,7 @@ const ExperienceTimeline = () => {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography variant='h6' component='span'>
-                        Seven Lakes Orchestras
+                        <ArrowLink label='Seven Lakes Orchestras' href='https://sevenlakesorchestras.org/' target='_blank' />
                     </Typography>
                     <Typography>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
