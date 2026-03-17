@@ -13,6 +13,12 @@ import Att from '@/assets/pics/att.svg';
 import Schwab from '@/assets/pics/schwab.svg';
 import Slork from '@/assets/pics/slork.jpg';
 import { Typography } from '@mui/material';
+import { experiences } from '@/data/experiences';
+
+const schwabExperience = experiences.find((experience) => experience.company === 'Charles Schwab');
+const attExperience = experiences.find((experience) => experience.company === 'AT&T');
+const cyltekExperience = experiences.find((experience) => experience.company === 'CYL-Tek');
+const slorkExperience = experiences.find((experience) => experience.company === 'Seven Lakes Orchestras');
 
 const ExperienceTimeline = () => {
     return (
@@ -46,22 +52,15 @@ const ExperienceTimeline = () => {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography variant='h6' component='span'>
-                        <ArrowLink label='Charles Schwab' href='https://www.schwab.com' target='_blank' />
+                        <ArrowLink
+                            label={schwabExperience?.company ?? 'Charles Schwab'}
+                            href={schwabExperience?.companyLink ?? 'https://www.schwab.com'}
+                            target='_blank'
+                        />
                     </Typography>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                        qui officia deserunt mollit anim id est laborum.
-                    </Typography>
+                    <Typography>{schwabExperience?.shortDescription}</Typography>
                     <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
-                        Feb 2026 - Present{' '}
+                        {schwabExperience?.period}
                     </Typography>
                 </TimelineContent>
             </TimelineItem>
@@ -84,22 +83,15 @@ const ExperienceTimeline = () => {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography variant='h6' component='span'>
-                        <ArrowLink label='AT&T' href='https://www.att.com' target='_blank' />
+                        <ArrowLink
+                            label={attExperience?.company ?? 'AT&T'}
+                            href={attExperience?.companyLink ?? 'https://www.att.com'}
+                            target='_blank'
+                        />
                     </Typography>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                        qui officia deserunt mollit anim id est laborum.
-                    </Typography>
+                    <Typography>{attExperience?.shortDescription}</Typography>
                     <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
-                        Feb 2026 - Present{' '}
+                        {attExperience?.period}
                     </Typography>
                 </TimelineContent>
             </TimelineItem>
@@ -122,22 +114,15 @@ const ExperienceTimeline = () => {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography variant='h6' component='span'>
-                        <ArrowLink label='CYLTEK' href='https://www.cyl-tek.com/' target='_blank' />
+                        <ArrowLink
+                            label={cyltekExperience?.company ?? 'CYL-Tek'}
+                            href={cyltekExperience?.companyLink ?? 'https://www.cyl-tek.com/'}
+                            target='_blank'
+                        />
                     </Typography>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                        qui officia deserunt mollit anim id est laborum.
-                    </Typography>
+                    <Typography>{cyltekExperience?.shortDescription}</Typography>
                     <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
-                        Feb 2026 - Present{' '}
+                        {cyltekExperience?.period}
                     </Typography>
                 </TimelineContent>
             </TimelineItem>
@@ -160,26 +145,19 @@ const ExperienceTimeline = () => {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography variant='h6' component='span'>
-                        <ArrowLink
-                            label='Seven Lakes Orchestras'
-                            href='https://sevenlakesorchestras.org/'
-                            target='_blank'
-                        />
+                        {slorkExperience?.companyLink ? (
+                            <ArrowLink
+                                label={slorkExperience.company}
+                                href={slorkExperience.companyLink}
+                                target='_blank'
+                            />
+                        ) : (
+                            slorkExperience?.company ?? 'Seven Lakes Orchestras'
+                        )}
                     </Typography>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                        qui officia deserunt mollit anim id est laborum.
-                    </Typography>
+                    <Typography>{slorkExperience?.shortDescription}</Typography>
                     <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
-                        Feb 2026 - Present{' '}
+                        {slorkExperience?.period}
                     </Typography>
                 </TimelineContent>
             </TimelineItem>

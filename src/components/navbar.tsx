@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
             <div className='max-w-[1100px] w-full mx-auto h-full flex justify-between items-center px-5'>
                 <div className='flex'>
                     <h1 className='font-bold text-2xl text-primary cursor-pointer'>
-                        <Link href='/'>Derek Chen</Link>
+                        <Link href='/'>Derek</Link>
                     </h1>
                 </div>
 
