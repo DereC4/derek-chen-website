@@ -1,4 +1,5 @@
 export type Experience = {
+    id: string;
     title: string;
     company: string;
     companyLink: string;
@@ -9,7 +10,14 @@ export type Experience = {
     skills?: string[];
 };
 
-export const experiences: Experience[] = [
+type ExperienceWithoutId = Omit<Experience, 'id'>;
+
+const createExperienceId = (company: string): string => {
+    const normalizedCompany = company.trim().replace(/\s+/g, '').replace(/[^a-zA-Z0-9]/g, '');
+    return `${normalizedCompany}-1`;
+};
+
+const experiencesData: ExperienceWithoutId[] = [
     {
         title: 'Senior Software Engineer',
         company: 'Longhorn Developers',
@@ -111,3 +119,8 @@ export const experiences: Experience[] = [
         skills: ['Node.js', 'Figma', 'Front-End Development', 'JavaScript', 'React Native'],
     },
 ];
+
+export const experiences: Experience[] = experiencesData.map((experience) => ({
+    ...experience,
+    id: createExperienceId(experience.company),
+}));
