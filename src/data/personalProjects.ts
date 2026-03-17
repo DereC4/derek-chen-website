@@ -22,7 +22,7 @@ export const projects = [
         title: 'Cobbleguard',
         description: `Addressed the widespread issue of unsecured online game servers by building an educational warning network, supported by an asynchronous Rust scanner that discovers, parses, and catalogs over 3.4 million server IPs into a PostgreSQL database. Deployed an automated agent on Oracle Cloud built in TypeScript with Mineflayer API, that connects to vulnerable servers, delivering educational security warnings to over 1 million users and handling queries with a responsive chat module.`,
         image: '/images/projects/cobble-guard.png',
-        technologies: ['TypeScript', 'Python', 'Rust', 'PostgreSQL'],
+        technologies: ['TypeScript', 'Python', 'Rust', 'PostgreSQL', 'discord.py'],
         href: '/projects/cobble-guard',
         period: 'Dec 2024 – Sep 2025',
     },
