@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 
     return (
         <div className='fixed w-full h-[80px] bg-background border-b border-border z-[1000]'>
-            <div className='max-w-[1600px] mx-auto h-full flex justify-between items-center px-4'>
+            <div className='max-w-[1100px] w-full mx-auto h-full flex justify-between items-center px-5'>
                 <div className='flex'>
                     <h1 className='font-bold text-2xl text-primary cursor-pointer'>
                         <Link href='/'>Derek Chen</Link>
