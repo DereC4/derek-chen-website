@@ -7,6 +7,7 @@ import ProjectCard from '@/components/ProjectCard';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { BiLogoDiscord } from 'react-icons/bi';
 import ExperienceTimeline from '@/components/ExperienceTimeline';
+import { SiKofi } from 'react-icons/si';
 
 const templateProjects = [
     {
@@ -97,12 +98,12 @@ export default function Home() {
                             <FaGithubSquare size={40} />
                         </a>
                         <a
-                            href='https://discord.com/users/yourDiscordId'
+                            href='https://ko-fi.com/derexxd'
                             target='_blank'
                             rel='noopener noreferrer'
                             className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
                         >
-                            <BiLogoDiscord size={40} />
+                            <SiKofi size={40} />
                         </a>
                     </div>
                 </div>
