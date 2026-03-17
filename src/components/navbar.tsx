@@ -2,10 +2,9 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { HiOutlineMenuAlt4 } from 'react-icons/hi';
+import { HiOutlineMenuAlt4, HiOutlineMail } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiKofi } from 'react-icons/si';
 import { BiFile } from 'react-icons/bi';
 
 const Navbar: React.FC = () => {
@@ -14,7 +13,7 @@ const Navbar: React.FC = () => {
 
     return (
         <div className='fixed w-full h-[80px] bg-background border-b border-border z-[1000]'>
-            <div className='max-w-[1600px] mx-auto h-full flex items-center px-4 relative'>
+            <div className='max-w-[1600px] mx-auto h-full flex justify-between items-center px-4'>
                 <div className='flex'>
                     <h1 className='font-bold text-2xl text-primary cursor-pointer'>
                         <Link href='/'>Derek Chen</Link>
@@ -22,7 +21,7 @@ const Navbar: React.FC = () => {
                 </div>
 
                 {/* Desktop Menu */}
-                <ul className='hidden md:flex font-medium text-foreground gap-8 absolute left-1/2 -translate-x-1/2'>
+                <ul className='hidden md:flex font-medium text-foreground gap-8'>
                     <li className='hover:scale-110 duration-500'>
                         <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
                             <Link href='/#about'>About</Link>
@@ -44,37 +43,6 @@ const Navbar: React.FC = () => {
                         </span>
                     </li>
                 </ul>
-
-                {/* Desktop Social Icons */}
-                <div className='hidden md:flex items-center gap-6 ml-auto'>
-                    <a
-                        href='https://github.com/DereC4'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        aria-label='GitHub'
-                        className='text-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform'
-                    >
-                        <FaGithub size={22} />
-                    </a>
-                    <a
-                        href='https://www.linkedin.com/in/derekyujirchen/'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        aria-label='LinkedIn'
-                        className='text-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform'
-                    >
-                        <FaLinkedin size={22} />
-                    </a>
-                    <a
-                        href='https://ko-fi.com/'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        aria-label='Ko-fi'
-                        className='text-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform'
-                    >
-                        <SiKofi size={22} />
-                    </a>
-                </div>
             </div>
 
             {/* Hamburger */}
