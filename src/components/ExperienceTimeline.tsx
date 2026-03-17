@@ -11,6 +11,7 @@ import Cyltek from '@/assets/pics/cyltek.jpg';
 import Att from '@/assets/pics/att.svg';
 import Schwab from '@/assets/pics/schwab.svg';
 import Slork from '@/assets/pics/slork.jpg';
+import { Typography } from '@mui/material';
 
 const ExperienceTimeline = () => {
     return (
@@ -32,7 +33,26 @@ const ExperienceTimeline = () => {
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
-                <TimelineContent>Experience 1</TimelineContent>
+                <TimelineContent>
+                    <Typography variant='h6' component='span'>
+                        Charles Schwab
+                    </Typography>
+                    <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                    </Typography>
+                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'text.primary' }}>
+                        Feb 2026 - Present{' '}
+                    </Typography>
+                </TimelineContent>
             </TimelineItem>
             <TimelineItem>
                 <TimelineSeparator>
@@ -51,7 +71,26 @@ const ExperienceTimeline = () => {
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
-                <TimelineContent>Experience 2</TimelineContent>
+                <TimelineContent>
+                    <Typography variant='h6' component='span'>
+                        AT&T
+                    </Typography>
+                    <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                    </Typography>
+                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'text.primary' }}>
+                        Feb 2026 - Present{' '}
+                    </Typography>
+                </TimelineContent>
             </TimelineItem>
             <TimelineItem>
                 <TimelineSeparator>
@@ -70,7 +109,26 @@ const ExperienceTimeline = () => {
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
-                <TimelineContent>Experience 3</TimelineContent>
+                <TimelineContent>
+                    <Typography variant='h6' component='span'>
+                        Cyltek
+                    </Typography>
+                    <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                    </Typography>
+                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'text.primary' }}>
+                        Feb 2026 - Present{' '}
+                    </Typography>
+                </TimelineContent>
             </TimelineItem>
             <TimelineItem>
                 <TimelineSeparator>
@@ -89,7 +147,26 @@ const ExperienceTimeline = () => {
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent>Experience 3</TimelineContent>
+                <TimelineContent>
+                    <Typography variant='h6' component='span'>
+                        Seven Lakes Orchestras
+                    </Typography>
+                    <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                    </Typography>
+                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'text.primary' }}>
+                        Feb 2026 - Present{' '}
+                    </Typography>
+                </TimelineContent>
             </TimelineItem>
         </Timeline>
     );
