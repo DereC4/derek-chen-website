@@ -13,6 +13,6 @@ Toolchain:
 - Figma
 
 Additional Credits:
-screenshot.rocks https://screenshot.rocks/app#! by daveearley https://github.com/daveearley
-screenzy https://screenzy.io/
-Jessica Zhu https://www.linkedin.com/in/jessica-zhu-/ - UT Registration Plus experimental feature image asset https://jessicazhu.work/utrp
+- [screenshot.rocks](https://screenshot.rocks/app#!) by [daveearley](https://github.com/daveearley)
+- [screenzy](https://screenzy.io/)
+- [Jessica Zhu](https://www.linkedin.com/in/jessica-zhu-/) - A former design lead for UT Registration Plus. Experimental feature image asset: [jessicazhu.work/utrp](https://jessicazhu.work/utrp)
