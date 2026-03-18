@@ -10,6 +10,7 @@ export const projectImages: Record<string, StaticImageData> = {
     'slork-wars': slorkWars1,
     'slork-wars-2': slorkWars2,
     'guests': guests1,
-    'ut-registration-plus': utgradedist,
-    'ut-grade-distribution-viewer': utregplus,
+    // 3.17.2026 ai did something clever here and found out i accidentally swapped the two, that is crazy, 2023 chatgpt would've never 
+    'ut-registration-plus': utregplus,
+    'ut-grade-distribution-viewer': utgradedist,
 };
