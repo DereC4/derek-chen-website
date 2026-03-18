@@ -1,34 +1,19 @@
 import ProjectCard from '@/components/ProjectCard';
+import { projects } from '@/data/personalProjects';
 
-const templateProjects = [
-    {
-        id: 'project-1',
-        title: 'E-Commerce Platform',
-        description:
-            'A full-stack e-commerce platform built with Next.js and Stripe integration. Features include user authentication, product management, shopping cart, and secure payments processing.',
-        image: '/images/projects/ecommerce-placeholder.jpg',
-        technologies: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL', 'TailwindCSS'],
-        href: '/projects/ecommerce-platform',
-    },
-    {
-        id: 'project-2',
-        title: 'Task Management App',
-        description:
-            'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features. Built with modern web technologies.',
-        image: '/images/projects/task-app-placeholder.jpg',
-        technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Express'],
-        href: '/projects/task-management',
-    },
-    {
-        id: 'project-3',
-        title: 'Weather Dashboard',
-        description:
-            'A responsive weather application that provides real-time weather data, forecasts, and interactive maps. Integrates with multiple weather APIs for accurate data.',
-        image: '/images/projects/weather-placeholder.jpg',
-        technologies: ['JavaScript', 'Weather API', 'Chart.js', 'CSS Grid', 'LocalStorage'],
-        href: '/projects/weather-dashboard',
-    },
+const featuredProjectIds = [
+    'ut-registration-plus',
+    'ut-distribution-viewer',
+    'cobbleguard',
+    'pear-desktop',
+    'slork-wars',
+    'guests',
+    'apod-space-data',
 ];
+
+const featuredProjects = featuredProjectIds
+    .map((id) => projects.find((project) => project.id === id))
+    .filter((project): project is (typeof projects)[number] => Boolean(project));
 
 export default function ProjectsSection() {
     return (
@@ -42,7 +27,7 @@ export default function ProjectsSection() {
             </div>
 
             <div className='space-y-16'>
-                {templateProjects.map((project, index) => (
+                {featuredProjects.map((project, index) => (
                     <ProjectCard
                         key={project.id}
                         id={project.id}

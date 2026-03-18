@@ -14,7 +14,7 @@ export const projects: PersonalProject[] = [
         title: 'UT Registration Plus',
         description: `Developing an open source Chrome extension (50,000+ active users) that streamlines course registration by integrating course info, professor ratings, grade distributions, and schedule planning directly into official university pages. Built with React, TypeScript, Tailwind, Vite, and maintained in an industry style CI/CD environment by a student-led team. Navigated a complete architecture change off of previous jQuery, JavaScript, and HTML/CSS stack to support Manifest V3.`,
         image: '/images/projects/ut-registration-plus.png',
-        technologies: ['TypeScript', 'React', 'CSS/SCSS', 'SQL', 'Vite', 'TailwindCSS'],
+        technologies: ['TypeScript', 'React', 'CSS/SCSS', 'SQL', 'Vite', 'TailwindCSS', 'Figma'],
         href: '/projects/ut-registration-plus',
         period: 'Dec 2023 – Present',
     },

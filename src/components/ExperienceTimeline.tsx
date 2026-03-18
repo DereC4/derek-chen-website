@@ -8,17 +8,17 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import LogoIcon from './CompanyLogoDot';
 import ArrowLink from './ArrowLink';
 // 10.12.2025 next.js images use imports
-import Cyltek from '@/assets/pics/cyltek.jpg';
-import Att from '@/assets/pics/att.svg';
-import Schwab from '@/assets/pics/schwab.svg';
-import Slork from '@/assets/pics/slork.jpg';
+import Cyltek from '@/assets/pics/companies/cyltek.jpg';
+import Att from '@/assets/pics/companies/att.svg';
+import Schwab from '@/assets/pics/companies/schwab.svg';
+import Slork from '@/assets/pics/companies/slork.jpg';
 import { Typography } from '@mui/material';
 import { experiences } from '@/data/experiences';
 
-const schwabExperience = experiences.find((experience) => experience.company === 'Charles Schwab');
-const attExperience = experiences.find((experience) => experience.company === 'AT&T');
-const cyltekExperience = experiences.find((experience) => experience.company === 'CYL-Tek');
-const slorkExperience = experiences.find((experience) => experience.company === 'Seven Lakes Orchestras');
+const schwabExperience = experiences.find(experience => experience.company === 'Charles Schwab');
+const attExperience = experiences.find(experience => experience.company === 'AT&T');
+const cyltekExperience = experiences.find(experience => experience.company === 'CYL-Tek');
+const slorkExperience = experiences.find(experience => experience.company === 'Seven Lakes Orchestras');
 const TIMELINE_DOT_SIZE = 60;
 const TIMELINE_LOGO_SIZE = 50;
 
@@ -170,7 +170,7 @@ const ExperienceTimeline = () => {
                                 className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
                             />
                         ) : (
-                            slorkExperience?.company ?? 'Seven Lakes Orchestras'
+                            (slorkExperience?.company ?? 'Seven Lakes Orchestras')
                         )}
                     </Typography>
                     <Typography variant='body2' sx={{ display: 'block' }}>
