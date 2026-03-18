@@ -68,9 +68,9 @@ export const projects: PersonalProject[] = [
     },
     {
         id: 'slork-wars',
-        title: 'Sci-Fi Film “SLORK Wars”',
-        description: `Launched a multi-month project utilizing all the talents my high school orchestra friends had. Produced a short film entertaining over 50,000 viewers. Recruited 200+ students to join the project. Utilized Unreal Engine (C++) and Blender to 3D model and animate scenes and characters. Based heavily on Rogue One and Revenge of the Sith`,
-        image: '/images/projects/slork-wars.png',
+        title: 'SLORK Wars Episode II: Attack of the Violas',
+        description: `Now with over 50 thousand views! Launched a multi-month project utilizing all the talents my high school orchestra friends had. Produced a short film entertaining over 50,000 viewers. Recruited 200+ students to join the project. Utilized Unreal Engine (C++) and Blender to 3D model and animate scenes and characters. Based heavily on Rogue One and Revenge of the Sith`,
+        image: '/pics/projects/slork-wars-1.png',
         technologies: ['Unreal Engine', 'C++', 'Blender'],
         href: '/projects/slork-wars',
         period: 'Aug 2021 – May 2022',
