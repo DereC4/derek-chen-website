@@ -1,6 +1,6 @@
 'use client';
 
-import { getTechnologyColor, getTextColor } from '@/lib/technologies';
+import { getTechnologyColor, getTextColor } from '@/lib/technologyColors';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
