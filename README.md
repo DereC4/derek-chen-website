@@ -15,3 +15,4 @@ Toolchain:
 Additional Credits:
 screenshot.rocks https://screenshot.rocks/app#! by daveearley https://github.com/daveearley
 screenzy https://screenzy.io/
+Jessica Zhu https://www.linkedin.com/in/jessica-zhu-/ - UT Registration Plus experimental feature image asset https://jessicazhu.work/utrp
