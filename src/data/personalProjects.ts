@@ -1,4 +1,14 @@
-export const projects = [
+export type PersonalProject = {
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+    technologies: string[];
+    href: string;
+    period: string;
+};
+
+export const projects: PersonalProject[] = [
     {
         id: 'ut-registration-plus',
         title: 'UT Registration Plus',
@@ -64,12 +74,21 @@ export const projects = [
     },
     {
         id: 'creepercatcher',
-        title: 'CreeperCatcher',
+        title: 'Creeper Catcher',
         description: `A 2D pygame retro game where the Geometry Dash (a game popular at the time in school) protagonist catches creepers (also from a game, likewise popular). Designed gameplay loops, scoring flow, and core game logic as part of a focused short-cycle class submission. Has timer-based enemy spawning, collision detection for scoring, and scrolling background layers for motion. Built for Computer Science Independent Study under Ryan Nutt, `,
         image: '/images/projects/creepercatcher.png',
-        technologies: ['Python', 'Game Development'],
+        technologies: ['Python', 'Game Development', 'pygame'],
         href: 'https://github.com/DereC4/creepercatcher',
         period: 'Nov 2021 – Dec 2021',
+    },
+    {
+        id: 'stroudonian-uno',
+        title: 'Stroudonian UNO',
+        description: `A school UNO recreation with two Java versions: a mostly finished text-based implementation and a GUI build that is around 70% complete. Implemented the core game engine with classes like Board, Deck, Player, and Card for turn flow, draw/discard management, and action-card rules (+2, reverse, skip, wild, +4), then connected gameplay to a Swing-based Graphic UI runner.`,
+        image: '/images/projects/stroudonian-uno.png',
+        technologies: ['Java', 'Swing', 'Game Development', 'Data Structures', 'Object Oriented Programming'],
+        href: 'https://github.com/DereC4/stroudonianuno',
+        period: 'August 2019 - October 2019',
     },
     {
         id: 'earth-mobs',
