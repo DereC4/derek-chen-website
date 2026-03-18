@@ -55,6 +55,9 @@ export const projects: PersonalProject[] = [
         period: 'Apr 2023 – May 2023',
     },
     {
+        // https://github.com/pear-devs/pear-desktop/pull/1039
+        // https://github.com/pear-devs/pear-desktop/pull/1092
+        // https://github.com/pear-devs/pear-desktop/issues/1187
         id: 'pear-desktop',
         title: 'Pear Desktop (formerly YouTube Music Desktop)',
         description: `My first real open source work! Contributed to the open-source music player with a Romanization toggle for the Genius plugin and improved behavior for East Asian-language tracks. Followed up with additional work on song-type lyric interception and translation-path handling, plus stability improvements that reduced long-session memory growth. Also addressed a critical memory leak in web request and content-filtering environments so lyric features behaved more reliably across user setups.`,
@@ -66,7 +69,7 @@ export const projects: PersonalProject[] = [
     {
         id: 'slork-wars',
         title: 'Sci-Fi Film “SLORK Wars”',
-        description: `Launched a multi-month project utilizing all the talents my school students had. Produced a short film entertaining over 50,000 viewers. Recruited 200+ students to join the project. Utilized Unreal Engine (C++) and Blender to 3D model and animate scenes and characters.`,
+        description: `Launched a multi-month project utilizing all the talents my high school orchestra friends had. Produced a short film entertaining over 50,000 viewers. Recruited 200+ students to join the project. Utilized Unreal Engine (C++) and Blender to 3D model and animate scenes and characters. Based heavily on Rogue One and Revenge of the Sith`,
         image: '/images/projects/slork-wars.png',
         technologies: ['Unreal Engine', 'C++', 'Blender'],
         href: '/projects/slork-wars',
