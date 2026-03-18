@@ -97,7 +97,7 @@ export default function Home() {
             {/* Experience */}
             <div id='experience' className='min-h-screen bg-secondary py-16 px-4'>
                 <div className='max-w-[1600px] mx-auto'>
-                    <ExperienceTimeline></ExperienceTimeline>
+                    <ExperienceTimeline />
                 </div>
             </div>
 
