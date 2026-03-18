@@ -34,7 +34,7 @@ export default function ProjectsSection() {
                         id={project.id}
                         title={project.title}
                         description={project.description}
-                        image={projectImages[project.id] ?? project.image}
+                        image={projectImages[project.id] ?? null}
                         technologies={project.technologies}
                         href={project.href}
                         className={`transition-all duration-300 hover:transform hover:-translate-y-2 ${
