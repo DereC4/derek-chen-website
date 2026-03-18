@@ -1,4 +1,5 @@
 import ProjectCard from '@/components/ProjectCard';
+import { projectImages } from '@/data/projectImages';
 import { projects } from '@/data/personalProjects';
 
 const featuredProjectIds = [
@@ -33,7 +34,7 @@ export default function ProjectsSection() {
                         id={project.id}
                         title={project.title}
                         description={project.description}
-                        image={project.image}
+                        image={projectImages[project.id] ?? project.image}
                         technologies={project.technologies}
                         href={project.href}
                         className={`transition-all duration-300 hover:transform hover:-translate-y-2 ${

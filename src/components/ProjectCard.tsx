@@ -2,6 +2,7 @@
 
 import { getTechnologyColor, getTextColor } from '@/lib/technologyColors';
 import Image from 'next/image';
+import type { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -9,7 +10,7 @@ interface ProjectCardProps {
     id: string;
     title: string;
     description: string;
-    image: string;
+    image: string | StaticImageData;
     technologies: string[];
     href: string;
     className?: string;
