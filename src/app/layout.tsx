@@ -16,8 +16,54 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-    title: 'Derek Chen Portfolio',
-    description: "Derek Chen's portfolio website for stuff",
+    title: {
+        default: 'Derek Chen',
+        template: '%s | Derek Chen',
+    },
+    description:
+        'Portfolio of Derek Chen, featuring software engineering internships, open-source work, and high-impact computer science projects.',
+    keywords: [
+        'Derek Chen',
+        'software engineer',
+        'computer science portfolio',
+        'UT Austin',
+        'full stack development',
+        'open source',
+        'Derek Yujir Chen'
+    ],
+    authors: [{ name: 'Derek Chen' }],
+    creator: 'Derek Chen',
+    publisher: 'Derek Chen',
+    alternates: {
+        canonical: '/',
+    },
+    openGraph: {
+        type: 'website',
+        locale: 'en_US',
+        title: 'Derek Chen | Software Engineer Portfolio',
+        description:
+            'Computer Science portfolio of Derek Chen, featuring software engineering internships, open-source work, and high-impact full-stack projects.',
+        siteName: 'Derek Chen Portfolio',
+        url: '/',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'Derek Chen | Software Engineer Portfolio',
+        description:
+            'Computer Science portfolio of Derek Chen, featuring software engineering internships, open-source work, and high-impact full-stack projects.',
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+            'max-video-preview': -1,
+        },
+    },
+    category: 'technology',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
