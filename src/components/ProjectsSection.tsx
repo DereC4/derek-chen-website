@@ -37,6 +37,7 @@ export default function ProjectsSection() {
                         image={projectImages[project.id] ?? null}
                         technologies={project.technologies}
                         href={project.href}
+                        // 3.19.2026 back and forth project cards layout
                         className={`transition-all duration-300 hover:transform hover:-translate-y-2 ${
                             index % 2 === 1 ? 'md:flex-row-reverse' : ''
                         }`}

@@ -22,7 +22,7 @@ THIS WAS AI GENERATED !!!
 - [x] Footer
 - [x] Experience timeline card
 - [x] Project card
-- [ ] Contact form component
+- [ ] Contact form component - edit nah let's not
 - [ ] Individual project detail component
 - [ ] Skills/tech stack section
 - [ ] Blog/articles section (optional)
