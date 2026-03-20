@@ -61,6 +61,7 @@ export const technologyColors: Record<string, string> = {
   'GraphQL': '#e10098',
   'REST API': '#61dafb',
   'tRPC': '#398ccb',
+  'Figma': '#9747FF',
 
   // Mobile
   'React Native': '#61dafb',
