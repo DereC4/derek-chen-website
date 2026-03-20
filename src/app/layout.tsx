@@ -40,17 +40,17 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        title: 'Derek Chen | Software Engineer Portfolio',
+        title: 'Derek Chen',
         description:
-            'Computer Science portfolio of Derek Chen, featuring software engineering internships, open-source work, and high-impact full-stack projects.',
+            'Portfolio of Derek Chen, featuring software engineering internships, open-source work, and high-impact computer science projects.',
         siteName: 'Derek Chen Portfolio',
         url: '/',
     },
     twitter: {
         card: 'summary',
-        title: 'Derek Chen | Software Engineer Portfolio',
+        title: 'Derek Chen',
         description:
-            'Computer Science portfolio of Derek Chen, featuring software engineering internships, open-source work, and high-impact full-stack projects.',
+            'Portfolio of Derek Chen, featuring software engineering internships, open-source work, and high-impact computer science projects.',
     },
     robots: {
         index: true,
