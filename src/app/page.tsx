@@ -102,7 +102,7 @@ export default function Home() {
 
             {/* Projects */}
             <div id='projects' className='min-h-screen bg-secondary py-16 px-4'>
-                <div className='max-w-[1600px] mx-auto'>
+                <div className='max-w-6xl mx-auto px-6'>
                     <ProjectsSection />
                 </div>
             </div>

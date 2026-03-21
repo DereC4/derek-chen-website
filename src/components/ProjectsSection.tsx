@@ -5,7 +5,7 @@ import { projects } from '@/data/personalProjects';
 const featuredProjectIds = [
     'ut-registration-plus',
     'ut-distribution-viewer',
-    'cobbleguard',
+    // 'cobbleguard',
     'pear-desktop',
     'slork-wars',
     'guests',
