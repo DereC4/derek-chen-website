@@ -119,9 +119,7 @@ const ExperienceTimeline = () => {
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            bgcolor: 'var(--primary)',
-                            color: '#0f172a',
-                            fontWeight: 700,
+                            bgcolor: '#fff',
                         }}
                     >
                         <LogoIcon src={LHD} size={TIMELINE_LOGO_SIZE} circle alt='AT&T company logo' />
