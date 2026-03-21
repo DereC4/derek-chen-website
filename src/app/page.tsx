@@ -45,8 +45,7 @@ export default function Home() {
                         <p className='text-lg md:text-xl text-muted-foreground leading-relaxed mb-6'>
                             I'm a software engineer and CS student at UT Austin. I enjoy software engineering,
                             especially the part where I get to design stuff that impacts people from my early days
-                            dabbling in Minecraft code (Minecraft Forge API) to real industry work at AT&T and Charles
-                            Schwab.
+                            dabbling in Minecraft code to real industry work at AT&T and Charles Schwab.
                         </p>
                         <p className='text-lg md:text-xl text-muted-foreground leading-relaxed mb-6'>
                             My favorite part of coding is always when I get to see what I visualize come to life.
