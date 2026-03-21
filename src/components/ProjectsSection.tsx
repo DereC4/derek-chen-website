@@ -13,9 +13,52 @@ const featuredProjectIds = [
     'accountech',
 ];
 
+/**
+ * Converts a provided date into a Date type, for further comparisons
+ * @param period String representation of date
+ * @returns Parsed date object
+ */
+const parseStartDate = (period: string): Date => {
+    const months: { [key: string]: number } = {
+        January: 0,
+        February: 1,
+        March: 2,
+        April: 3,
+        May: 4,
+        June: 5,
+        July: 6,
+        August: 7,
+        September: 8,
+        October: 9,
+        November: 10,
+        December: 11,
+        Jan: 0,
+        Feb: 1,
+        Mar: 2,
+        Apr: 3,
+        Jun: 5,
+        Jul: 6,
+        Aug: 7,
+        Sep: 8,
+        Oct: 9,
+        Nov: 10,
+        Dec: 11,
+    };
+
+    // Extract the first date part (before the –)
+    const startPart = period.split('–')[0].trim();
+    const parts = startPart.split(' ');
+    const monthStr = parts[0];
+    const year = parseInt(parts[1], 10);
+
+    const monthIndex = months[monthStr] ?? 0;
+    return new Date(year, monthIndex, 1);
+};
+
 const featuredProjects = featuredProjectIds
     .map(id => projects.find(project => project.id === id))
-    .filter((project): project is (typeof projects)[number] => Boolean(project));
+    .filter((project): project is (typeof projects)[number] => Boolean(project))
+    .sort((a, b) => parseStartDate(b.period).getTime() - parseStartDate(a.period).getTime());
 
 export default function ProjectsSection() {
     return (

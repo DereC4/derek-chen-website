@@ -165,7 +165,7 @@ Allows communities to stay open while preventing griefing and protecting builds.
         image: '/images/projects/guests.png',
         technologies: ['Java', 'Gradle', 'Bukkit', 'PaperMC'],
         href: 'https://github.com/Derec-Mods/Guests',
-        period: 'TBD',
+        period: 'Oct 2025 - Jan 2026',
     },
     {
         id: 'trove',
