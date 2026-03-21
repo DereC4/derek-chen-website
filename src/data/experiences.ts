@@ -22,20 +22,6 @@ const createExperienceId = (company: string): string => {
 
 const experiencesData: ExperienceWithoutId[] = [
     {
-        title: 'Senior Software Engineer',
-        company: 'Longhorn Developers',
-        companyLink: 'https://github.com/Longhorn-Developers',
-        period: 'December 2023 – Present',
-        location: 'UT Austin (On-site)',
-        shortDescription:
-            'Leading development of UT Registration Plus, a university course management tool used by 60,000+ students at UT Austin.',
-        description: [
-            'Promoted from Software Engineer (Nov 2023 – Oct 2024) to Senior Software Engineer (Oct 2024 – Present) on the UT Registration Plus team.',
-            'Developing UT Registration Plus, a university course management tool used by 60,000+ students at UT Austin.',
-            'Contributed across TypeScript and SQL-driven product features to improve usability and reliability.',
-        ],
-    },
-    {
         title: 'Software Engineer Intern - Login Management Team',
         company: 'Charles Schwab',
         companyLink: 'https://www.schwab.com/',
@@ -62,6 +48,20 @@ const experiencesData: ExperienceWithoutId[] = [
             'Resolved backend bottlenecks in the TOM platform (60k+ users) by refactoring technical debt and optimizing query patterns, cutting Spring Boot backend load times by 30%+.',
             'Integrated backend server maintenance status with UI by developing a real-time alert system using Angular UI components and Spring Boot, proactively notifying users of downtime through live database-driven warnings.',
             'Designed and developed AT&T Language Assist, a multilingual communication tool leveraging OpenAI Whisper and FastAPI to enable live call translation and automatic language detection for AT&T call centers; projected to save $162M+ per year by reducing call wait times and interpreter costs. Pitched MVP to CTO Jeremy Legg after winning 1st place out of 24 teams in the Intern Innovation Challenge.',
+        ],
+    },
+    {
+        title: 'Senior Software Engineer',
+        company: 'Longhorn Developers',
+        companyLink: 'https://github.com/Longhorn-Developers',
+        period: 'December 2023 – Present',
+        location: 'UT Austin (On-site)',
+        shortDescription:
+            'Leading development of UT Registration Plus, a university course management tool used by 60,000+ students at UT Austin.',
+        description: [
+            'Promoted from Software Engineer (Nov 2023 – Oct 2024) to Senior Software Engineer (Oct 2024 – Present) on the UT Registration Plus team.',
+            'Developing UT Registration Plus, a university course management tool used by 60,000+ students at UT Austin.',
+            'Contributed across TypeScript and SQL-driven product features to improve usability and reliability.',
         ],
     },
     {

@@ -17,6 +17,7 @@ import { experiences } from '@/data/experiences';
 
 const schwabExperience = experiences.find(experience => experience.company === 'Charles Schwab');
 const attExperience = experiences.find(experience => experience.company === 'AT&T');
+const longhornExperience = experiences.find(experience => experience.company === 'Longhorn Developers');
 const cyltekExperience = experiences.find(experience => experience.company === 'CYL-Tek');
 const slorkExperience = experiences.find(experience => experience.company === 'Seven Lakes Orchestras');
 const TIMELINE_DOT_SIZE = 60;
@@ -103,6 +104,44 @@ const ExperienceTimeline = () => {
                     <Typography>{attExperience?.shortDescription}</Typography>
                     <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
                         {attExperience?.period}
+                    </Typography>
+                </TimelineContent>
+            </TimelineItem>
+
+            <TimelineItem>
+                <TimelineSeparator>
+                    <TimelineDot
+                        sx={{
+                            width: TIMELINE_DOT_SIZE,
+                            height: TIMELINE_DOT_SIZE,
+                            p: 0,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            bgcolor: 'var(--primary)',
+                            color: '#0f172a',
+                            fontWeight: 700,
+                        }}
+                    >
+                        LHD
+                    </TimelineDot>
+                    <TimelineConnector></TimelineConnector>
+                </TimelineSeparator>
+                <TimelineContent>
+                    <Typography variant='h6' component='span'>
+                        <ArrowLink
+                            label={longhornExperience?.company ?? 'Longhorn Developers'}
+                            href={longhornExperience?.companyLink ?? 'https://github.com/Longhorn-Developers'}
+                            target='_blank'
+                            className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
+                        />
+                    </Typography>
+                    <Typography variant='body2' sx={{ display: 'block' }}>
+                        {longhornExperience?.title}
+                    </Typography>
+                    <Typography>{longhornExperience?.shortDescription}</Typography>
+                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
+                        {longhornExperience?.period}
                     </Typography>
                 </TimelineContent>
             </TimelineItem>
