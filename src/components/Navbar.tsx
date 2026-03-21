@@ -42,14 +42,17 @@ const Navbar: React.FC = () => {
                         </li>
                     </ul>
 
-                    <DarkModeToggler defaultMode='light' />
+                    <DarkModeToggler defaultMode='dark' />
 
                     {/* Hamburger */}
                     <div onClick={handleClick} className='md:hidden z-[300] duration-500 cursor-pointer'>
                         {!nav ? (
                             <HiOutlineMenuAlt4 className='text-foreground' size={24} />
                         ) : (
-                            <AiOutlineClose className='text-muted-foreground hover:text-foreground duration-300' size={24} />
+                            <AiOutlineClose
+                                className='text-muted-foreground hover:text-foreground duration-300'
+                                size={24}
+                            />
                         )}
                     </div>
                 </div>
