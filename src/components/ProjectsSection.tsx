@@ -9,7 +9,8 @@ const featuredProjectIds = [
     'pear-desktop',
     'slork-wars',
     'guests',
-    'apod-space-data',
+    'trove',
+    'accountech',
 ];
 
 const featuredProjects = featuredProjectIds
