@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
+/* psuedo class */
 :root {
   color-scheme: light;
   --background: rgb(255 255 255);
   --foreground: rgb(15 23 42);
+  --primary: rgb(125 211 252);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --background: rgb(23 23 23);
+  --foreground: rgb(248 250 252);
   --primary: rgb(125 211 252);
 }
 
@@ -16,7 +24,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme]) {
     color-scheme: dark;
     --background: rgb(23 23 23);
     --foreground: rgb(248 250 252);

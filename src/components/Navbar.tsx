@@ -2,11 +2,12 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { HiOutlineMenuAlt4, HiOutlineMail } from 'react-icons/hi';
+import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BiFile } from 'react-icons/bi';
 import { SOCIAL_LINKS } from '@/data/socialLinks';
+import DarkModeToggler from '@/components/DarkModeToggler';
 
 const Navbar: React.FC = () => {
     const [nav, setNav] = useState<boolean>(false);
@@ -21,33 +22,37 @@ const Navbar: React.FC = () => {
                     </h1>
                 </div>
 
-                {/* Desktop Menu */}
-                <ul className='hidden md:flex font-medium text-foreground gap-8'>
-                    <li className='hover:scale-110 duration-500'>
-                        <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
-                            <Link href='/#about'>About</Link>
-                        </span>
-                    </li>
-                    <li className='hover:scale-110 duration-500'>
-                        <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
-                            <Link href='/#experience'>Experience</Link>
-                        </span>
-                    </li>
-                    <li className='hover:scale-110 duration-500'>
-                        <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
-                            <Link href='/#projects'>Projects</Link>
-                        </span>
-                    </li>
-                </ul>
-            </div>
+                <div className='flex items-center gap-4'>
+                    {/* Desktop Menu */}
+                    <ul className='hidden md:flex font-medium text-foreground gap-8'>
+                        <li className='hover:scale-110 duration-500'>
+                            <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
+                                <Link href='/#about'>About</Link>
+                            </span>
+                        </li>
+                        <li className='hover:scale-110 duration-500'>
+                            <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
+                                <Link href='/#experience'>Experience</Link>
+                            </span>
+                        </li>
+                        <li className='hover:scale-110 duration-500'>
+                            <span className='border-b-4 border-spacing-y-6 hover:border-primary border-spacing-8 duration-500 border-transparent px-1 inline'>
+                                <Link href='/#projects'>Projects</Link>
+                            </span>
+                        </li>
+                    </ul>
 
-            {/* Hamburger */}
-            <div onClick={handleClick} className='md:hidden z-[300] duration-500 cursor-pointer'>
-                {!nav ? (
-                    <HiOutlineMenuAlt4 className='text-foreground' size={24} />
-                ) : (
-                    <AiOutlineClose className='text-muted-foreground hover:text-foreground duration-300' size={24} />
-                )}
+                    <DarkModeToggler defaultMode='light' />
+
+                    {/* Hamburger */}
+                    <div onClick={handleClick} className='md:hidden z-[300] duration-500 cursor-pointer'>
+                        {!nav ? (
+                            <HiOutlineMenuAlt4 className='text-foreground' size={24} />
+                        ) : (
+                            <AiOutlineClose className='text-muted-foreground hover:text-foreground duration-300' size={24} />
+                        )}
+                    </div>
+                </div>
             </div>
 
             {/* Mobile Menu */}
