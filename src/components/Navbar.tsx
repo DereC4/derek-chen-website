@@ -2,12 +2,9 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { HiOutlineMenuAlt4 } from 'react-icons/hi';
-import { AiOutlineClose } from 'react-icons/ai';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { BiFile } from 'react-icons/bi';
 import { SOCIAL_LINKS } from '@/data/socialLinks';
 import DarkModeToggler from '@/components/DarkModeToggler';
+import AnimatedHamburger from '@/components/AnimatedHamburger';
 
 const Navbar: React.FC = () => {
     const [nav, setNav] = useState<boolean>(false);
