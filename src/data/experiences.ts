@@ -13,7 +13,10 @@ export type Experience = {
 type ExperienceWithoutId = Omit<Experience, 'id'>;
 
 const createExperienceId = (company: string): string => {
-    const normalizedCompany = company.trim().replace(/\s+/g, '').replace(/[^a-zA-Z0-9]/g, '');
+    const normalizedCompany = company
+        .trim()
+        .replace(/\s+/g, '')
+        .replace(/[^a-zA-Z0-9]/g, '');
     return `${normalizedCompany}-1`;
 };
 
@@ -120,7 +123,7 @@ const experiencesData: ExperienceWithoutId[] = [
     },
 ];
 
-export const experiences: Experience[] = experiencesData.map((experience) => ({
+export const experiences: Experience[] = experiencesData.map(experience => ({
     ...experience,
     id: createExperienceId(experience.company),
 }));
