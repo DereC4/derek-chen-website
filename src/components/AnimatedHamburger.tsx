@@ -9,12 +9,12 @@ const AnimatedHamburger: React.FC<AnimatedHamburgerProps> = ({ isOpen, onClick }
     return (
         <button
             onClick={onClick}
-            className='md:hidden z-[300] cursor-pointer flex flex-col gap-1 w-6 h-6 justify-center'
+            className='md:hidden z-[300] cursor-pointer flex flex-col gap-1.5 w-6 h-6 justify-center items-center relative'
             aria-label='Toggle menu'
         >
             <span
-                className={`block w-6 h-0.5 bg-foreground rounded-full transition-all duration-300 origin-center ${
-                    isOpen ? 'rotate-45 translate-y-2' : 'rotate-0'
+                className={`block w-6 h-0.5 bg-foreground rounded-full transition-all duration-300 absolute ${
+                    isOpen ? 'rotate-45' : 'rotate-0 -translate-y-2'
                 }`}
             />
             <span
@@ -23,8 +23,8 @@ const AnimatedHamburger: React.FC<AnimatedHamburgerProps> = ({ isOpen, onClick }
                 }`}
             />
             <span
-                className={`block w-6 h-0.5 bg-foreground rounded-full transition-all duration-300 origin-center ${
-                    isOpen ? '-rotate-45 -translate-y-2' : 'rotate-0'
+                className={`block w-6 h-0.5 bg-foreground rounded-full transition-all duration-300 absolute ${
+                    isOpen ? '-rotate-45' : 'rotate-0 translate-y-2'
                 }`}
             />
         </button>
