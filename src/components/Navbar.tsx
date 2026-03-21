@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { SOCIAL_LINKS } from '@/data/socialLinks';
 import DarkModeToggler from '@/components/DarkModeToggler';
 import AnimatedHamburger from '@/components/AnimatedHamburger';
 
@@ -42,16 +41,7 @@ const Navbar: React.FC = () => {
                     <DarkModeToggler defaultMode='dark' />
 
                     {/* Hamburger */}
-                    <div onClick={handleClick} className='md:hidden z-[300] duration-500 cursor-pointer'>
-                        {!nav ? (
-                            <HiOutlineMenuAlt4 className='text-foreground' size={24} />
-                        ) : (
-                            <AiOutlineClose
-                                className='text-muted-foreground hover:text-foreground duration-300'
-                                size={24}
-                            />
-                        )}
-                    </div>
+                    <AnimatedHamburger isOpen={nav} onClick={handleClick} />
                 </div>
             </div>
 
@@ -60,39 +50,26 @@ const Navbar: React.FC = () => {
                 className={
                     !nav
                         ? 'hidden'
-                        : 'absolute top-0 left-0 w-full h-[650px] rounded-bl-3xl rounded-br-3xl font-medium bg-background border border-border px-4 py-[22px] md:hidden flex flex-col z-[200]'
+                        : 'absolute top-0 left-0 w-full h-[280px] rounded-bl-3xl rounded-br-3xl font-medium bg-background border border-border px-4 py-4 md:hidden flex flex-col z-[200]'
                 }
             >
-                <h1 className='font-bold text-2xl text-primary mb-8'>Derek Chen</h1>
-                <ul className='items-center justify-center flex flex-col text-foreground'>
-                    <li className='py-6 text-3xl hover:text-primary duration-300'>
+                <h1 className='font-bold text-xl text-primary mb-6'>Derek Chen</h1>
+                <ul className='flex flex-col text-foreground'>
+                    <li className='py-3 text-lg hover:text-primary duration-300'>
                         <Link onClick={handleClick} href='/#about'>
                             About
                         </Link>
                     </li>
-                    <li className='py-6 text-3xl hover:text-primary duration-300'>
+                    <li className='py-3 text-lg hover:text-primary duration-300'>
                         <Link onClick={handleClick} href='/#experience'>
                             Experience
                         </Link>
                     </li>
-                    <li className='py-6 text-3xl hover:text-primary duration-300'>
+                    <li className='py-3 text-lg hover:text-primary duration-300'>
                         <Link onClick={handleClick} href='/#projects'>
                             Projects
                         </Link>
                     </li>
-
-                    {/* Mobile Social Links */}
-                    <div className='flex w-[60%] justify-between py-5'>
-                        <a href={SOCIAL_LINKS.linkedin} target='_blank' rel='noopener noreferrer'>
-                            <FaLinkedin size={30} className='cursor-pointer text-blue-500' />
-                        </a>
-                        <a href={SOCIAL_LINKS.github} target='_blank' rel='noopener noreferrer'>
-                            <FaGithub size={30} className='cursor-pointer text-muted-foreground' />
-                        </a>
-                        <a href={SOCIAL_LINKS.resume} target='_blank' rel='noopener noreferrer'>
-                            <BiFile size={30} className='cursor-pointer text-accent' />
-                        </a>
-                    </div>
                 </ul>
             </div>
 
