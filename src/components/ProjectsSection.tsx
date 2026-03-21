@@ -1,4 +1,5 @@
 import ProjectCard from '@/components/ProjectCard';
+import UnderConstructionNotice from '@/components/UnderConstructionNotice';
 import { projectImages } from '@/data/projectImages';
 import { projects } from '@/data/personalProjects';
 
