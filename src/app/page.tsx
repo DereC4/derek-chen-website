@@ -1,5 +1,6 @@
 'use client';
 
+import ProjectsSection from '@/components/ProjectsSection';
 import Navbar from '@/components/Navbar';
 import { TypeAnimation } from 'react-type-animation';
 import ArrowLink from '@/components/ArrowLink';
@@ -13,7 +14,6 @@ import { CgMail } from 'react-icons/cg';
 import { CiMail } from 'react-icons/ci';
 import { MdEmail } from 'react-icons/md';
 import { FiMail } from 'react-icons/fi';
-import ProjectsSection from '@/components/ProjectsSection';
 
 export default function Home() {
     return (
