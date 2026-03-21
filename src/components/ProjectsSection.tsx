@@ -22,8 +22,8 @@ export default function ProjectsSection() {
             <div className='text-center mb-16'>
                 <h2 className='text-4xl md:text-5xl font-bold text-foreground mb-4'>Featured Projects</h2>
                 <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
-                    Here are some of the projects I&apos;ve worked on that showcase my skills in full-stack development
-                    and problem-solving.
+                    Here are some of the projects I've worked on that showcase my skills in full-stack development and
+                    problem-solving.
                 </p>
             </div>
 
