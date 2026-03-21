@@ -12,6 +12,7 @@ import Cyltek from '@/assets/pics/companies/cyltek.jpg';
 import Att from '@/assets/pics/companies/att.svg';
 import Schwab from '@/assets/pics/companies/schwab.svg';
 import Slork from '@/assets/pics/companies/slork.jpg';
+import LHD from '@/assets/pics/companies/lhd.png';
 import { Typography } from '@mui/material';
 import { experiences } from '@/data/experiences';
 
@@ -123,7 +124,7 @@ const ExperienceTimeline = () => {
                             fontWeight: 700,
                         }}
                     >
-                        LHD
+                        <LogoIcon src={LHD} size={TIMELINE_LOGO_SIZE} circle alt='AT&T company logo' />
                     </TimelineDot>
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
