@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 import { Inter, Roboto } from 'next/font/google';
 import './globals.css';
 import Footer from '@/components/Footer';
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
         'UT Austin',
         'full stack development',
         'open source',
-        'Derek Yujir Chen'
+        'Derek Yujir Chen',
     ],
     authors: [{ name: 'Derek Chen' }],
     creator: 'Derek Chen',
@@ -72,6 +73,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <body className={`${inter.variable} ${roboto.variable} font-sans antialiased`}>
                 {children}
                 <Footer />
+                <Analytics />
             </body>
         </html>
     );
