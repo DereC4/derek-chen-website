@@ -27,7 +27,7 @@ export default function ProjectsSection() {
                 </p>
             </div>
 
-            <div className='space-y-16'>
+            <div className='space-y-24'>
                 {featuredProjects.map((project, index) => (
                     <ProjectCard
                         key={project.id}
