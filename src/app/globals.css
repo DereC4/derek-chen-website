@@ -8,10 +8,11 @@
   --primary: rgb(125 211 252);
 }
 
-:root[data-theme='dark'] {
-  color-scheme: dark;
-  --background: rgb(23 23 23);
-  --foreground: rgb(248 250 252);
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --background: rgb(255 255 255);
+  --foreground: rgb(15 23 42);
   --primary: rgb(125 211 252);
 }
 
@@ -23,6 +24,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* this is for system driven themeing when user has not manually chosen a theme */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
     color-scheme: dark;
