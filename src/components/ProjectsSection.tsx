@@ -72,7 +72,7 @@ export default function ProjectsSection() {
                 </p>
             </div>
 
-            <div className='space-y-24 flex flex-col gap-y-10'>
+            <div className='space-y-24 flex flex-col gap-y-16'>
                 {featuredProjects.map((project, index) => (
                     <ProjectCard
                         key={project.id}

@@ -19,16 +19,16 @@ interface ProjectCardProps {
 const ProjectCard: FC<ProjectCardProps> = ({ id, title, description, image, technologies, href, className = '' }) => {
     return (
         <article
-            className={`flex flex-col md:flex-row items-center md:items-start mb-6 md:mb-0 md:space-x-8 w-full text-center md:text-left ${className}`}
+            className={`flex flex-col md:flex-row items-center md:items-start mb-6 md:mb-0 md:gap-8 w-full text-center md:text-left ${className}`}
         >
             {image && (
-                <Link href={href} className='aspect-w-16 aspect-h-9 w-full md:w-[40%] overflow-hidden'>
+                <Link href={href} className='flex-shrink-0 w-full md:w-[40%] overflow-hidden'>
                     <div className='relative w-full h-[200px] md:h-[250px] rounded overflow-hidden group'>
                         <Image
                             src={image}
                             alt={title}
                             fill
-                            className='object-cover rounded w-full h-full transition-transform duration-300 group-hover:scale-105'
+                            className='object-cover rounded-lg w-full h-full transition-transform duration-300 group-hover:scale-105'
                             sizes='(max-width: 768px) 100vw, 40vw'
                         />
                     </div>
@@ -39,7 +39,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ id, title, description, image, tech
                     {technologies.map((tech, index) => {
                         const backgroundColor = getTechnologyColor(tech);
                         const textColor = getTextColor(backgroundColor);
-                        
+
                         return (
                             <span
                                 key={index}
