@@ -1,0 +1,79 @@
+name: Link Checker
+
+on:
+  pull_request:
+  schedule:
+    - cron: "0 10 * * 1"
+    # 3.21.2026 Minute Hour DayOfMonth DayOfWeek format for cronjob
+    # minute 0, hour 10, any day of month, any month, day of week 1 (monday)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build site
+        run: pnpm build
+
+      - name: Start site
+        run: |
+          pnpm start -- -p 3000 > /tmp/next-start.log 2>&1 &
+          for i in {1..60}; do
+            if curl -fsS http://127.0.0.1:3000 > /dev/null; then
+              echo "Site is up"
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Site did not start in time"
+          cat /tmp/next-start.log
+          exit 1
+
+      - name: Check markdown links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --verbose
+            --no-progress
+            --max-concurrency 8
+            --retry-wait-time 2
+            --max-retries 2
+            --timeout 20
+            --exclude-mail
+            --base .
+            "./**/*.md"
+            "./src/**/*.md"
+
+      - name: Crawl app links (internal + external)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --verbose
+            --no-progress
+            --max-concurrency 8
+            --retry-wait-time 2
+            --max-retries 2
+            --timeout 20
+            --exclude-mail
+            --accept 200,206,429
+            "http://127.0.0.1:3000"
