@@ -19,7 +19,7 @@ export default function ArrowLink({ label, href, className = '', target = '_self
             href={href}
             target={target}
             rel={computedRel}
-            className={`inline-flex items-center gap-1.5 font-semibold text-lg md:text-xl text-white transition-colors duration-200 hover:text-gray-200 ${className}`}
+            className={`inline-flex items-center gap-1.5 font-semibold text-lg md:text-xl text-foreground transition-colors duration-200 hover:text-primary ${className}`}
         >
             <span>{label}</span>
             <span className='text-sm md:text-base translate-y-[-1px]'>↗</span>
