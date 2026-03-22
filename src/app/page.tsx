@@ -45,10 +45,26 @@ export default function Home() {
                     <div className='max-w-4xl mb-12'>
                         <p className='text-lg md:text-xl text-muted-foreground leading-relaxed mb-6'>
                             I'm a software engineer and fourth year Computer Science student at UT Austin. From my early
-                            days developing Minecraft Java mods downloaded by millions, to building academic tools
-                            relied upon by 50,000+ students daily, to shipping production code for leading tech
-                            companies, my focus remains the same: I build reliable, high-performance software that
-                            solves real problems for real people.
+                            days developing{' '}
+                            <a
+                                href='https://www.curseforge.com/members/derexxd'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='text-foreground hover:text-primary underline underline-offset-4 transition-colors duration-200'
+                            >
+                                Minecraft Java mods
+                            </a>{' '}
+                            downloaded by millions, to building{' '}
+                            <a
+                                href='https://github.com/Longhorn-Developers/UT-Registration-Plus'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='text-foreground hover:text-primary underline underline-offset-4 transition-colors duration-200'
+                            >
+                                academic tools relied upon by 50,000+ students daily
+                            </a>
+                            , to shipping production code for leading tech companies, my focus remains the same: I build
+                            reliable, high-performance software that solves real problems for real people.
                         </p>
                     </div>
                     <div className='flex justify-start items-center gap-8 mb-10'>
