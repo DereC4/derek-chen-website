@@ -14,6 +14,7 @@ import Schwab from '@/assets/pics/companies/schwab.svg';
 import Slork from '@/assets/pics/companies/slork.jpg';
 import LHD from '@/assets/pics/companies/lhd.png';
 import { Typography } from '@mui/material';
+import { FiMapPin } from 'react-icons/fi';
 import { experiences } from '@/data/experiences';
 
 const schwabExperience = experiences.find(experience => experience.company === 'Charles Schwab');
@@ -23,6 +24,17 @@ const cyltekExperience = experiences.find(experience => experience.company === '
 const slorkExperience = experiences.find(experience => experience.company === 'Seven Lakes Orchestras');
 const TIMELINE_DOT_SIZE = 60;
 const TIMELINE_LOGO_SIZE = 50;
+
+const LocationLabel = ({ location }: { location?: string }) => {
+    if (!location) return null;
+
+    return (
+        <span className='inline-flex items-center gap-1 text-sm text-muted-foreground whitespace-nowrap'>
+            <FiMapPin aria-hidden='true' />
+            {location}
+        </span>
+    );
+};
 
 const ExperienceTimeline = () => {
     return (
@@ -55,14 +67,17 @@ const ExperienceTimeline = () => {
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
                 <TimelineContent>
-                    <Typography variant='h6' component='span'>
-                        <ArrowLink
-                            label={schwabExperience?.company ?? 'Charles Schwab'}
-                            href={schwabExperience?.companyLink ?? 'https://www.schwab.com'}
-                            target='_blank'
-                            className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
-                        />
-                    </Typography>
+                    <div className='flex items-start justify-between gap-4'>
+                        <Typography variant='h6' component='span'>
+                            <ArrowLink
+                                label={schwabExperience?.company ?? 'Charles Schwab'}
+                                href={schwabExperience?.companyLink ?? 'https://www.schwab.com'}
+                                target='_blank'
+                                className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
+                            />
+                        </Typography>
+                        <LocationLabel location={schwabExperience?.location} />
+                    </div>
                     <Typography variant='body2' sx={{ display: 'block' }}>
                         {schwabExperience?.title}
                     </Typography>
@@ -91,14 +106,17 @@ const ExperienceTimeline = () => {
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
                 <TimelineContent>
-                    <Typography variant='h6' component='span'>
-                        <ArrowLink
-                            label={attExperience?.company ?? 'AT&T'}
-                            href={attExperience?.companyLink ?? 'https://www.att.com'}
-                            target='_blank'
-                            className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
-                        />
-                    </Typography>
+                    <div className='flex items-start justify-between gap-4'>
+                        <Typography variant='h6' component='span'>
+                            <ArrowLink
+                                label={attExperience?.company ?? 'AT&T'}
+                                href={attExperience?.companyLink ?? 'https://www.att.com'}
+                                target='_blank'
+                                className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
+                            />
+                        </Typography>
+                        <LocationLabel location={attExperience?.location} />
+                    </div>
                     <Typography variant='body2' sx={{ display: 'block' }}>
                         {attExperience?.title}
                     </Typography>
@@ -127,14 +145,17 @@ const ExperienceTimeline = () => {
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
                 <TimelineContent>
-                    <Typography variant='h6' component='span'>
-                        <ArrowLink
-                            label={longhornExperience?.company ?? 'Longhorn Developers'}
-                            href={longhornExperience?.companyLink ?? 'https://github.com/Longhorn-Developers'}
-                            target='_blank'
-                            className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
-                        />
-                    </Typography>
+                    <div className='flex items-start justify-between gap-4'>
+                        <Typography variant='h6' component='span'>
+                            <ArrowLink
+                                label={longhornExperience?.company ?? 'Longhorn Developers'}
+                                href={longhornExperience?.companyLink ?? 'https://github.com/Longhorn-Developers'}
+                                target='_blank'
+                                className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
+                            />
+                        </Typography>
+                        <LocationLabel location={longhornExperience?.location} />
+                    </div>
                     <Typography variant='body2' sx={{ display: 'block' }}>
                         {longhornExperience?.title}
                     </Typography>
@@ -163,14 +184,17 @@ const ExperienceTimeline = () => {
                     <TimelineConnector></TimelineConnector>
                 </TimelineSeparator>
                 <TimelineContent>
-                    <Typography variant='h6' component='span'>
-                        <ArrowLink
-                            label={cyltekExperience?.company ?? 'CYL-Tek'}
-                            href={cyltekExperience?.companyLink ?? 'https://www.cyl-tek.com/'}
-                            target='_blank'
-                            className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
-                        />
-                    </Typography>
+                    <div className='flex items-start justify-between gap-4'>
+                        <Typography variant='h6' component='span'>
+                            <ArrowLink
+                                label={cyltekExperience?.company ?? 'CYL-Tek'}
+                                href={cyltekExperience?.companyLink ?? 'https://www.cyl-tek.com/'}
+                                target='_blank'
+                                className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
+                            />
+                        </Typography>
+                        <LocationLabel location={cyltekExperience?.location} />
+                    </div>
                     <Typography variant='body2' sx={{ display: 'block' }}>
                         {cyltekExperience?.title}
                     </Typography>
@@ -199,18 +223,21 @@ const ExperienceTimeline = () => {
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                    <Typography variant='h6' component='span'>
-                        {slorkExperience?.companyLink ? (
-                            <ArrowLink
-                                label={slorkExperience.company}
-                                href={slorkExperience.companyLink}
-                                target='_blank'
-                                className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
-                            />
-                        ) : (
-                            (slorkExperience?.company ?? 'Seven Lakes Orchestras')
-                        )}
-                    </Typography>
+                    <div className='flex items-start justify-between gap-4'>
+                        <Typography variant='h6' component='span'>
+                            {slorkExperience?.companyLink ? (
+                                <ArrowLink
+                                    label={slorkExperience.company}
+                                    href={slorkExperience.companyLink}
+                                    target='_blank'
+                                    className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
+                                />
+                            ) : (
+                                (slorkExperience?.company ?? 'Seven Lakes Orchestras')
+                            )}
+                        </Typography>
+                        <LocationLabel location={slorkExperience?.location} />
+                    </div>
                     <Typography variant='body2' sx={{ display: 'block' }}>
                         {slorkExperience?.title}
                     </Typography>

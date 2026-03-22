@@ -21,8 +21,8 @@ export default function Home() {
         <>
             <Navbar></Navbar>
             {/* First part */}
-            <div id='about' className='h-screen flex flex-col justify-center items-center px-4 bg-background'>
-                <div className='max-w-[1600px] mx-auto text-center'>
+            <div id='about' className='h-screen flex flex-col justify-center px-4 bg-background'>
+                <div className='max-w-6xl mx-auto w-full text-left'>
                     {/* Typing Effect */}
                     <div className='mb-8'>
                         <h1 className='text-5xl md:text-7xl font-bold text-foreground mb-4'>
@@ -42,24 +42,18 @@ export default function Home() {
                             />
                         </h1>
                     </div>
-                    <div className='max-w-4xl mx-auto mb-12'>
+                    <div className='max-w-4xl mb-12'>
                         <p className='text-lg md:text-xl text-muted-foreground leading-relaxed mb-6'>
-                            I'm a software engineer and CS student at UT Austin. I enjoy software engineering,
-                            especially the part where I get to design stuff that impacts people from my early days
-                            dabbling in Minecraft code to real industry work at AT&T and Charles Schwab.
-                        </p>
-                        <p className='text-lg md:text-xl text-muted-foreground leading-relaxed mb-6'>
-                            My favorite part of coding is always when I get to see what I visualize come to life.
-                        </p>
-                        <p className='text-lg md:text-xl text-muted-foreground leading-relaxed'>
-                            Some aspects of computer science that particularly pique my interest are{' '}
-                            <span className='text-primary font-semibold'>full stack development</span>
+                            I'm a software engineer and fourth year Computer Science student at UT Austin. I enjoy
+                            software engineering, especially the part where I get to design stuff that impacts people
+                            from my early days dabbling in Minecraft code to real industry work at AT&T and Charles
+                            Schwab.
                         </p>
                     </div>
-                    <div className='flex justify-center items-center gap-8 mb-10'>
+                    <div className='flex justify-start items-center gap-8 mb-10'>
                         <ArrowLink label='View Resume' href={SOCIAL_LINKS.resume} target='_blank' />
                     </div>
-                    <div className='flex justify-center items-center gap-6 mb-8'>
+                    <div className='flex justify-start items-center gap-6 mb-8'>
                         <a
                             href={SOCIAL_LINKS.linkedin}
                             target='_blank'

@@ -55,7 +55,7 @@ const experiencesData: ExperienceWithoutId[] = [
         company: 'Longhorn Developers',
         companyLink: 'https://github.com/Longhorn-Developers',
         period: 'December 2023 – Present',
-        location: 'UT Austin (On-site)',
+        location: 'Austin, Texas',
         shortDescription:
             'Leading development of UT Registration Plus, a university course management tool used by 60,000+ students at UT Austin.',
         description: [
