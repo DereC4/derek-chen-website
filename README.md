@@ -16,3 +16,5 @@ Additional Credits:
 - [screenshot.rocks](https://screenshot.rocks/app#!) by [daveearley](https://github.com/daveearley)
 - [screenzy](https://screenzy.io/)
 - [Jessica Zhu](https://www.linkedin.com/in/jessica-zhu-/) - A former design lead for UT Registration Plus. Experimental feature image asset: [jessicazhu.work/utrp](https://jessicazhu.work/utrp)
+- [StarlyRD (@StarlingVoxel)](https://sketchfab.com/StarlingVoxel#:~:text=StarlyRD%20(@StarlingVoxel)%20%2D%20Sketchfab,Sketchfab%20for%20Teams) - "Under Construction Page" graphics
+- Assorted randos (my friends)
