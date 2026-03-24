@@ -182,7 +182,7 @@ Full-stack React Native frontend with Java Spring Boot API and MongoDB managing 
     {
         id: 'accountech',
         title: 'AccounTech',
-        description: `AccounTech is a GPT-4 powered virtual accountant for credit/debit cardholders to assist with personal finances. It uses a reactive feedback system that gives immediate feedback on each transaction. Built in 24 hours with three teammates for HackTX 2023 (Hosted by Freetail Hackers). Team consisting of Akhilesh Bitla, Bersam Basagaoglu, Brian Jiang, and Derek Chen.`,
+        description: `AccounTech is a personal finance assistant created for the Capital One Challenge at HackTX 2023 (Hosted by Freetail Hackers). Built in under 24 hours, the app combines a React Native-based client experience with an Express.js API deployed on Google Cloud, plus a GPT-4-powered assistant that answers user questions about spending behavior and potential financial impact. Team consisting of Akhilesh Bitla, Bersam Basagaoglu, Brian Jiang, and Derek Chen.`,
         shortDescription: `GPT-4 powered virtual accountant providing real-time financial feedback on transactions.
 Built in 24 hours with React frontend and Google Cloud Platform integration for HackTX 2023.`,
         image: '/images/projects/accountech.png',
