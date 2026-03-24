@@ -16,7 +16,7 @@ export default function Home() {
         <>
             <Navbar></Navbar>
             {/* First part */}
-            <div id='about' className='h-screen flex flex-col justify-center px-4 bg-background'>
+            <div id='about' className='min-h-[100dvh] pt-[80px] flex flex-col justify-center px-4 bg-background'>
                 <div className='max-w-6xl mx-auto w-full text-left'>
                     {/* Typing Effect */}
                     <div className='mb-8'>
