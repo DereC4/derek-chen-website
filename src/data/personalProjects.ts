@@ -83,7 +83,7 @@ Fixed memory leaks and improved stability for long-session usage across diverse 
     {
         id: 'slork-wars',
         title: 'SLORK Wars Episode II: Attack of the Violas',
-        description: `I started this as a year-long graduation project to keep senioritis from winning, and it grew into a 30-minute Star Wars fan film made with my friends from the Seven Lakes High School orchestras! We recruited students, mixed live action with low budget 3D animation, and packed it with lightsaber duels, anime styled fight scenes, space battles, and orchestra inside jokes. The final film now has 50,000+ views on YouTube. Heavily inspired by Rogue One and Revenge of the Sith.`,
+        description: `I started this as a year-long graduation project to keep senioritis from winning, and it grew into a 30-minute Star Wars fan film made with my friends from the Seven Lakes High School orchestras! We recruited students and mixed live action with 3D animation built in Unreal Engine (C++) and Blender, packing it with lightsaber duels, anime-styled fight scenes, space battles, and orchestra inside jokes. The final film now has 50,000+ views on YouTube. Heavily inspired by Rogue One and Revenge of the Sith, it was a great way to help our community find its rhythm again post-COVID lockdown by collaborating on something ambitious, creative, and honestly hilarious.`,
         shortDescription: `Epic short film produced with 200+ orchestra students garnering 50,000+ YouTube views.
 Created with Unreal Engine and Blender, `,
         image: '/pics/projects/slork-wars-1.png',
