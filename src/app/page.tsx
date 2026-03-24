@@ -4,16 +4,11 @@ import ProjectsSection from '@/components/ProjectsSection';
 import Navbar from '@/components/Navbar';
 import { TypeAnimation } from 'react-type-animation';
 import ArrowLink from '@/components/ArrowLink';
-import { FaGithubSquare, FaLinkedin, FaMailBulk, FaMailchimp } from 'react-icons/fa';
-import { BiLogoDiscord, BiMailSend } from 'react-icons/bi';
-import { HiOutlineMail } from 'react-icons/hi';
+import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import ExperienceTimeline from '@/components/ExperienceTimeline';
 import { SiKofi } from 'react-icons/si';
 import { SOCIAL_LINKS } from '@/data/socialLinks';
-import { CgMail } from 'react-icons/cg';
-import { CiMail } from 'react-icons/ci';
 import { MdEmail } from 'react-icons/md';
-import { FiMail } from 'react-icons/fi';
 import UnderConstructionNotice from '@/components/UnderConstructionNotice';
 
 export default function Home() {
