@@ -16,7 +16,7 @@ export default function Home() {
         <>
             <Navbar></Navbar>
             {/* First part */}
-            <div id='about' className='min-h-[100dvh] pt-[80px] flex flex-col justify-center px-4 bg-background'>
+            <main id='about' className='min-h-[100dvh] pt-[80px] flex flex-col justify-center px-4 bg-background'>
                 <div className='max-w-6xl mx-auto w-full text-left'>
                     {/* Typing Effect */}
                     <div className='mb-8'>
@@ -70,6 +70,7 @@ export default function Home() {
                             href={SOCIAL_LINKS.linkedin}
                             target='_blank'
                             rel='noopener noreferrer'
+                            aria-label='Visit my LinkedIn profile'
                             className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
                         >
                             <FaLinkedin size={40} />
@@ -78,12 +79,14 @@ export default function Home() {
                             href={SOCIAL_LINKS.github}
                             target='_blank'
                             rel='noopener noreferrer'
+                            aria-label='Visit my GitHub profile'
                             className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
                         >
                             <FaGithubSquare size={40} />
                         </a>
                         <a
                             href='mailto:derexh2so4@utexas.edu'
+                            aria-label='Send me an email'
                             className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
                         >
                             <MdEmail size={40} />
@@ -92,13 +95,14 @@ export default function Home() {
                             href={SOCIAL_LINKS.kofi}
                             target='_blank'
                             rel='noopener noreferrer'
+                            aria-label='Support me on Ko-fi'
                             className='text-foreground hover:text-gray-600 transition-colors duration-300 hover:scale-110 transform'
                         >
                             <SiKofi size={40} />
                         </a>
                     </div>
                 </div>
-            </div>
+            </main>
 
             {/* Experience */}
             <div id='experience' className='min-h-screen bg-secondary py-16 px-4'>
