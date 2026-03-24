@@ -12,6 +12,9 @@ import pearDesktop4 from '@/assets/pics/projects/youtube-music-4.png';
 import pearDesktop5 from '@/assets/pics/projects/youtube-music-5.png';
 import accountech from '@/assets/pics/projects/accountech.png';
 import trove from '@/assets/pics/projects/trove.png';
+import elytraVaults from '@/assets/pics/projects/elytravaults.png';
+import macebackport from '@/assets/pics/projects/macebackport.png';
+import earthMobs from '@/assets/pics/projects/minecraftearthmod.png';
 
 export const projectImages: Record<string, StaticImageData> = {
     'slork-wars': slorkWars1,
@@ -27,4 +30,7 @@ export const projectImages: Record<string, StaticImageData> = {
     'ut-distribution-viewer': utgradedist,
     accountech: accountech,
     trove: trove,
+    'elytra-vaults': elytraVaults,
+    'mace-backport': macebackport,
+    'earth-mobs': earthMobs,
 };
