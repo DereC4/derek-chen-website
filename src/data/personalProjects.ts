@@ -19,7 +19,8 @@ Integrates professor ratings, grade distributions, and schedule planning into of
         image: '/images/projects/ut-registration-plus.png',
         technologies: ['TypeScript', 'React', 'CSS', 'SCSS', 'SQL', 'Vite', 'TailwindCSS', 'Figma'],
         href: '/projects/ut-registration-plus',
-        period: 'Dec 2023 – Present',
+        period: 'Present – Present',
+        // period: 'Dec 2023 – Present',
     },
     {
         id: 'minecraft-moddev',

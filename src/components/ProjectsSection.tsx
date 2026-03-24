@@ -21,6 +21,10 @@ const featuredProjectIds = [
  * @returns Parsed date object
  */
 const parseStartDate = (period: string): Date => {
+    if (period.trim().toLowerCase().startsWith('present')) {
+        return new Date(9999, 11, 31);
+    }
+
     const months: { [key: string]: number } = {
         January: 0,
         February: 1,
@@ -91,7 +95,10 @@ export default function ProjectsSection() {
                 ))}
             </div>
             <div className='text-center mt-12'>
-                <Link href='/projects' className='inline-block px-6 py-3 bg-foreground text-background rounded-lg font-semibold hover:opacity-90 transition-opacity'>
+                <Link
+                    href='/projects'
+                    className='inline-block px-6 py-3 bg-foreground text-background rounded-lg font-semibold hover:opacity-90 transition-opacity'
+                >
                     See more projects here!
                 </Link>
             </div>
