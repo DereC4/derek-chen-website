@@ -35,7 +35,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ id, title, description, image, tech
                 </Link>
             )}
             <div className='w-full md:w-[60%]'>
-                <div className='p-0 md:mt-10 mb-4'>
+                <div className='p-0 md:mt-3 mb-4'>
                     {technologies.map((tech, index) => {
                         const backgroundColor = getTechnologyColor(tech);
                         const textColor = getTextColor(backgroundColor);
