@@ -76,6 +76,9 @@ export const technologyColors: Record<string, string> = {
 
     // Other
     APIs: '#f0abfc',
+    Blender: '#E87D0D',
+    'Premiere Pro': '#9999FF',
+    'After Effects': '#CF96FD',
 
     default: '#93c5fd',
 };
