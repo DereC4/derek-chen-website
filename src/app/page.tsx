@@ -39,7 +39,7 @@ export default function Home() {
                     </div>
                     <div className='max-w-4xl mb-12'>
                         <p className='text-lg md:text-xl text-muted-foreground leading-relaxed mb-6'>
-                            I'm a software engineer and fourth year Computer Science student at UT Austin. From my early
+                            I'm a software engineer and fourth-year Computer Science student at UT Austin. From my early
                             days developing{' '}
                             <a
                                 href='https://www.curseforge.com/members/derexxd'
