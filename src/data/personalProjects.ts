@@ -171,7 +171,7 @@ Allows communities to stay open while preventing griefing and protecting builds.
     {
         id: 'trove',
         title: 'Trove: The Lost & Found App',
-        description: `A virtual lost-and-found app for college campuses, inspired by the $70 dorm key replacement costs at UT Austin. In a 24-hour HackTX 2022 sprint, worked with a team of three to design in Figma and develop a React Native frontend with a Java Spring Boot + MongoDB backend. Delivered a fully functional, polished app that won Best Overall Beginner Hack out of 75 teams. Despite being new to React Native and working under tight time constraints, my team delivered a fully functional, aesthetically polished app that won Best Overall Beginner Hack Award out of 75 teams.`,
+        description: `A virtual lost-and-found app for college campuses, inspired by the $70 dorm key replacement costs at UT Austin. In a 24-hour HackTX 2022 sprint, worked with a team of three to design in Figma and develop a React Native frontend with a Java Spring Boot + MongoDB backend. Despite being new to React Native and working under tight time constraints, my team delivered a fully functional, aesthetically polished app that won Best Overall Beginner Hack Award out of 75 teams. Team consisting of Akhilesh Bitla, Bersam Basagaoglu, Derek Chen, and Kshitij Kapoor.`,
         shortDescription: `Cross-platform lost-and-found mobile app built in 24 hours winning Best Overall Beginner Hack at HackTX 2022.
 Full-stack React Native frontend with Java Spring Boot API and MongoDB managing lost item reports.`,
         image: '/images/projects/trove.png',
@@ -182,7 +182,7 @@ Full-stack React Native frontend with Java Spring Boot API and MongoDB managing 
     {
         id: 'accountech',
         title: 'AccounTech',
-        description: `AccounTech is a GPT-4 powered virtual accountant for credit/debit cardholders to assist with personal finances. It uses a reactive feedback system that gives immediate feedback on each transaction. Built in 24 hours with three teammates for HackTX 2023 (Hosted by Freetail Hackers). Demo: https://www.youtube.com/watch?v=NWfa8gtDus8`,
+        description: `AccounTech is a GPT-4 powered virtual accountant for credit/debit cardholders to assist with personal finances. It uses a reactive feedback system that gives immediate feedback on each transaction. Built in 24 hours with three teammates for HackTX 2023 (Hosted by Freetail Hackers). Team consisting of Akhilesh Bitla, Bersam Basagaoglu, Brian Jiang, and Derek Chen.`,
         shortDescription: `GPT-4 powered virtual accountant providing real-time financial feedback on transactions.
 Built in 24 hours with React frontend and Google Cloud Platform integration for HackTX 2023.`,
         image: '/images/projects/accountech.png',
