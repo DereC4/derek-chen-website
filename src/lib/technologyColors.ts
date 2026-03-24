@@ -48,6 +48,7 @@ export const technologyColors: Record<string, string> = {
     Vercel: '#cbd5e1',
     Netlify: '#5eead4',
     Heroku: '#c4b5fd',
+    'Oracle Cloud': '#A45A52',
 
     // Tools & Services
     Git: '#fdba74',
@@ -62,6 +63,9 @@ export const technologyColors: Record<string, string> = {
     'REST API': '#7dd3fc',
     tRPC: '#93c5fd',
     Figma: '#c4b5fd',
+    Blender: '#E87D0D',
+    'Premiere Pro': '#9999FF',
+    'After Effects': '#CF96FD',
 
     // Mobile
     'React Native': '#67e8f9',
@@ -76,9 +80,6 @@ export const technologyColors: Record<string, string> = {
 
     // Other
     APIs: '#f0abfc',
-    Blender: '#E87D0D',
-    'Premiere Pro': '#9999FF',
-    'After Effects': '#CF96FD',
 
     default: '#93c5fd',
 };
