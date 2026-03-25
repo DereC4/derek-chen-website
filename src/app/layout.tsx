@@ -46,12 +46,19 @@ export const metadata: Metadata = {
             'Portfolio of Derek Chen, featuring software engineering internships, open-source work, and high-impact computer science projects.',
         siteName: 'Derek Chen Portfolio',
         url: '/',
+        images: [
+            {
+                url: '/website-mockup-1.png',
+                alt: 'Derek Chen portfolio preview',
+            },
+        ],
     },
     twitter: {
-        card: 'summary',
+        card: 'summary_large_image',
         title: 'Derek Chen',
         description:
             'Portfolio of Derek Chen, featuring software engineering internships, open-source work, and high-impact computer science projects.',
+        images: ['/website-mockup-1.png'],
     },
     robots: {
         index: true,
