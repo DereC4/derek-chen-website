@@ -1,0 +1,72 @@
+name: derex smp status (for fun)
+
+on:
+    schedule:
+        - cron: '0 */3 * * *'
+    workflow_dispatch:
+
+permissions:
+    contents: read
+
+jobs:
+    ping-server:
+        runs-on: ubuntu-latest
+        timeout-minutes: 5
+
+        steps:
+            - name: Ping Minecraft server status API
+              run: |
+                  SERVER_IP="207.211.181.64"
+                  SERVER_PORT="25565"
+                  STATUS_URL="https://api.mcsrvstat.us/2/${SERVER_IP}:${SERVER_PORT}"
+
+                  echo "Checking ${SERVER_IP}:${SERVER_PORT}"
+                  RESPONSE="$(curl -fsSL "${STATUS_URL}")"
+
+                  RESPONSE="${RESPONSE}" python3 - <<'PY'
+                  import json
+                  import os
+
+                  response = os.environ.get("RESPONSE", "{}")
+                  data = json.loads(response)
+
+                  print("Raw JSON:")
+                  print(json.dumps(data, indent=2))
+                  print()
+                  print("Server report:")
+
+                  online = data.get("online", False)
+                  print(f"- Online: {online}")
+                  print(f"- IP: {data.get('ip', 'N/A')}")
+                  print(f"- Port: {data.get('port', 'N/A')}")
+                  print(f"- Hostname: {data.get('hostname', 'N/A')}")
+                  print(f"- Version: {data.get('version', 'N/A')}")
+                  print(f"- Protocol: {data.get('protocol', 'N/A')}")
+
+                  motd = data.get("motd", {})
+                  motd_clean = motd.get("clean", []) if isinstance(motd, dict) else []
+                  if motd_clean:
+                      print("- MOTD:")
+                      for line in motd_clean:
+                          print(f"  - {line}")
+                  else:
+                      print("- MOTD: N/A")
+
+                  players = data.get("players", {}) if isinstance(data.get("players"), dict) else {}
+                  player_online = players.get("online", 0)
+                  player_max = players.get("max", 0)
+                  print(f"- Players: {player_online}/{player_max}")
+
+                  player_list = players.get("list", [])
+                  if player_list:
+                      print("- Player list:")
+                      for player in player_list:
+                          print(f"  - {player}")
+                  else:
+                      print("- Player list: None")
+
+                  software = data.get("software", 'N/A')
+                  map_name = data.get("map", 'N/A')
+                  print(f"- Software: {software}")
+                  print(f"- Map: {map_name}")
+                  PY

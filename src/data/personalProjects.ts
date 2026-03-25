@@ -13,8 +13,8 @@ export const projects: PersonalProject[] = [
     {
         id: 'ut-registration-plus',
         title: 'UT Registration Plus',
-        description: `Developing an open source Chrome extension (50,000+ active users) that streamlines course registration by integrating course info, professor ratings, grade distributions, and schedule planning directly into official university pages. Built with React, TypeScript, Tailwind, Vite, and maintained in an industry style CI/CD environment by a student-led team. Navigated a complete architecture change off of previous jQuery, JavaScript, and HTML/CSS stack to support Manifest V3.`,
-        shortDescription: `Open source Chrome extension with 50,000+ users that streamlines UT Austin course registration.
+        description: `Developing an open-source Chrome extension (50,000+ active users) that streamlines course registration by integrating course info, professor ratings, grade distributions, and schedule planning directly into official university pages. Built with React, TypeScript, Tailwind, Vite, and maintained in an industry-style CI/CD environment by a student-led team. Navigated a complete architecture change away from the previous jQuery, JavaScript, and HTML/CSS stack to support Manifest V3.`,
+        shortDescription: `Open-source Chrome extension with 50,000+ users that streamlines UT Austin course registration.
 Integrates professor ratings, grade distributions, and schedule planning into official university pages.`,
         image: '/images/projects/ut-registration-plus.png',
         technologies: ['TypeScript', 'React', 'CSS', 'SCSS', 'SQL', 'Vite', 'TailwindCSS', 'Figma'],
@@ -58,7 +58,7 @@ Full-stack React frontend and MongoDB backend serving personalized organization 
     {
         id: 'ut-distribution-viewer',
         title: 'UT Austin Distribution Viewer',
-        description: `Developed a user-friendly website with HTML/CSS to replace outdated tools, offering intuitive visualizations of course grade distributions at UT Austin with back-end infrastructure hosted with Express.js framework and SQL. Assisted 6,100+ distinct students during registration periods in the initial 12 month period.`,
+        description: `Developed a user-friendly website with HTML/CSS to replace outdated tools, offering intuitive visualizations of course grade distributions at UT Austin with backend infrastructure hosted with the Express.js framework and SQL. Assisted 6,100+ distinct students during registration periods in the first year alone.`,
         shortDescription: `Interactive visualization tool replacing outdated grade distribution lookup at UT Austin.
 Served 6,100+ students quarterly with Express.js backend and SQL database integration.`,
         image: '/images/projects/ut-distribution-viewer.png',
@@ -72,8 +72,8 @@ Served 6,100+ students quarterly with Express.js backend and SQL database integr
         // https://github.com/pear-devs/pear-desktop/issues/1187
         id: 'pear-desktop',
         title: 'Pear Desktop (formerly YouTube Music Desktop)',
-        description: `My first real open source work! Contributed to the open-source music player with a Romanization toggle for the Genius plugin and improved behavior for East Asian-language tracks. Followed up with additional work on song-type lyric interception and translation-path handling, plus stability improvements that reduced long-session memory growth. Also addressed a critical memory leak in web request and content-filtering environments so lyric features behaved more reliably across user setups.`,
-        shortDescription: `First open source contribution adding East Asian language support to music player with Romanization.
+        description: `My first real open-source work! Contributed to the open-source music player with a Romanization toggle for the Genius plugin and improved behavior for East Asian-language tracks. Followed up with additional work on song-type lyric interception and translation-path handling, plus stability improvements that reduced long-session memory growth. Also addressed a critical memory leak in web request and content-filtering environments so lyric features behaved more reliably across user setups.`,
+        shortDescription: `First open-source contribution adding East Asian language support to music player with Romanization.
 Fixed memory leaks and improved stability for long-session usage across diverse user environments.`,
         image: '/images/projects/pear-desktop.png',
         technologies: ['TypeScript', 'Electron', 'CSS', 'HTML', 'JavaScript'],
@@ -171,7 +171,7 @@ Allows communities to stay open while preventing griefing and protecting builds.
     {
         id: 'trove',
         title: 'Trove: The Lost & Found App',
-        description: `A virtual lost-and-found app for college campuses, inspired by the $70 dorm key replacement costs at UT Austin. In a 24-hour HackTX 2022 sprint, worked with a team of three to design in Figma and develop a React Native frontend with a Java Spring Boot + MongoDB backend. Delivered a fully functional, polished app that won Best Overall Beginner Hack out of 75 teams. Despite being new to React Native and working under tight time constraints, my team delivered a fully functional, aesthetically polished app that won Best Overall Beginner Hack Award out of 75 teams.`,
+        description: `A virtual lost-and-found app for college campuses, inspired by the $70 dorm key replacement costs at UT Austin. In a 24-hour HackTX 2022 sprint, worked with a team of three to design in Figma and develop a React Native frontend with a Java Spring Boot + MongoDB backend. Despite being new to React Native and working under tight time constraints, my team delivered a fully functional, aesthetically polished app that won the Best Overall Beginner Hack Award out of 75 teams. Team consisting of Akhilesh Bitla, Bersam Basagaoglu, Derek Chen, and Kshitij Kapoor.`,
         shortDescription: `Cross-platform lost-and-found mobile app built in 24 hours winning Best Overall Beginner Hack at HackTX 2022.
 Full-stack React Native frontend with Java Spring Boot API and MongoDB managing lost item reports.`,
         image: '/images/projects/trove.png',
@@ -182,7 +182,7 @@ Full-stack React Native frontend with Java Spring Boot API and MongoDB managing 
     {
         id: 'accountech',
         title: 'AccounTech',
-        description: `AccounTech is a GPT-4 powered virtual accountant for credit/debit cardholders to assist with personal finances. It uses a reactive feedback system that gives immediate feedback on each transaction. Built in 24 hours with three teammates for HackTX 2023 (Hosted by Freetail Hackers). Demo: https://www.youtube.com/watch?v=NWfa8gtDus8`,
+        description: `AccounTech is a personal finance assistant created for the Capital One Challenge at HackTX 2023 (Hosted by Freetail Hackers). Built in under 24 hours, the app combines a React Native-based client experience with an Express.js API deployed on Google Cloud, plus a GPT-4-powered assistant that answers user questions about spending behavior and potential financial impact. Team consisting of Akhilesh Bitla, Bersam Basagaoglu, Brian Jiang, and Derek Chen.`,
         shortDescription: `GPT-4 powered virtual accountant providing real-time financial feedback on transactions.
 Built in 24 hours with React frontend and Google Cloud Platform integration for HackTX 2023.`,
         image: '/images/projects/accountech.png',
