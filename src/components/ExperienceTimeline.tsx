@@ -15,7 +15,7 @@ import Slork from '@/assets/pics/companies/slork.jpg';
 import LHD from '@/assets/pics/companies/lhd.png';
 import { Typography } from '@mui/material';
 import { FiMapPin } from 'react-icons/fi';
-import { experiences } from '@/data/experiences';
+import { experiences, type ExperiencePosition } from '@/data/experiences';
 
 const schwabExperience = experiences.find(experience => experience.company === 'Charles Schwab');
 const attExperience = experiences.find(experience => experience.company === 'AT&T');
@@ -33,6 +33,51 @@ const LocationLabel = ({ location }: { location?: string }) => {
             <FiMapPin aria-hidden='true' />
             {location}
         </span>
+    );
+};
+
+const PositionList = ({
+    title,
+    period,
+    shortDescription,
+    positions,
+}: {
+    title?: string;
+    period?: string;
+    shortDescription?: string;
+    positions?: ExperiencePosition[];
+}) => {
+    if (positions && positions.length > 0) {
+        return (
+            <>
+                {positions.map(position => (
+                    <React.Fragment key={`${position.title}-${position.period}`}>
+                        <Typography variant='body2' sx={{ display: 'block' }}>
+                            {position.title}
+                        </Typography>
+                        <Typography
+                            variant='caption'
+                            sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}
+                        >
+                            {position.period}
+                        </Typography>
+                        {position.shortDescription ? <Typography>{position.shortDescription}</Typography> : null}
+                    </React.Fragment>
+                ))}
+            </>
+        );
+    }
+
+    return (
+        <>
+            <Typography variant='body2' sx={{ display: 'block' }}>
+                {title}
+            </Typography>
+            <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
+                {period}
+            </Typography>
+            {shortDescription ? <Typography>{shortDescription}</Typography> : null}
+        </>
     );
 };
 
@@ -78,13 +123,12 @@ const ExperienceTimeline = () => {
                         </Typography>
                         <LocationLabel location={schwabExperience?.location} />
                     </div>
-                    <Typography variant='body2' sx={{ display: 'block' }}>
-                        {schwabExperience?.title}
-                    </Typography>
-                    <Typography>{schwabExperience?.shortDescription}</Typography>
-                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
-                        {schwabExperience?.period}
-                    </Typography>
+                    <PositionList
+                        title={schwabExperience?.title}
+                        period={schwabExperience?.period}
+                        shortDescription={schwabExperience?.shortDescription}
+                        positions={schwabExperience?.positions}
+                    />
                 </TimelineContent>
             </TimelineItem>
 
@@ -117,13 +161,12 @@ const ExperienceTimeline = () => {
                         </Typography>
                         <LocationLabel location={attExperience?.location} />
                     </div>
-                    <Typography variant='body2' sx={{ display: 'block' }}>
-                        {attExperience?.title}
-                    </Typography>
-                    <Typography>{attExperience?.shortDescription}</Typography>
-                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
-                        {attExperience?.period}
-                    </Typography>
+                    <PositionList
+                        title={attExperience?.title}
+                        period={attExperience?.period}
+                        shortDescription={attExperience?.shortDescription}
+                        positions={attExperience?.positions}
+                    />
                 </TimelineContent>
             </TimelineItem>
 
@@ -156,13 +199,12 @@ const ExperienceTimeline = () => {
                         </Typography>
                         <LocationLabel location={longhornExperience?.location} />
                     </div>
-                    <Typography variant='body2' sx={{ display: 'block' }}>
-                        {longhornExperience?.title}
-                    </Typography>
-                    <Typography>{longhornExperience?.shortDescription}</Typography>
-                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
-                        {longhornExperience?.period}
-                    </Typography>
+                    <PositionList
+                        title={longhornExperience?.title}
+                        period={longhornExperience?.period}
+                        shortDescription={longhornExperience?.shortDescription}
+                        positions={longhornExperience?.positions}
+                    />
                 </TimelineContent>
             </TimelineItem>
 
@@ -195,13 +237,12 @@ const ExperienceTimeline = () => {
                         </Typography>
                         <LocationLabel location={cyltekExperience?.location} />
                     </div>
-                    <Typography variant='body2' sx={{ display: 'block' }}>
-                        {cyltekExperience?.title}
-                    </Typography>
-                    <Typography>{cyltekExperience?.shortDescription}</Typography>
-                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
-                        {cyltekExperience?.period}
-                    </Typography>
+                    <PositionList
+                        title={cyltekExperience?.title}
+                        period={cyltekExperience?.period}
+                        shortDescription={cyltekExperience?.shortDescription}
+                        positions={cyltekExperience?.positions}
+                    />
                 </TimelineContent>
             </TimelineItem>
 
@@ -238,13 +279,12 @@ const ExperienceTimeline = () => {
                         </Typography>
                         <LocationLabel location={slorkExperience?.location} />
                     </div>
-                    <Typography variant='body2' sx={{ display: 'block' }}>
-                        {slorkExperience?.title}
-                    </Typography>
-                    <Typography>{slorkExperience?.shortDescription}</Typography>
-                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
-                        {slorkExperience?.period}
-                    </Typography>
+                    <PositionList
+                        title={slorkExperience?.title}
+                        period={slorkExperience?.period}
+                        shortDescription={slorkExperience?.shortDescription}
+                        positions={slorkExperience?.positions}
+                    />
                 </TimelineContent>
             </TimelineItem>
         </Timeline>

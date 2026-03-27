@@ -7,7 +7,14 @@ export type Experience = {
     location: string;
     shortDescription: string;
     description: string[];
+    positions?: ExperiencePosition[];
     skills?: string[];
+};
+
+export type ExperiencePosition = {
+    title: string;
+    period: string;
+    shortDescription?: string;
 };
 
 type ExperienceWithoutId = Omit<Experience, 'id'>;
@@ -83,6 +90,20 @@ const experiencesData: ExperienceWithoutId[] = [
         companyLink: '', // Add the website link if available
         period: 'May 2021 – August 2022',
         location: 'Katy, Texas',
+        positions: [
+            {
+                title: 'Communications Chair',
+                period: 'May 2021 – August 2022',
+                shortDescription:
+                    'Modernized the orchestra website by replacing legacy jQuery with modern frameworks, improving SEO ranking by 40%+. Led a 19-member team coordinating projects and raised audience turnout to 600+ with a promotional film.',
+            },
+            {
+                title: 'Librarian',
+                period: 'May 2020 – May 2021',
+                shortDescription:
+                    'Managed orchestra sheet music organization and distribution logistics to keep rehearsals and performances running smoothly.',
+            },
+        ],
         shortDescription:
             'Modernized the orchestra website by replacing legacy jQuery with modern frameworks, improving SEO ranking by 40%+. Led a 19-member team coordinating projects and raised audience turnout to 600+ with a promotional film.',
         description: [
