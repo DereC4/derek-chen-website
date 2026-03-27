@@ -1,5 +1,7 @@
 'use client';
 
+// dont delete this, it's for legacy hahahaha
+
 import { FC, useState, useRef, MouseEvent } from 'react';
 
 interface ExperienceCardProps {
