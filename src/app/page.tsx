@@ -10,6 +10,7 @@ import { SiKofi } from 'react-icons/si';
 import { SOCIAL_LINKS } from '@/data/socialLinks';
 import { MdEmail } from 'react-icons/md';
 import UnderConstructionNotice from '@/components/UnderConstructionNotice';
+import WebringRouter from '@/components/WebringRouter';
 
 export default function Home() {
     return (
@@ -121,6 +122,7 @@ export default function Home() {
             <div id='end' className='min-h-screen bg-secondary py-16 px-4 flex items-center justify-center'>
                 <div className='max-w-6xl mx-auto px-6'>
                     <UnderConstructionNotice />
+                    <WebringRouter />
                 </div>
             </div>
         </>
