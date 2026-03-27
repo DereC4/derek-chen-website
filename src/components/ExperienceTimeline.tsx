@@ -36,47 +36,20 @@ const LocationLabel = ({ location }: { location?: string }) => {
     );
 };
 
-const PositionList = ({
-    title,
-    period,
-    shortDescription,
-    positions,
-}: {
-    title?: string;
-    period?: string;
-    shortDescription?: string;
-    positions?: ExperiencePosition[];
-}) => {
-    if (positions && positions.length > 0) {
-        return (
-            <>
-                {positions.map(position => (
-                    <React.Fragment key={`${position.title}-${position.period}`}>
-                        <Typography variant='body2' sx={{ display: 'block' }}>
-                            {position.title}
-                        </Typography>
-                        <Typography
-                            variant='caption'
-                            sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}
-                        >
-                            {position.period}
-                        </Typography>
-                        {position.shortDescription ? <Typography>{position.shortDescription}</Typography> : null}
-                    </React.Fragment>
-                ))}
-            </>
-        );
-    }
-
+const PositionList = ({ positions }: { positions: ExperiencePosition[] }) => {
     return (
         <>
-            <Typography variant='body2' sx={{ display: 'block' }}>
-                {title}
-            </Typography>
-            <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
-                {period}
-            </Typography>
-            {shortDescription ? <Typography>{shortDescription}</Typography> : null}
+            {positions.map(position => (
+                <React.Fragment key={`${position.title}-${position.period}`}>
+                    <Typography variant='body2' sx={{ display: 'block' }}>
+                        {position.title}
+                    </Typography>
+                    <Typography variant='caption' sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}>
+                        {position.period}
+                    </Typography>
+                    {position.shortDescription ? <Typography>{position.shortDescription}</Typography> : null}
+                </React.Fragment>
+            ))}
         </>
     );
 };
@@ -123,12 +96,7 @@ const ExperienceTimeline = () => {
                         </Typography>
                         <LocationLabel location={schwabExperience?.location} />
                     </div>
-                    <PositionList
-                        title={schwabExperience?.title}
-                        period={schwabExperience?.period}
-                        shortDescription={schwabExperience?.shortDescription}
-                        positions={schwabExperience?.positions}
-                    />
+                    {schwabExperience ? <PositionList positions={schwabExperience.positions} /> : null}
                 </TimelineContent>
             </TimelineItem>
 
@@ -161,12 +129,7 @@ const ExperienceTimeline = () => {
                         </Typography>
                         <LocationLabel location={attExperience?.location} />
                     </div>
-                    <PositionList
-                        title={attExperience?.title}
-                        period={attExperience?.period}
-                        shortDescription={attExperience?.shortDescription}
-                        positions={attExperience?.positions}
-                    />
+                    {attExperience ? <PositionList positions={attExperience.positions} /> : null}
                 </TimelineContent>
             </TimelineItem>
 
@@ -199,12 +162,7 @@ const ExperienceTimeline = () => {
                         </Typography>
                         <LocationLabel location={longhornExperience?.location} />
                     </div>
-                    <PositionList
-                        title={longhornExperience?.title}
-                        period={longhornExperience?.period}
-                        shortDescription={longhornExperience?.shortDescription}
-                        positions={longhornExperience?.positions}
-                    />
+                    {longhornExperience ? <PositionList positions={longhornExperience.positions} /> : null}
                 </TimelineContent>
             </TimelineItem>
 
@@ -237,12 +195,7 @@ const ExperienceTimeline = () => {
                         </Typography>
                         <LocationLabel location={cyltekExperience?.location} />
                     </div>
-                    <PositionList
-                        title={cyltekExperience?.title}
-                        period={cyltekExperience?.period}
-                        shortDescription={cyltekExperience?.shortDescription}
-                        positions={cyltekExperience?.positions}
-                    />
+                    {cyltekExperience ? <PositionList positions={cyltekExperience.positions} /> : null}
                 </TimelineContent>
             </TimelineItem>
 
@@ -279,12 +232,7 @@ const ExperienceTimeline = () => {
                         </Typography>
                         <LocationLabel location={slorkExperience?.location} />
                     </div>
-                    <PositionList
-                        title={slorkExperience?.title}
-                        period={slorkExperience?.period}
-                        shortDescription={slorkExperience?.shortDescription}
-                        positions={slorkExperience?.positions}
-                    />
+                    {slorkExperience ? <PositionList positions={slorkExperience.positions} /> : null}
                 </TimelineContent>
             </TimelineItem>
         </Timeline>

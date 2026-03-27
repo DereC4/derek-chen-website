@@ -7,7 +7,7 @@ export type Experience = {
     location: string;
     shortDescription: string;
     description: string[];
-    positions?: ExperiencePosition[];
+    positions: ExperiencePosition[];
     skills?: string[];
 };
 
@@ -34,6 +34,14 @@ const experiencesData: ExperienceWithoutId[] = [
         companyLink: 'https://www.schwab.com/',
         period: 'June 2025 – August 2025',
         location: 'Austin, Texas',
+        positions: [
+            {
+                title: 'Software Engineer Intern - Login Management Team',
+                period: 'June 2025 – August 2025',
+                shortDescription:
+                    'Developed a BigQuery-powered authentication analytics tool to trace login flows across a 72-TB production database. Built GCP dashboards processing 100+ GB daily logs and reduced mean time to resolution by 30%.',
+            },
+        ],
         shortDescription:
             'Developed a BigQuery-powered authentication analytics tool to trace login flows across a 72-TB production database. Built GCP dashboards processing 100+ GB daily logs and reduced mean time to resolution by 30%.',
         description: [
@@ -49,6 +57,14 @@ const experiencesData: ExperienceWithoutId[] = [
         companyLink: 'https://www.att.com/',
         period: 'June 2024 – August 2024',
         location: 'Dallas, Texas',
+        positions: [
+            {
+                title: 'Software Engineer Intern - Core Platforms Team',
+                period: 'June 2024 – August 2024',
+                shortDescription:
+                    'Resolved backend bottlenecks in the TOM platform, cutting Spring Boot load times by 30%+. Developed AT&T Language Assist, a multilingual communication tool using AI for live call translation, projected to save $162M+ annually.',
+            },
+        ],
         shortDescription:
             'Resolved backend bottlenecks in the TOM platform, cutting Spring Boot load times by 30%+. Developed AT&T Language Assist, a multilingual communication tool using AI for live call translation, projected to save $162M+ annually.',
         description: [
@@ -63,6 +79,14 @@ const experiencesData: ExperienceWithoutId[] = [
         companyLink: 'https://github.com/Longhorn-Developers',
         period: 'December 2023 – Present',
         location: 'Austin, Texas',
+        positions: [
+            {
+                title: 'Senior Software Engineer',
+                period: 'December 2023 – Present',
+                shortDescription:
+                    'Leading development of UT Registration Plus, a university course management tool used by 60,000+ students at UT Austin.',
+            },
+        ],
         shortDescription:
             'Leading development of UT Registration Plus, a university course management tool used by 60,000+ students at UT Austin.',
         description: [
@@ -77,6 +101,14 @@ const experiencesData: ExperienceWithoutId[] = [
         companyLink: 'https://www.cyl-tek.com/',
         period: 'May 2023 – July 2023',
         location: 'Hsinchu, Taiwan',
+        positions: [
+            {
+                title: 'Embedded Software Engineer Intern',
+                period: 'May 2023 – July 2023',
+                shortDescription:
+                    'Engineered a cross-platform AES-256 encryption module to securely transfer data between STM32-based smart medical IoT devices. Debugged and resolved critical synchronization issues in the IoT device pairing tool.',
+            },
+        ],
         shortDescription:
             'Engineered a cross-platform AES-256 encryption module to securely transfer data between STM32-based smart medical IoT devices. Debugged and resolved critical synchronization issues in the IoT device pairing tool.',
         description: [
@@ -130,6 +162,14 @@ const experiencesData: ExperienceWithoutId[] = [
         companyLink: '', // Add the website link if available
         period: 'June 2021 – October 2021',
         location: 'Houston, Texas',
+        positions: [
+            {
+                title: 'Application Developer Intern',
+                period: 'June 2021 – October 2021',
+                shortDescription:
+                    'Designed UI implementations for a mobile map application using React Native and Google Maps API to locate STEM-related educational events. Collaborated with 10 developers on a full-stack application and moderated 10+ communication channels.',
+            },
+        ],
         shortDescription:
             'Designed UI implementations for a mobile map application using React Native and Google Maps API to locate STEM-related educational events. Collaborated with 10 developers on a full-stack application and moderated 10+ communication channels.',
         description: [
