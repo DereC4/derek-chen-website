@@ -6,7 +6,7 @@ export default function WebringRouter() {
             aria-label='UT Webring navigation'
             className='mx-auto mt-8 w-full max-w-xl bg-background/60 p-6 text-center backdrop-blur-sm'
         >
-            <h2 className='text-lg font-semibold text-foreground'>UT Webring</h2>
+            <h2 className='text-lg font-semibold text-foreground'>🤘 UT Webring</h2>
 
             <div className='mt-5 flex items-center justify-center gap-4'>
                 <a
