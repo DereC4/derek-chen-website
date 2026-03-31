@@ -2,7 +2,7 @@ export default function VenatorEscapePage() {
     return (
         <div style={{ width: '100%', minHeight: '100vh', background: '#000' }}>
             <iframe
-                src='/games/last-stand.html'
+                src='https://derec4.github.io/Last-Stand/'
                 title='Venator Escape Game'
                 style={{
                     width: '100%',
