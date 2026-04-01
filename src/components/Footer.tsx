@@ -1,10 +1,15 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { HiLocationMarker } from 'react-icons/hi';
+
+const VENATOR_ESCAPE_PATH = '/projects/venator-escape';
 
 const Footer = () => {
     const [time, setTime] = useState('');
+    const pathname = usePathname();
+    const isVenatorEscapePage = pathname === VENATOR_ESCAPE_PATH || pathname.startsWith(`${VENATOR_ESCAPE_PATH}/`);
 
     useEffect(() => {
         const formatter = new Intl.DateTimeFormat('en-US', {
@@ -25,6 +30,18 @@ const Footer = () => {
 
         return () => clearInterval(interval);
     }, []);
+
+    useEffect(() => {
+        document.body.style.overflow = isVenatorEscapePage ? 'hidden' : '';
+
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [isVenatorEscapePage]);
+
+    if (isVenatorEscapePage) {
+        return null;
+    }
 
     return (
         <footer className='border-t border-border bg-background'>
