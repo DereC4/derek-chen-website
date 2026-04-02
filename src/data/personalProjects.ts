@@ -103,6 +103,17 @@ Built for AP CS Principles exam using tkinter GUI and PIL image rendering.`,
         period: 'Apr 2022 – Apr 2022',
     },
     {
+        id: 'last-stand-star-wars-fangame',
+        title: 'Last Stand: Sci-Fi Crossover (Star Wars)',
+        description: `Find yourself watching a deployment of troopers on a Venator-class Star Destroyer caught in the middle of an enemy raid! An unknown, lethal enemy has boarded wielding some sort of prototype armor. Collaborated with Harsh Dave on game design and presentation for a high school class.`,
+        shortDescription: `Scratch game featuring trooper deployment on a Venator-class ship amid an enemy raid with a mysterious boss.
+Custom sprite work from retro Star Wars games with cutscenes, dialogue, and experimental hard mode.`,
+        image: '/images/projects/last-stand-star-wars-fangame.png',
+        technologies: ['Game Development'],
+        href: '/projects/venator-escape',
+        period: 'Sep 2021 – Oct 2021',
+    },
+    {
         id: 'creepercatcher',
         title: 'Creeper Catcher',
         description: `A 2D pygame retro game where the Geometry Dash (a game popular at the time in school) protagonist catches creepers (also from a game, likewise popular). Designed gameplay loops, scoring flow, and core game logic as part of a focused short-cycle class submission. Has timer-based enemy spawning, collision detection for scoring, and scrolling background layers for motion. Built for Computer Science Independent Study under Ryan Nutt, `,
