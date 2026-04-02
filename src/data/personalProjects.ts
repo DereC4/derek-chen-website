@@ -63,7 +63,7 @@ Full-stack React frontend and MongoDB backend serving personalized organization 
 Served 6,100+ students quarterly with Express.js backend and SQL database integration.`,
         image: '/images/projects/ut-distribution-viewer.png',
         technologies: ['JavaScript', 'HTML/CSS', 'Express', 'SQL'],
-        href: '/projects/ut-distribution-viewer',
+        href: 'https://derec4.github.io/ut-grade-distribution-viewer/',
         period: 'Apr 2023 – May 2023',
     },
     {
