@@ -15,6 +15,7 @@ import trove from '@/assets/pics/projects/trove.png';
 import elytraVaults from '@/assets/pics/projects/elytravaults.png';
 import macebackport from '@/assets/pics/projects/macebackport.png';
 import earthMobs from '@/assets/pics/projects/minecraftearthmod.png';
+import venatorEscape from '@/assets/pics/projects/venator-escape.png';
 
 export const projectImages: Record<string, StaticImageData> = {
     'slork-wars': slorkWars1,
@@ -33,4 +34,5 @@ export const projectImages: Record<string, StaticImageData> = {
     'elytra-vaults': elytraVaults,
     'mace-backport': macebackport,
     'earth-mobs': earthMobs,
+    'last-stand-star-wars-fangame': venatorEscape,
 };
