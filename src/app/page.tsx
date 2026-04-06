@@ -43,7 +43,7 @@ export default function Home() {
                             I'm a software engineer and fourth-year Computer Science student at UT Austin. From my early
                             days developing{' '}
                             <a
-                                href='https://www.curseforge.com/members/derexxd'
+                                href='https://www.curseforge.com/members/derexxd/projects?page=1&sortBy=TotalDownloads'
                                 target='_blank'
                                 rel='noopener noreferrer'
                                 className='text-foreground hover:text-primary underline underline-offset-4 transition-colors duration-200'
