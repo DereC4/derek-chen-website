@@ -19,7 +19,7 @@ interface ProjectCardProps {
 const ProjectCard: FC<ProjectCardProps> = ({ id, title, description, image, technologies, href, className = '' }) => {
     return (
         <article
-            className={`flex flex-col md:flex-row items-center md:items-start mb-6 md:mb-0 md:gap-8 w-full text-center md:text-left ${className}`}
+            className={`flex flex-col md:flex-row items-start mb-6 md:mb-0 md:gap-8 w-full text-left ${className}`}
         >
             {image && (
                 <Link href={href} className='flex-shrink-0 w-full md:w-[40%] overflow-hidden'>
