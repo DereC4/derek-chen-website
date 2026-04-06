@@ -6,6 +6,7 @@
   --background: rgb(23 23 23);
   --foreground: rgb(248 250 252);
   --primary: rgb(125 211 252);
+  --construction-text: rgb(254 240 138);
 }
 
 
@@ -14,12 +15,14 @@
   --background: rgb(255 255 255);
   --foreground: rgb(15 23 42);
   --primary: rgb(125 211 252);
+  --construction-text: rgb(180 83 9);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-construction-text: var(--construction-text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -31,6 +34,7 @@
     --background: rgb(23 23 23);
     --foreground: rgb(248 250 252);
     --primary: rgb(125 211 252);
+    --construction-text: rgb(254 240 138);
   }
 }
 

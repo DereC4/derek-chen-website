@@ -14,7 +14,9 @@ export default function UnderConstructionNotice() {
                     className='h-[256px] w-[256px] object-contain'
                 />
             </div>
-            <p className='text-sm font-medium tracking-wide text-yellow-200'>More coming soon. Work in progress.</p>
+            <p className='text-sm font-medium tracking-wide text-construction-text'>
+                More coming soon. Work in progress.
+            </p>
         </div>
     );
 }
