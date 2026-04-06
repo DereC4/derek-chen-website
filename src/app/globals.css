@@ -5,7 +5,7 @@
   color-scheme: dark;
   --background: rgb(23 23 23);
   --foreground: rgb(248 250 252);
-  --primary: rgb(125 211 252);
+  --primary: rgb(90, 122, 205);
   --construction-text: rgb(254 240 138);
 }
 
@@ -14,7 +14,7 @@
   color-scheme: light;
   --background: rgb(255 255 255);
   --foreground: rgb(15 23 42);
-  --primary: rgb(125 211 252);
+  --primary: rgb(90, 122, 205);
   --construction-text: rgb(180 83 9);
 }
 
