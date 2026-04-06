@@ -1,10 +1,21 @@
+import localFont from 'next/font/local';
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from 'react-icons/hi2';
 
+const minecraftia = localFont({
+    src: '../assets/fonts/Minecraftia.ttf',
+    display: 'swap',
+});
+
+/**
+ *
+ * @returns Component for the UT Austin webring https://github.com/umbresp/ut-webring
+ */
 export default function WebringRouter() {
     return (
+        // 4.5.2026 use custom font, use the localFont class which gives an auto-css classname for our font
         <section
             aria-label='UT Webring navigation'
-            className='mx-auto mt-8 w-full max-w-xl bg-background/60 p-6 text-center backdrop-blur-sm'
+            className={`${minecraftia.className} mx-auto mt-8 w-full max-w-xl bg-background/60 p-6 text-center backdrop-blur-sm`}
         >
             <h2 className='text-lg font-semibold text-foreground'>🤘 UT Webring</h2>
 
