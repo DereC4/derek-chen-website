@@ -51,4 +51,7 @@ export const coursework: CourseWork[] = [
     { id: 'FIN 320F', name: 'Foundations of Finance', uniqueNumber: 4095 },
     { id: 'ANS 301M', name: 'Internet Culture in China and Taiwan', uniqueNumber: 34158 },
     { id: 'CS 378', name: 'Foundations of Data Warehousing', uniqueNumber: 55155 },
+    { id: 'CS 378', name: 'Symbolic Programming', uniqueNumber: 53450 },
+    { id: 'CS 376', name: 'Computer Vision', uniqueNumber: 53395 },
+    { id: 'CS 371M', name: 'Mobile Computing', uniqueNumber: 53365 },
 ];
