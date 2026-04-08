@@ -1,0 +1,267 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.8in}
+\addtolength{\evensidemargin}{-0.8in} % Match the left margin adjustment
+\addtolength{\textwidth}{1.6in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+	{\LARGE \scshape Derek Chen} \\ \vspace{1pt} 
+	\small \raisebox{-0.1\height}~ \raisebox{-0.2\height}\faEnvelope\  {derec0614@gmail.com} ~ 
+	\raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/derekyujirchen} ~
+	\raisebox{-0.2\height}\faGithub\ {github.com/DereC4} ~
+    \raisebox{-0.2\height}\faCode\ {derekchen.dev}
+	\vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Texas at Austin}{Austin, Texas}
+{Bachelor of Science, Computer Science, Business Minor}{2022 - 2026}
+\resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%\resumeSubHeadingListStart
+\small{
+	\textbf{Relevant Coursework}{: Data Structures, Algorithms and Complexity, Operating Systems, Computer Architecture, Software Engineering, Machine Learning, Linear Algebra, Discrete Mathematics, Computer Ethics, Data Warehousing, Ethical Hacking, Computer Vision, iOS Mobile Computing, Symbolic Programming}
+%\resumeSubHeadingListEnd
+%         \begin{multicols}{3}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item Data Structures
+%                 \item Computer Architecture
+%                 \item Operating Systems
+%                 \item Computer Ethics
+%                 \item Software Engineering
+%                 \item Computer Organization
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Charles Schwab}{ June 2025 - August 2025}
+{Software Engineer Intern - Login Management Team}{Austin, Texas}
+\resumeItemListStart
+\resumeItem{Developed a \textbf{BigQuery-powered} authentication analytics tool querying a \textbf{GCP}-hosted 72-TB production login database, enabling investigators to trace login flows by session ID, customer ID, or device ID}
+\resumeItem{Built a \textbf{GCP-BigQuery} dashboard to process 100+ GB of daily log data (5.7M+ API requests), improving error and analytics tracking and reducing mean time to resolution by $30\%$}
+\resumeItem{Performed automated release validation using \textbf{GitHub Actions (Python, YAML)} to compare manifests and application configuration files between production releases, ensuring release integrity and detecting configuration drift/unexpected changes}
+\resumeItem{Created \textbf{Grafana} dashboards to monitor device recognition, mobile authentication, and fraud detection across millions of multiplatform Charles Schwab client events handling over \$10 trillion in client assets}
+\resumeItemListEnd
+
+\resumeSubheading
+{AT\&T}{ June 2024 - August 2024}
+{Software Engineer Intern - Core Platforms Team}{Dallas, Texas}
+\resumeItemListStart
+\resumeItem{Resolved backend bottlenecks in the TOM platform (60k+ users) by refactoring technical debt and optimizing query patterns, cutting \textbf{Spring Boot} backend load times by \textbf{30\%+}}
+\resumeItem{Integrated backend server maintenance status with UI by developing a real-time alert system using \textbf{Angular} UI components and \textbf{Spring Boot}, proactively notifying users of downtime through live database-driven warnings}
+\resumeItem{Designed and developed \textbf{AT\&T Language Assist}, a multilingual communication tool leveraging OpenAI Whisper and FastAPI to enable live call translation and automatic language detection for AT\&T call centers; projected to save \textbf{\$162M+ per year} by reducing call wait times and interpreter costs. Pitched MVP to \textbf{CTO Jeremy Legg} after winning \textbf{1st place out of 24 teams} in the Intern Innovation Challenge}
+\resumeItemListEnd
+      
+\resumeSubheading
+{CYL-Tek}{ May 2023 - July 2023}
+{Embedded Software Engineer Intern}{Hsinchu, Taiwan}
+\resumeItemListStart
+\resumeItem{Engineered a cross-platform AES-256 encryption and decryption module \textbf{(C, Python)} to securely transfer sensitive data between STM32-based smart medical IoT devices, enhancing system-level data protection and HIPAA/PDPA compliance}
+\resumeItem{Debugged and resolved a critical synchronization issue in the IoT device pairing tool (\textbf{Python}), increasing reliability across all deployed units}
+\resumeItemListEnd
+
+% \resumeSubheading
+% {Seven Lakes Orchestras}{May 2021 - August 2022}
+% {Communications Chair}{Katy, Texas}
+% \resumeItemListStart
+% \resumeItem{Modernized orchestra website by replacing legacy \textbf{jQuery} with modern frameworks, enhancing performance, implementing \textbf{HTTPS}, and improving SEO ranking and over \textbf{40\% increase in site traffic}}
+% \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{UT Registration Plus} $|$ \emph{TypeScript, React, CSS/SCSS, SQL, Vite}}{December 2023 - Present}
+\resumeItemListStart
+\resumeItem{Developing an open source Chrome extension (\textbf{50,000+ active users}) that streamlines course registration by integrating course info, professor ratings, grade distributions, and schedule planning directly into official university pages; built with \textbf{React}, \textbf{TypeScript}, \textbf{Tailwind}, \textbf{Vite}, and maintained in an industry style \textbf{CI/CD} environment by a student-led team}
+\resumeItem{Navigated a complete architecture change off of previous jQuery, JavaScript, and HTML/CSS stack to support Manifest V3}
+\resumeItemListEnd
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Mod/Plugin Dev} $|$ \emph{Java, Gradle, Maven, SQL, APIs}}{June 2020 - Present}
+\resumeItemListStart
+\resumeItem{Coded plugins, game modifications, and custom tools for Minecraft server networks and content creators, reaching over \textbf{17 million users} and driving over \textbf{6.4 billion YouTube views}}
+\resumeItem{Developed a modular Minecraft server plugin enabling players to create, manage, and compete as in-game factions, with features like territory claiming, custom enemy AI, and resource management}
+\resumeItem{Designed and implemented a backend architecture, including asynchronous operations, write-behind caching, and a robust SQL database layer, ensuring thread-safe player data management in a single-threaded server environment}
+\resumeItemListEnd 
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{CobbleGuard} $|$ \emph{TypeScript, Python, Rust, PostgreSQL}}{July 2025 - September 2025}
+\resumeItemListStart
+\resumeItem{Addressed the widespread issue of unsecured online game servers by building an educational warning network, supported by an asynchronous scanner that discovers, parses, and catalogs over \textbf{3.4 million} server IPs into a \textbf{PostgreSQL} database}
+\resumeItem{Deployed an automated agent on \textbf{Oracle Cloud} built in \textbf{TypeScript} with Mineflayer API, that connects to vulnerable servers, to date delivering educational security warnings to over \textbf{1 million players} and handling queries with a responsive chat module} 
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		\textbf{Languages}{: Java, Python, JavaScript, TypeScript, C, HTML/CSS, R, SQL, Swift, Clojure} \\
+		\textbf{Technologies/Frameworks}{: Git, Node.js, React, React Native, Next, Express, Tailwind, APIs, Pandas, Google Cloud Platform (GCP), Oracle Cloud, BigQuery, MySQL, Linux, Flask, REST, Agile, CI/CD}}}
+\end{itemize}
+\vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%             \resumeItemListStart
+%                 \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%                 \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%                 \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+% \section{Honors and Awards}
+% \vspace{-5pt}
+% \resumeSubHeadingListStart
+% \resumeProjectHeading
+% {\textbf{Best Overall Beginner Hack} $|$ \emph{HackTX 2022}}{October 2022}
+% \resumeItemListStart
+% \resumeItem{Designed Trove, a virtual, centralized database for storing and displaying items people have brought to a lost and found site, as well as reports others put up for items they've lost, within 24 hours.}
+% \resumeItem{Utilized Java, JavaScript, Springboot, MongoDB for a full-stack app, cloud hosted with a React Native front end}
+% \resumeItem{Won the Best Overall Beginner Hack Award out of 75 teams in HackTX 2022.}
+% \resumeItemListEnd
+% \resumeSubHeadingListEnd
+% \vspace{-15pt}
+
+\end{document}
