@@ -14,6 +14,7 @@ const featuredProjectIds = [
     'trove',
     'accountech',
     'last-stand-star-wars-fangame',
+    'earth-mobs',
 ];
 
 /**
