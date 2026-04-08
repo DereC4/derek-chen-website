@@ -72,9 +72,8 @@ Served 6,100+ students quarterly with Express.js backend and SQL database integr
         // https://github.com/pear-devs/pear-desktop/issues/1187
         id: 'pear-desktop',
         title: 'Pear Desktop (formerly YouTube Music Desktop)',
-        description: `My first real open-source work! Contributed to the open-source music player with a Romanization toggle for the Genius plugin and improved behavior for East Asian-language tracks. Followed up with additional work on song-type lyric interception and translation-path handling, plus stability improvements that reduced long-session memory growth. Also addressed a critical memory leak in web request and content-filtering environments so lyric features behaved more reliably across user setups.`,
-        shortDescription: `First open-source contribution adding East Asian language support to music player with Romanization.
-Fixed memory leaks and improved stability for long-session usage across diverse user environments.`,
+        description: `My first real open-source work was contributing to Pear Desktop (fomerly known as YouTube Music Desktop App), a Youtube Music player with over 16 million downloads that I used for years. Architected a Romanization toggle for the Genius Lyrics plugin and optimized lyric behavior for East Asian-language (for those who wanted to sing along to kpop). Identified and patched a critical memory leak within content-filtering that caused significant performance degradation during long sessions.`,
+        shortDescription: `Contributed internationalization features and critical memory-leak fixes to a massively popular open-source music player with 16M+ downloads.`,
         image: '/images/projects/pear-desktop.png',
         technologies: ['TypeScript', 'Electron', 'CSS', 'HTML', 'JavaScript'],
         href: 'https://github.com/pear-devs/pear-desktop',
