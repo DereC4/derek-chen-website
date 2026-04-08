@@ -1,3 +1,5 @@
+'use client';
+
 import localFont from 'next/font/local';
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from 'react-icons/hi2';
 
@@ -11,6 +13,11 @@ const minecraftia = localFont({
  * @returns Component for the UT Austin webring https://github.com/umbresp/ut-webring
  */
 export default function WebringRouter() {
+    const handleViewRingsClick = () => {
+        const ringUrl = Math.random() < 0.5 ? 'https://webring.jolteon.me' : 'https://www.utexas.network/';
+        window.open(ringUrl, '_blank', 'noopener,noreferrer');
+    };
+
     return (
         // 4.5.2026 use custom font, use the localFont class which gives an auto-css classname for our font
         <section
@@ -34,14 +41,13 @@ export default function WebringRouter() {
                 >
                     Random Site
                 </a>
-                <a
-                    href='https://webring.jolteon.me'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                <button
+                    type='button'
+                    onClick={handleViewRingsClick}
                     className='text-muted-foreground underline-offset-4 transition-colors duration-200 hover:text-primary hover:underline'
                 >
-                    View Ring
-                </a>
+                    View Rings
+                </button>
                 <a
                     href='https://api.jolteon.me/webring/nextlink'
                     className='inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors duration-200 hover:border-primary hover:text-primary'
