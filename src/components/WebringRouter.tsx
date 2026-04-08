@@ -35,12 +35,12 @@ export default function WebringRouter() {
                     <span>Prev</span>
                 </a>
 
-                <a
+                {/* <a
                     href='https://api.jolteon.me/webring/randomlink'
                     className='text-muted-foreground underline-offset-4 transition-colors duration-200 hover:text-primary hover:underline'
                 >
                     Random Site
-                </a>
+                </a> */}
                 <button
                     type='button'
                     onClick={handleViewRingsClick}
