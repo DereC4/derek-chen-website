@@ -43,8 +43,8 @@ const ProjectCard: FC<ProjectCardProps> = ({ id, title, description, image, tech
                         return (
                             <span
                                 key={index}
-                                className='inline-block rounded py-0.5 px-2 m-1 text-xs font-medium text-black transition-transform hover:scale-105'
-                                style={{ backgroundColor: backgroundColor, color: textColor }}
+                                className='inline-block rounded py-0.5 px-2 m-1 text-xs font-medium transition-transform hover:scale-105 text-[var(--tech-text)] dark:text-black'
+                                style={{ backgroundColor: backgroundColor, ['--tech-text' as any]: textColor }}
                             >
                                 {tech}
                             </span>

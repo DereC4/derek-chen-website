@@ -10,7 +10,7 @@ export const technologyColors: Record<string, string> = {
     Svelte: '#fdba74',
     TailwindCSS: '#7dd3fc',
     'Tailwind CSS': '#7dd3fc',
-    CSS: '#60a5fa',
+    CSS: '#1293dd',
     HTML: '#fb923c',
     SCSS: '#f9a8d4',
     Sass: '#f9a8d4',
@@ -82,6 +82,7 @@ export const technologyColors: Record<string, string> = {
 
     // Build Tools
     Gradle: '#065668',
+    Vite: '#9467fd',
 
     // Other
     APIs: '#f0abfc',
