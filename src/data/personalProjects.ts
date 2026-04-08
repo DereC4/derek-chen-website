@@ -137,12 +137,18 @@ Implemented game engine with turn management, draw/discard logic, and action car
     {
         id: 'earth-mobs',
         title: 'Earth Mobs',
-        description: `Grew player base of over 300,000 by developing a Forge API-powered modification that introduced new content and enhancements to a critically acclaimed video game. Programmed in-game entities interacting with users in the game environment and pathfinding around the world. Maintained long term support by established bug tracking mediums on GitHub for clients to report issues and suggestions, creating a community of 300+ active users.`,
+        description: `Grew player base of over 300,000 by developing a Forge API-powered modification that introduced new content and enhancements to a critically acclaimed video game. Programmed in-game entities interacting with users in the game environment and pathfinding around the world. Maintained long term support by established bug tracking mediums on GitHub for clients to report issues and suggestions, creating a community of 300+ active users.
+        
+        
+        My first large-scale engineering project: a Java-based Minecraft modification with over 340,000 downloads. I architected entity AI with custom pathfinding and developed a basic procedural world-generation system to support a custom dimension. This involved not only back-end logic for biome distribution but also creative technical work in 3D modeling and texturing for various entities and blocks. Throughout its 5-year lifecycle, I maintained the project across 30+ game versions, utilizing a GitHub-based workflow with Wikis for documentation and Issue Trackers for community-driven bug triaging. This project was my foundation in managing long-term software compatibility and open-source collaboration.
+
+        Developed and maintained a high-scale Java modification for Minecraft with over 340,000 downloads. Architected a procedural world-generation system for a custom dimension, including biome distribution logic and noise-based terrain seeding. Engineered custom AI entity behaviors and pathfinding algorithms while ensuring backward compatibility across 30+ game versions. Managed a 5-year project lifecycle via GitHub, utilizing Issue Trackers for bug triaging and authoring a comprehensive technical Wiki for the community.
+        `,
         shortDescription: `Minecraft Forge mod expanding game content with 300K+ player downloads and 300+ GitHub community.
 Developed AI pathfinding, entity interactions, and long-term community support infrastructure.`,
         image: '/images/projects/earth-mobs.png',
-        technologies: ['Java', 'Gradle', 'Forge API'],
-        href: '/projects/earth-mobs',
+        technologies: ['Java', 'Gradle', 'Minecraft Forge API', 'Procedural Generation'],
+        href: 'https://www.curseforge.com/minecraft/mc-mods/minecraft-earth-mod',
         period: 'June 2020 – Apr 2024',
     },
     {
