@@ -66,6 +66,8 @@ export const technologyColors: Record<string, string> = {
     Blender: '#E87D0D',
     'Premiere Pro': '#9999FF',
     'After Effects': '#CF96FD',
+    Blockbench: '#1a91d7',
+    Audacity: '#334dff',
 
     // Mobile
     'React Native': '#67e8f9',
@@ -78,8 +80,13 @@ export const technologyColors: Record<string, string> = {
     Cypress: '#94a3b8',
     Playwright: '#86efac',
 
+    // Build Tools
+    Gradle: '#022e38',
+
     // Other
     APIs: '#f0abfc',
+    'Game Development': '#00FF00',
+    'Minecraft Forge API': '#c39563',
 
     default: '#93c5fd',
 };
