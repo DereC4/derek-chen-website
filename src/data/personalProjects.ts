@@ -62,7 +62,7 @@ Full-stack React frontend and MongoDB backend serving personalized organization 
         shortDescription: `Interactive visualization tool replacing outdated grade distribution lookup at UT Austin.
 Served 6,100+ students quarterly with Express.js backend and SQL database integration.`,
         image: '/images/projects/ut-distribution-viewer.png',
-        technologies: ['JavaScript', 'HTML/CSS', 'Express', 'SQL'],
+        technologies: ['JavaScript', 'HTML', 'CSS', 'Express', 'SQL'],
         href: 'https://derec4.github.io/ut-grade-distribution-viewer/',
         period: 'Apr 2023 – May 2023',
     },
@@ -213,6 +213,7 @@ Built in 24 hours with React frontend and Google Cloud Platform integration for 
             'GPT-4',
             'Google Cloud Platform',
             'Figma',
+            'Express',
         ],
         href: 'https://devpost.com/software/accoun-tech',
         period: 'Oct 2023 – Oct 2023',

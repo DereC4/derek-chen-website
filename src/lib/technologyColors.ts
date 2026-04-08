@@ -1,6 +1,6 @@
 export const technologyColors: Record<string, string> = {
     // Frontend
-    TypeScript: '#93c5fd',
+    TypeScript: '#5aa2f5',
     JavaScript: '#fde047',
     React: '#67e8f9',
     'Next.js': '#cbd5e1',
