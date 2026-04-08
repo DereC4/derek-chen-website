@@ -81,11 +81,11 @@ export const technologyColors: Record<string, string> = {
     Playwright: '#86efac',
 
     // Build Tools
-    Gradle: '#022e38',
+    Gradle: '#065668',
 
     // Other
     APIs: '#f0abfc',
-    'Game Development': '#00FF00',
+    'Game Development': '#26dd26a9',
     'Minecraft Forge API': '#c39563',
 
     default: '#93c5fd',
