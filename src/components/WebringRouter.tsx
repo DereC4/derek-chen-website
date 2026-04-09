@@ -1,7 +1,9 @@
 'use client';
 
+import { useCallback } from 'react';
 import localFont from 'next/font/local';
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from 'react-icons/hi2';
+import { MergedWebringService } from '@/lib/mergedWebringService';
 
 const minecraftia = localFont({
     src: '../assets/fonts/Minecraftia.ttf',
@@ -13,10 +15,14 @@ const minecraftia = localFont({
  * @returns Component for the UT Austin webring https://github.com/umbresp/ut-webring
  */
 export default function WebringRouter() {
-    const handleViewRingsClick = () => {
-        const ringUrl = Math.random() < 0.5 ? 'https://webring.jolteon.me' : 'https://www.utexas.network/';
-        window.open(ringUrl, '_blank', 'noopener,noreferrer');
-    };
+    const handleRandomClick = useCallback(async () => {
+        try {
+            const randomUrl = await MergedWebringService.getRandomLink();
+            window.open(randomUrl, '_blank', 'noopener,noreferrer');
+        } catch {
+            window.open(MergedWebringService.fallbackRandomLink, '_blank', 'noopener,noreferrer');
+        }
+    }, []);
 
     return (
         // 4.5.2026 use custom font, use the localFont class which gives an auto-css classname for our font
@@ -43,10 +49,10 @@ export default function WebringRouter() {
                 </a> */}
                 <button
                     type='button'
-                    onClick={handleViewRingsClick}
+                    onClick={handleRandomClick}
                     className='text-muted-foreground underline-offset-4 transition-colors duration-200 hover:text-primary hover:underline'
                 >
-                    View Rings
+                    Random (🎲)
                 </button>
                 <a
                     href='https://api.jolteon.me/webring/nextlink'
