@@ -50,7 +50,7 @@ export default function WebringRouter() {
                 <button
                     type='button'
                     onClick={handleRandomClick}
-                    className='text-muted-foreground underline-offset-4 transition-colors duration-200 hover:text-primary hover:underline'
+                    className='text-muted-foreground underline-offset-4 transition-colors duration-200 hover:text-primary hover:underline cursor-pointer'
                 >
                     Random (🎲)
                 </button>
