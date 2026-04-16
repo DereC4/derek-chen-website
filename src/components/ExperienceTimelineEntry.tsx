@@ -50,8 +50,8 @@ const ExperienceTimelineEntry = ({
                 {showConnector ? <TimelineConnector /> : null}
             </TimelineSeparator>
             <TimelineContent sx={{ pb: 3 }}>
-                <div className='flex items-start justify-between gap-4'>
-                    <Typography variant='h6' component='span'>
+                <div className='flex items-baseline justify-between gap-4'>
+                    <Typography variant='h6' component='span' sx={{ lineHeight: 1.2 }}>
                         {companyLink ? (
                             <ArrowLink
                                 label={experience.company}
@@ -63,7 +63,7 @@ const ExperienceTimelineEntry = ({
                             experience.company
                         )}
                     </Typography>
-                    <span className='inline-flex items-center gap-1 text-sm text-muted-foreground whitespace-nowrap'>
+                    <span className='inline-flex items-center gap-1 text-sm text-muted-foreground whitespace-nowrap leading-none'>
                         <FiMapPin aria-hidden='true' />
                         {experience.location}
                     </span>
