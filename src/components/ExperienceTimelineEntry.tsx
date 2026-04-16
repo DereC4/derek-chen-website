@@ -49,7 +49,7 @@ const ExperienceTimelineEntry = ({
                 </TimelineDot>
                 {showConnector ? <TimelineConnector /> : null}
             </TimelineSeparator>
-            <TimelineContent>
+            <TimelineContent sx={{ pb: 3 }}>
                 <div className='flex items-start justify-between gap-4'>
                     <Typography variant='h6' component='span'>
                         {companyLink ? (

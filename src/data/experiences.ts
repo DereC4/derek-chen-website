@@ -59,7 +59,7 @@ const experiencesData: ExperienceWithoutId[] = [
                 title: 'Software Engineer Intern - Core Platforms Team',
                 period: 'June 2024 – August 2024',
                 shortDescription:
-                    'Resolved backend bottlenecks for the TOM platform (60k+ users) by refactoring technical debt and optimizing Spring Boot query patterns, cutting load times by 30%+. Developed a real-time maintenance alert system using Angular and Spring Boot to proactively notify users of downtime through live, database-driven UI warnings. Developed Language Assist during the Intern Innovation Challenge, an AI tool using OpenAI Whisper and FastAPI for live call translation projected to save $162M annually. Won 1st place out of 24 teams and pitched the MVP directly to CTO Jeremy Legg.`,',
+                    'Resolved backend bottlenecks for the TOM platform (60k+ users) by refactoring technical debt and optimizing Spring Boot query patterns, cutting load times by 30%+. Developed a real-time maintenance alert system using Angular and Spring Boot to proactively notify users of downtime through live, database-driven UI warnings. Developed Language Assist during the Intern Innovation Challenge, an AI tool using OpenAI Whisper and FastAPI for live call translation projected to save $162M annually. Won 1st place out of 24 teams and pitched the MVP directly to CTO Jeremy Legg.',
             },
         ],
         description: [
@@ -110,7 +110,7 @@ const experiencesData: ExperienceWithoutId[] = [
     {
         title: 'Communications Chair',
         company: 'Seven Lakes Orchestras',
-        companyLink: 'https://sevenlakesorchestras.org/', 
+        companyLink: 'https://sevenlakesorchestras.org/',
         period: 'May 2021 – August 2022',
         location: 'Katy, Texas',
         positions: [
@@ -148,7 +148,7 @@ const experiencesData: ExperienceWithoutId[] = [
     {
         title: 'Application Developer Intern',
         company: 'STEM-E',
-        companyLink: '', 
+        companyLink: '',
         period: 'June 2021 – October 2021',
         location: 'Houston, Texas',
         positions: [
