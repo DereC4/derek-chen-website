@@ -62,7 +62,7 @@ const experiencesData: ExperienceWithoutId[] = [
                 title: 'Software Engineer Intern - Core Platforms Team',
                 period: 'June 2024 – August 2024',
                 shortDescription:
-                    'Resolved backend bottlenecks in the TOM platform, cutting Spring Boot load times by 30%+. Developed AT&T Language Assist, a multilingual communication tool using AI for live call translation, projected to save $162M+ annually.',
+                    'Optimized the TOM platform (60k+ users) by refactoring technical debt, cutting Spring Boot load times by 30%. Developed Language Assist during the Intern Innovation Challenge, an AI tool using OpenAI Whisper and FastAPI for live call translation projected to save $162M annually. Won 1st place out of 24 teams and pitched the MVP directly to CTO Jeremy Legg.',
             },
         ],
         shortDescription:
