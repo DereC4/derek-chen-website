@@ -27,6 +27,17 @@ function normalizeWebsiteUrl(rawUrl: string): string | null {
     }
 }
 
+const EXCLUDED_WEBRING_HOSTS = new Set(['derekchen.dev']);
+
+function isExcludedWebringUrl(url: string): boolean {
+    try {
+        const hostname = new URL(url).hostname.toLowerCase().replace(/^www\./, '');
+        return EXCLUDED_WEBRING_HOSTS.has(hostname);
+    } catch {
+        return false;
+    }
+}
+
 export class MergedWebringService {
     static readonly fallbackRandomLink = 'https://api.jolteon.me/webring/randomlink';
 
@@ -71,7 +82,7 @@ export class MergedWebringService {
             networkResult.value.members.forEach(member => {
                 if (typeof member.website === 'string') {
                     const normalized = normalizeWebsiteUrl(member.website);
-                    if (normalized) pooledSites.push(normalized);
+                    if (normalized && !isExcludedWebringUrl(normalized)) pooledSites.push(normalized);
                 }
             });
         }
@@ -81,7 +92,7 @@ export class MergedWebringService {
                 const candidate =
                     typeof site.link === 'string' ? site.link : typeof site.url === 'string' ? site.url : '';
                 const normalized = normalizeWebsiteUrl(candidate);
-                if (normalized) pooledSites.push(normalized);
+                if (normalized && !isExcludedWebringUrl(normalized)) pooledSites.push(normalized);
             });
         }
 
