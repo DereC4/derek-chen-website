@@ -38,7 +38,7 @@ const experiencesData: ExperienceWithoutId[] = [
                 title: 'Software Engineer Intern - Login Management Team',
                 period: 'June 2025 – August 2025',
                 shortDescription:
-                    'Developed a BigQuery-powered authentication analytics tool to trace login flows across a 72-TB production database. Built GCP dashboards processing 100+ GB daily logs and reduced mean time to resolution by 30%.',
+                    'Engineered authentication analytics for a 72-TB production database handling 5.7M+ daily API requests. Built GCP-powered BigQuery dashboards processing 100+ GB of daily log data. Developed release validation via GitHub Actions to automatically compare manifests and detect configuration drift between production deployments. Designed Grafana monitoring suites for fraud detection across platforms securing $10 trillion in client assets.',
             },
         ],
         description: [
@@ -59,7 +59,7 @@ const experiencesData: ExperienceWithoutId[] = [
                 title: 'Software Engineer Intern - Core Platforms Team',
                 period: 'June 2024 – August 2024',
                 shortDescription:
-                    'Optimized the TOM platform (60k+ users) by refactoring technical debt, cutting Spring Boot load times by 30%. Developed Language Assist during the Intern Innovation Challenge, an AI tool using OpenAI Whisper and FastAPI for live call translation projected to save $162M annually. Won 1st place out of 24 teams and pitched the MVP directly to CTO Jeremy Legg.',
+                    'Resolved backend bottlenecks for the TOM platform (60k+ users) by refactoring technical debt and optimizing Spring Boot query patterns, cutting load times by 30%+. Developed a real-time maintenance alert system using Angular and Spring Boot to proactively notify users of downtime through live, database-driven UI warnings. Developed Language Assist during the Intern Innovation Challenge, an AI tool using OpenAI Whisper and FastAPI for live call translation projected to save $162M annually. Won 1st place out of 24 teams and pitched the MVP directly to CTO Jeremy Legg.`,',
             },
         ],
         description: [
@@ -99,7 +99,7 @@ const experiencesData: ExperienceWithoutId[] = [
                 title: 'Embedded Software Engineer Intern',
                 period: 'May 2023 – July 2023',
                 shortDescription:
-                    'Engineered a cross-platform AES-256 encryption module to securely transfer data between STM32-based smart medical IoT devices. Debugged and resolved critical synchronization issues in the IoT device pairing tool.',
+                    'Engineered AES-256 encryption for STM32 medical IoT devices at a healthcare startup, ensuring HIPAA/PDPA compliance via C and Python. Debugged and resolved critical synchronization vulnerabilities in the IoT device pairing suite, significantly increasing connection reliability for all deployed units.',
             },
         ],
         description: [
@@ -118,7 +118,7 @@ const experiencesData: ExperienceWithoutId[] = [
                 title: 'Communications Chair',
                 period: 'May 2021 – August 2022',
                 shortDescription:
-                    'Modernized the orchestra website by replacing legacy jQuery with modern frameworks, improving SEO ranking by 40%+. Led a 19-member team coordinating projects and raised audience turnout to 600+ with a promotional film.',
+                    'Modernized the orchestra website by replacing legacy jQuery with modern frameworks, and implementing HTTPS, improving SEO ranking by 40%+. Led a 19-member team coordinating projects and raised audience turnout to 600+ with a promotional film.',
             },
             {
                 title: 'Librarian',
