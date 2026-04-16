@@ -49,9 +49,9 @@ const ExperienceTimelineEntry = ({
                 </TimelineDot>
                 {showConnector ? <TimelineConnector /> : null}
             </TimelineSeparator>
-            <TimelineContent sx={{ pb: 3 }}>
+            <TimelineContent sx={{ pb: 2, fontFamily: 'var(--font-figtree), Arial, Helvetica, sans-serif' }}>
                 <div className='flex items-baseline justify-between gap-4'>
-                    <Typography variant='h6' component='span' sx={{ lineHeight: 1.2 }}>
+                    <Typography variant='h6' component='span' sx={{ lineHeight: 1.2, fontFamily: 'inherit' }}>
                         {companyLink ? (
                             <ArrowLink
                                 label={experience.company}
@@ -71,16 +71,18 @@ const ExperienceTimelineEntry = ({
 
                 {experience.positions.map(position => (
                     <React.Fragment key={`${position.title}-${position.period}`}>
-                        <Typography variant='body2' sx={{ display: 'block' }}>
+                        <Typography variant='body2' sx={{ display: 'block', fontFamily: 'inherit' }}>
                             {position.title}
                         </Typography>
                         <Typography
                             variant='caption'
-                            sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)' }}
+                            sx={{ fontWeight: 600, display: 'block', color: 'var(--primary)', fontFamily: 'inherit' }}
                         >
                             {position.period}
                         </Typography>
-                        {position.shortDescription ? <Typography>{position.shortDescription}</Typography> : null}
+                        {position.shortDescription ? (
+                            <Typography sx={{ fontFamily: 'inherit' }}>{position.shortDescription}</Typography>
+                        ) : null}
                     </React.Fragment>
                 ))}
             </TimelineContent>

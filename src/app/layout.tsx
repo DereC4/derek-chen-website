@@ -1,13 +1,23 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
-import { Inter, Roboto } from 'next/font/google';
+import localFont from 'next/font/local';
+import { Roboto } from 'next/font/google';
 import './globals.css';
 import Footer from '@/components/Footer';
 
-const inter = Inter({
-    variable: '--font-inter',
-    subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700'],
+const figtree = localFont({
+    src: [
+        {
+            path: '../assets/fonts/Figtree-VariableFont_wght.ttf',
+            style: 'normal',
+        },
+        {
+            path: '../assets/fonts/Figtree-Italic-VariableFont_wght.ttf',
+            style: 'italic',
+        },
+    ],
+    variable: '--font-figtree',
+    display: 'swap',
 });
 
 const roboto = Roboto({
@@ -78,7 +88,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang='en'>
-            <body className={`${inter.variable} ${roboto.variable} font-sans antialiased`}>
+            <body className={`${figtree.variable} ${roboto.variable} font-sans antialiased`}>
                 {children}
                 <Footer />
                 <Analytics />
