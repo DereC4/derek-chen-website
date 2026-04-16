@@ -119,7 +119,7 @@ const experiencesData: ExperienceWithoutId[] = [
     {
         title: 'Communications Chair',
         company: 'Seven Lakes Orchestras',
-        companyLink: '', // Add the website link if available
+        companyLink: 'https://sevenlakesorchestras.org/', 
         period: 'May 2021 – August 2022',
         location: 'Katy, Texas',
         positions: [
