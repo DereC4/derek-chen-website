@@ -18,7 +18,7 @@ export const projects: PersonalProject[] = [
 Integrates professor ratings, grade distributions, and schedule planning into official university pages.`,
         image: '/images/projects/ut-registration-plus.png',
         technologies: ['TypeScript', 'React', 'CSS', 'SCSS', 'SQL', 'Vite', 'TailwindCSS', 'Figma'],
-        href: '/projects/ut-registration-plus',
+        href: 'https://chromewebstore.google.com/detail/ut-registration-plus/hboadpjkoaieogjimneceaahlppnipaa?hl=en',
         period: 'Present – Present',
         // period: 'Dec 2023 – Present',
     },

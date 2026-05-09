@@ -1,5 +1,6 @@
 'use client';
 
+import ArrowLink from '@/components/ArrowLink';
 import { getTechnologyColor, getTextColor } from '@/lib/technologyColors';
 import Image from 'next/image';
 import type { StaticImageData } from 'next/image';
@@ -51,11 +52,9 @@ const ProjectCard: FC<ProjectCardProps> = ({ id, title, description, image, tech
                         );
                     })}
                 </div>
-                <Link href={href} className='no-underline'>
-                    <h2 className='text-2xl font-bold hover:underline cursor-pointer mb-1 mt-2 text-foreground'>
-                        {title}
-                    </h2>
-                </Link>
+                <h2 className='mb-1 mt-2'>
+                    <ArrowLink label={title} href={href} className='text-2xl font-bold hover:underline' />
+                </h2>
                 <div className='text-sm text-muted-foreground'>
                     <p>{description}</p>
                 </div>
