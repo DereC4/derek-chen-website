@@ -9,15 +9,15 @@ export default function GithubStats() {
     const username = 'DereC4';
 
     return (
-        <div className='flex flex-col items-start gap-6 p-6 bg-slate-900 text-white rounded-xl max-w-4xl mx-auto'>
-            <div className='flex flex-row justify-center mx-auto'>
+        <div className='flex flex-col items-start gap-3 p-6 bg-slate-900 text-white rounded-xl max-w-4xl mx-auto'>
+            <div className='flex flex-row justify-between mx-auto w-full'>
                 <p>$ git log --stat</p>
-                <ArrowLink
+                {/* <ArrowLink
                     label={'Github'}
                     href={'https://github.com/DereC4'}
                     target='_blank'
                     className='text-lg md:text-xl text-foreground hover:text-foreground/80 mb-1'
-                />
+                /> */}
             </div>
             <GitHubCalendar
                 username={username}
