@@ -96,14 +96,14 @@ export default function ProjectsSection() {
                     />
                 ))}
             </div>
-            <div className='text-center mt-12'>
+            {/* <div className='text-center mt-12'>
                 <Link
                     href='/projects'
                     className='inline-block px-6 py-3 bg-foreground text-background rounded-2xl font-semibold hover:opacity-90 transition-opacity'
                 >
                     See more projects here!
                 </Link>
-            </div>
+            </div> */}
         </>
     );
 }
