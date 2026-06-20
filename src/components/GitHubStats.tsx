@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GitHubCalendar } from 'react-github-calendar';
 
 // https://grubersjoe.github.io/react-github-calendar/#/?user=derec4
-export default function ContritionStats() {
+export default function GithubStats() {
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
   const years = [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019];
   const username = "DereC4";
@@ -12,11 +12,10 @@ export default function ContritionStats() {
       
       <GitHubCalendar 
           username={username} 
-          year={selectedYear}
           colorScheme="dark"
-          theme={{
-            dark: ['#1e293b', '#0e7490', '#06b6d4', '#22d3ee', '#67e8f9'],
-          }}
+          // theme={{
+          //   dark: ['#1e293b', '#0e7490', '#06b6d4', '#22d3ee', '#67e8f9'],
+          // }}
         />
 
     </div>

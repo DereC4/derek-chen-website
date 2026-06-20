@@ -6,6 +6,7 @@ import ExperienceTimeline from '@/components/ExperienceTimeline';
 import UnderConstructionNotice from '@/components/UnderConstructionNotice';
 import WebringRouter from '@/components/WebringRouter';
 import HomeHeroSection from '@/components/HomeHeroSection';
+import GithubStats from '@/components/GitHubStats';
 
 export default function Home() {
     return (
@@ -28,6 +29,7 @@ export default function Home() {
                 </div>
             </div>
             
+            <GithubStats></GithubStats>
 
             <div id='end' className='min-h-screen bg-secondary py-16 px-4 flex items-center justify-center'>
                 <div className='max-w-6xl mx-auto px-6'>
