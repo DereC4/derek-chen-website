@@ -17,7 +17,7 @@ export const projects: PersonalProject[] = [
         shortDescription: `Open-source Chrome extension with 50,000+ users that streamlines UT Austin course registration.
 Integrates professor ratings, grade distributions, and schedule planning into official university pages.`,
         image: '/images/projects/ut-registration-plus.png',
-        technologies: ['TypeScript', 'React', 'CSS', 'SCSS', 'SQL', 'Vite', 'TailwindCSS', 'Figma'],
+        technologies: ['TypeScript', 'React', 'CSS', 'SCSS', 'SQL', 'Astro', 'Vite', 'TailwindCSS', 'Figma'],
         href: 'https://chromewebstore.google.com/detail/ut-registration-plus/hboadpjkoaieogjimneceaahlppnipaa?hl=en',
         period: 'Present – Present',
         // period: 'Dec 2023 – Present',

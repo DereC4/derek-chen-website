@@ -14,6 +14,7 @@ export const technologyColors: Record<string, string> = {
     HTML: '#fb923c',
     SCSS: '#f9a8d4',
     Sass: '#f9a8d4',
+    Astro: '#e540a9',
 
     // Backend
     'Node.js': '#86efac',
