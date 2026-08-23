@@ -28,6 +28,24 @@ const createExperienceId = (company: string): string => {
 
 const experiencesData: ExperienceWithoutId[] = [
     {
+        title: 'Software Engineer 1',
+        company: 'Dell',
+        companyLink: 'https://www.dell.com/en-us',
+        period: 'August 2026',
+        location: 'Austin, Texas',
+        positions: [
+            {
+                title: 'Software Engineer 1',
+                period: 'August 2026',
+                shortDescription:
+                    'Alienware Team',
+            },
+        ],
+        description: [
+            'Alienware Team',
+        ],
+    },
+    {
         title: 'Software Engineer Intern - Login Management Team',
         company: 'Charles Schwab',
         companyLink: 'https://www.schwab.com/',

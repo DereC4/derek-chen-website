@@ -8,6 +8,7 @@ import Att from '@/assets/pics/companies/att.svg';
 import Schwab from '@/assets/pics/companies/schwab.svg';
 import Slork from '@/assets/pics/companies/slork.jpg';
 import LHD from '@/assets/pics/companies/lhd.png';
+import Dell from '@/assets/pics/companies/dell.svg'
 import { experiences } from '@/data/experiences';
 
 type TimelineCompanyConfig = {
@@ -18,6 +19,12 @@ type TimelineCompanyConfig = {
 };
 
 const timelineCompanies: TimelineCompanyConfig[] = [
+    {
+        company: 'Dell Technologies',
+        logoSrc: Dell,
+        logoAlt: 'Dell company logo',
+        fallbackCompanyLink: 'https://www.dell.com/en-us',
+    },
     {
         company: 'Charles Schwab',
         logoSrc: Schwab,
