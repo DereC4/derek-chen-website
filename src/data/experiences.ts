@@ -29,7 +29,7 @@ const createExperienceId = (company: string): string => {
 const experiencesData: ExperienceWithoutId[] = [
     {
         title: 'Software Engineer 1',
-        company: 'Dell',
+        company: 'Dell Technologies',
         companyLink: 'https://www.dell.com/en-us',
         period: 'August 2026',
         location: 'Austin, Texas',
