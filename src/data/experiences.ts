@@ -35,10 +35,9 @@ const experiencesData: ExperienceWithoutId[] = [
         location: 'Austin, Texas',
         positions: [
             {
-                title: 'Software Engineer 1',
+                title: 'Software Engineer 1 - Alienware Team',
                 period: 'August 2026',
-                shortDescription:
-                    'Alienware Team',
+                shortDescription: 'Overhauling Alienware Command Center (AWCC), the central optimization platform for millions of gamers, to streamline hardware telemetry, device controls, peripheral interactions, and game auto-detection.',
             },
         ],
         description: [
